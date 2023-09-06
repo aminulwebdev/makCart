@@ -71,7 +71,7 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="header_left">
-            <a href="">  <img src="images/logo.png" alt=""></a>
+              <a href=""> <img src="images/logo.png" alt=""></a>
 
               <div class="search_box">
                 <div class="categories_box">
@@ -106,7 +106,7 @@
                 </div>
               </div>
 
-             
+
               <div class="cart">
                 <a href="">
                   <i class="fa-solid fa-heart"></i><span>Wishlist</span>
@@ -114,17 +114,74 @@
                 <a href="">
                   <i class="fa-solid fa-scale-balanced"></i><span>compare</span>
                 </a>
-                <a href="" >
-                  <i class="fa-solid fa-bag-shopping" ></i><span>cart</span>
+                <a class="cart_icon" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-bag-shopping "></i><span>cart</span>
+                  <div class="select_items">2</div>
                 </a>
+               
               </div>
+
+              <!-- ===================
+              Cart offcancas start
+            ========================= -->
+              <div class="offcanvas offcanvas-end cart_offcanvas" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header  offcanvas_title">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+                  <button data-bs-dismiss="offcanvas" aria-label="Close">Close <span><i
+                        class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+
+                <div class="offcanvas-body cart_list">
+                  <div class="cart_items">
+                    <div class="product_list">
+                      <div class="product_name">
+                        <h4>Electronics Black Wrist Watch</h4>
+                        <p>1 X <span>$25.98</span></p>
+                      </div>
+                      <img src="images/product_one.jpg" alt="">
+                    </div>
+                    <div class="product_list">
+                      <div class="product_name">
+                        <h4>Electronics Black Wrist Watch</h4>
+                        <p>1 X <span>$25.98</span></p>
+                      </div>
+                      <img src="images/product_one.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="total_amount">
+                    <div class="price">
+                      <h6>Subtotal:</h6>
+                      <p>$50.96</p>
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <button class="view_cart">VIEW CART</button>
+                    <button class="checkout_btn">CHECKOUT</button>
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+              <!-- ===================
+              Cart offcancas end
+            ========================= -->
+
+
+
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-<hr>
+  <hr>
   <!--===========================
             Header part end
     ============================= -->
