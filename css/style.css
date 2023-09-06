@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #header {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   background: #fff;
   color: #333333;
 }
@@ -68,7 +69,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #header .header_top .header_right .dropdown_elements .dropdown .dropdown_box li {
   display: flex;
-  align-items: center;
   gap: 5px;
 }
 #header .header_top .header_right .dropdown_elements .dropdown:hover .dropdown_box {
@@ -84,4 +84,89 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #header .header_top .header_right .header_account ul a {
   color: #333333;
+}
+#header .header_middle {
+  padding: 30px;
+}
+#header .header_middle .header_left {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+#header .header_middle .header_left img {
+  width: 150px;
+}
+#header .header_middle .header_left .search_box {
+  border: 2px solid #842b6e;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+#header .header_middle .header_left .search_box .categories_box {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 14px;
+}
+#header .header_middle .header_left .search_box .categories_box .custom_dropdown {
+  border: none;
+  color: #757575;
+}
+#header .header_middle .header_left .search_box input {
+  border: none;
+  width: 350px;
+}
+#header .header_middle .header_left .search_box button {
+  border: none;
+  background: transparent;
+  padding-right: 10px;
+  color: #757575;
+  font-size: 17px;
+}
+#header .header_middle .hello {
+  display: flex;
+  align-items: center;
+}
+#header .header_middle .hello .hadder_right {
+  display: flex;
+}
+#header .header_middle .hello .hadder_right .live_chat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid #ccc;
+  padding-right: 25px;
+}
+#header .header_middle .hello .hadder_right .live_chat ul a {
+  font-size: 30px;
+  color: #333;
+}
+#header .header_middle .hello .hadder_right .live_chat .chat_info p {
+  font-size: 16px;
+  line-height: 15px;
+}
+#header .header_middle .hello .hadder_right .live_chat .chat_info p span {
+  color: #999999;
+}
+#header .header_middle .hello .hadder_right .live_chat .chat_info a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #333;
+}
+#header .header_middle .hello .hadder_right .cart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-left: 25px;
+}
+#header .header_middle .hello .hadder_right .cart a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-size: 27px;
+}
+#header .header_middle .hello .hadder_right .cart a span {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

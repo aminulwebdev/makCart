@@ -80,6 +80,7 @@
     .header_right {
       display: flex;
       justify-content: end;
+
       .dropdown_elements {
         display: flex;
         gap: 20px;
@@ -119,7 +120,7 @@
 
             li {
               display: flex;
-              align-items: center;
+              // align-items: center;
               gap: 5px;
             }
           }
@@ -133,16 +134,124 @@
         }
       }
 
-      .header_account{
-        ul{
+      .header_account {
+        ul {
           display: flex;
           gap: 20px;
           padding-left: 20px;
 
-          a{
+          a {
             color: $brand_clr;
           }
         }
+      }
+    }
+  }
+
+  .header_middle {
+
+    padding: 30px;
+
+    .header_left {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+
+      img {
+        width: 150px;
+      }
+
+      .search_box {
+        border: 2px solid #842b6e;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+
+        .categories_box {
+          border-right: 1px solid #ccc;
+          padding: 10px;
+          margin-right: 14px;
+
+          .custom_dropdown {
+            border: none;
+            color: #757575;
+          }
+
+        }
+
+        input {
+          border: none;
+          width: 350px;
+        }
+
+        button {
+          border: none;
+          background: transparent;
+          padding-right: 10px;
+          color: #757575;
+          font-size: 17px;
+        }
+      }
+
+    }
+
+    .hello {
+      display: flex;
+      align-items: center;
+
+      .hadder_right {
+        display: flex;
+
+        .live_chat {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          border-right: 1px solid #ccc;
+          padding-right: 25px;
+
+          ul {
+            a {
+              font-size: 30px;
+              color: #333;
+            }
+          }
+          .chat_info {
+            p {
+              font-size: 16px;
+              line-height: 15px;
+  
+              span {
+                color: #999999;
+              }
+            }
+  
+            a {
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 27px;
+              color: #333;
+            }
+          }
+        }
+.cart{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-left: 25px;
+  a{
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    color: #333;
+    font-size: 27px;
+    span{
+      font-size: 12px;
+    }
+  }
+}
+       
       }
     }
   }
