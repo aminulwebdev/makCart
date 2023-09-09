@@ -85,7 +85,6 @@
         display: flex;
         gap: 20px;
         border-right: 2px solid #ccc;
-        // width: fit-content;
         padding-right: 20px;
 
         .dropdown {
@@ -93,8 +92,15 @@
             display: flex;
             gap: 5px;
             align-items: center;
-
             cursor: pointer;
+
+            p {
+              transition: .3s;
+
+              &:hover {
+                color: $brand_clr;
+              }
+            }
 
             span {
               font-size: 10px;
@@ -120,9 +126,10 @@
 
             li {
               display: flex;
-              // align-items: center;
               gap: 5px;
+              color: $brand_clr;
             }
+
           }
 
           &:hover .dropdown_box {
@@ -148,6 +155,8 @@
     }
   }
 
+  // ===========Header Middle Start=========
+
   .header_middle {
 
     padding: 30px;
@@ -162,7 +171,7 @@
       }
 
       .search_box {
-        border: 2px solid #842b6e;
+        border: 2px solid #be3265;
         border-radius: 3px;
         display: flex;
         align-items: center;
@@ -196,11 +205,13 @@
 
     }
 
-    .hello {
+
+    // ===========Header Middle right Start=========
+    .hadder_right {
       display: flex;
       align-items: center;
 
-      .hadder_right {
+      .right_side {
         display: flex;
 
         .live_chat {
@@ -233,6 +244,7 @@
               line-height: 27px;
               color: #333;
             }
+
           }
         }
 
@@ -261,7 +273,7 @@
               color: #ffffff;
               font-size: 11px;
               line-height: 6px;
-              background: #336699;
+              background: $brand_clr;
               border-radius: 50px;
               padding: 5px;
             }
@@ -273,8 +285,7 @@
           padding: 30px;
 
           .offcanvas_title {
-            border-bottom: 1px solid rgba(102, 102, 102, 0.20);
-
+            border-bottom: 1px solid $secondary_clr;
             padding: 0 0 14px 0;
 
             h5 {
@@ -295,8 +306,6 @@
             padding: 0;
 
             .cart_items {
-              // border-bottom: 2px solid red;
-
               .product_list {
                 display: flex;
                 padding: 20px 0 0 0;
@@ -335,7 +344,6 @@
             }
 
             .total_amount {
-
               padding-top: 20px;
 
               .price {
@@ -343,8 +351,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding-top: 20px;
-                border-top: 1px solid rgba(102, 102, 102, 0.20);
-
+                border-top: 1px solid $secondary_clr;
 
                 h6 {
                   font-size: 14px;
@@ -367,8 +374,6 @@
               justify-content: space-between;
               padding-top: 30px;
 
-              // button {}
-
               .view_cart {
                 font-size: 13px;
                 line-height: 13px;
@@ -382,8 +387,6 @@
                   color: #fff;
                   border: 2px solid #336699;
                 }
-
-
               }
 
               .checkout_btn {
@@ -402,12 +405,173 @@
                   border: 2px solid #3c78b4;
 
                 }
+              }
+            }
 
+          }
+        }
+
+      }
+    }
+  }
+
+  // ============= Main menu start ===========
+
+  .main_menu {
+    .brows_category {
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        background: #f1f1f1;
+        padding: 20px;
+
+        a {
+          display: flex;
+          justify-content: space-between;
+          color: $text_clr;
+        }
+
+      }
+
+      position: relative;
+
+      .category_box {
+        background: rgb(255, 255, 255);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 8px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: relative;
+        .category_menu {
+          >li {
+            border-bottom: 1px solid $secondary_clr;
+            padding: 13px 5px 13px 12px;
+
+            a {
+              display: flex;
+
+              justify-content: space-between;
+              font-size: 13px;
+              font-weight: 500;
+              color: $text_clr;
+
+              span i {
+                padding-right: 7px; //brows_category logo to fashion gap
+                font-size: 15px;
+
+              }
+
+              .catemenu_arrow i {
+                font-size: 10px;
+                transition: all linear .2s;
+              }
+
+            }
+
+            &:hover .catemenu_arrow i {
+              transform: translateX(50%);
+            }
+          }
+   
+
+          .mega_menu {
+            display: flex;
+            gap: 20px;
+
+            position: absolute;
+            top: 0;
+            left: 96%;
+            width: 685px;
+            background: #fff;
+
+            transition: all linear .2s;
+            padding-left: 20px;
+            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+            // visibility: hidden; // mega menu hidden, mega menu hidden 
+            // opacity: 0;        // mega menu hidden, mega menu hidden 
+
+            .megamenu_items {
+              padding-top: 28px;
+
+              h4 {
+                border-bottom: 1px solid $secondary_clr;
+                padding-bottom: 13px;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 600;
+              }
+
+              ul {
+                width: 195px;
+
+                li {
+                  padding-top: 12px;
+                }
+
+                a {
+
+                  font-size: 14px;
+                  line-height: 14px;
+                  color: $mega_clr;
+                }
+
+              }
+            }
+
+            .fashion_img {
+              position: relative;
+
+              .fashionimg_text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 30px 0 0 30px;
+
+                p {
+                  line-height: 14px;
+                  font-weight: 600px;
+
+                  span {
+                    color: #fc6782;
+                    font-weight: 700;
+                  }
+                }
+
+                h3 {
+                  font-size: 25px;
+                  line-height: 30px;
+                  font-weight: 700;
+                  padding: 5px 0 14px 0;
+                }
+
+                a {
+                  font-size: 13px;
+                  color: #000;
+                  font-weight: 600;
+
+                  i {
+                    transition: all linear .2s;
+                  }
+
+                  &:hover i {
+                    transform: translatex(50%);
+
+                  }
+                }
 
               }
             }
 
           }
+
+          &:hover .mega_menu {
+            visibility: visible;
+            opacity: 1;
+            left: 100%;
+          }
+
         }
 
       }
