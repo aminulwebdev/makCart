@@ -487,7 +487,7 @@
             width: 685px;
             background: #fff;
 
-            transition: all linear .2s;
+            transition: all linear .1s;
             padding-left: 20px;
             box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
             visibility: hidden; // mega menu hidden, mega menu hidden 
@@ -573,12 +573,12 @@
             display: flex;
             gap: 20px;
             position: absolute;
-            top: 25%;
+            top: 10%;
             left: 96%;
             width: 685px;
             background: #fff;
 
-            transition: all linear .2s;
+            transition: all linear .1s;
             padding-left: 20px;
             box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
             visibility: hidden; // mega menu hidden, mega menu hidden 
@@ -677,12 +677,12 @@
             display: flex;
             gap: 20px;
             position: absolute;
-            top: 50%;
+            top: 18%;
             left: 96%;
             width: 685px;
             background: #fff;
 
-            transition: all linear .2s;
+            transition: all linear .1s;
             padding-left: 20px;
             box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
             visibility: hidden; // mega menu hidden, mega menu hidden 
@@ -774,7 +774,151 @@
             }
           }
 
-        
+          //======Mega Menu for Furniture========
+          .mega_menufurniture {
+
+            // display: flex;
+            // gap: 20px;
+            position: absolute;
+            top: 26%;
+            left: 96%;
+            width: 880px;
+            background: #fff;
+
+            transition: all linear .1s;
+            padding-left: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            visibility: hidden; // mega menu hidden, mega menu hidden 
+            opacity: 0; // mega menu hidden, mega menu hidden 
+
+            .megamenu_list {
+              display: flex;
+              gap: 20px;
+
+              .megamenu_items {
+                h4 {
+                  border-bottom: 1px solid $secondary_clr;
+                  padding-bottom: 10px;
+                  font-size: 14px;
+                  line-height: 14px;
+                  font-weight: 600;
+                  padding-top: 25px;
+                }
+
+                ul {
+                  width: 195px;
+                  padding-top: 6px;
+
+                  li {
+                    padding-top: 10px;
+                  }
+
+                  a {
+
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $mega_clr;
+                  }
+
+                }
+              }
+            }
+
+            .img_list {
+              display: flex;
+              gap: 20px;
+              padding-top: 30px;
+              padding-bottom: 20px;
+
+              .category_img {
+                position: relative;
+
+                .imgtext_left {
+
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  padding: 25px 25px 0 0;
+
+                  h6 {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    padding-bottom: 4px;
+                    text-align: end;
+                    color: $mega_clr;
+                  }
+
+                  h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: $text_clr;
+                    padding-bottom: 14px;
+                  }
+
+                  p {
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-weight: 400px;
+                    color: $text_clr;
+                    text-align: end;
+
+                    span {
+                      font-size: 14px;
+                      line-height: 14px;
+                      font-weight: 700;
+                    }
+                  }
+                }
+
+                .imgtext_right {
+
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  padding: 25px 0 0 25px;
+
+                  h6 {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    padding-bottom: 4px;
+                  }
+
+                  h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: #fff;
+                    padding-bottom: 14px;
+                  }
+
+                  p {
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-weight: 400px;
+                    color: #fff;
+
+                    // padding-bottom: 11px;
+                    span {
+                      font-size: 14px;
+                      line-height: 14px;
+                      font-weight: 700;
+                    }
+                  }
+                }
+
+                img {
+                  border-radius: 3px;
+                }
+
+              }
+
+            }
+          }
 
 
           // ====Fashion Mega Menu hover=======
@@ -798,9 +942,30 @@
             left: 100%;
           }
 
-        
+          // ====Furniture Mega Menu hover=======
+          &:hover .mega_menufurniture {
+            visibility: visible;
+            opacity: 1;
+            left: 100%;
+          }
+
         }
 
+        .all_categories {
+          li {
+            padding: 18px 12px 10px 12px;
+            border-bottom: none;
+            display: flex;
+            a {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              color: $brand_clr;
+              font-weight: 600;
+            }
+          }
+
+        }
       }
     }
   }
