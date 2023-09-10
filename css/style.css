@@ -366,9 +366,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul {
   width: 195px;
+  padding-top: 6px;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul li {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul a {
   font-size: 14px;
