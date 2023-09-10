@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #header .main_menu .brows_category .category_box .category_menu > li:hover .catemenu_arrow i {
   transform: translateX(50%);
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
   display: flex;
   gap: 20px;
   position: absolute;
@@ -353,64 +353,221 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   transition: all linear 0.2s;
   padding-left: 20px;
   box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items {
-  padding-top: 28px;
-}
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items h4 {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .megamenu_items h4 {
   border-bottom: 1px solid rgba(102, 102, 102, 0.2);
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
+  padding-top: 25px;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .megamenu_items ul {
   width: 195px;
   padding-top: 6px;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul li {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .megamenu_items ul li {
   padding-top: 10px;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .megamenu_items ul a {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .megamenu_items ul a {
   font-size: 14px;
   line-height: 14px;
   color: #666666;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img {
   position: relative;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text {
   position: absolute;
   top: 0;
   left: 0;
   padding: 30px 0 0 30px;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text p {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text p {
   line-height: 14px;
   font-weight: 600px;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text p span {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text p span {
   color: #fc6782;
   font-weight: 700;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text h3 {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text h3 {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   padding: 5px 0 14px 0;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text a {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text a {
   font-size: 13px;
   color: #000;
   font-weight: 600;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text a i {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text a i {
   transition: all linear 0.2s;
 }
-#header .main_menu .brows_category .category_box .category_menu .mega_menu .fashion_img .fashionimg_text a:hover i {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .fashionimg_text a:hover i {
   transform: translatex(50%);
 }
-#header .main_menu .brows_category .category_box .category_menu:hover .mega_menu {
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 30px 30px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text h3 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600px;
+  color: #fff;
+  padding-bottom: 23px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text p span {
+  color: #fc6782;
+  font-weight: 700;
+  color: #F77C29;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 14px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text a i {
+  transition: all linear 0.2s;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menufashion .category_img .homeimg_text a:hover i {
+  transform: translatex(50%);
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+  width: 685px;
+  background: #fff;
+  transition: all linear 0.2s;
+  padding-left: 20px;
+  box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .megamenu_items h4 {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  padding-top: 25px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .megamenu_items ul {
+  width: 195px;
+  padding-top: 6px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .megamenu_items ul li {
+  padding-top: 10px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .megamenu_items ul a {
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img {
+  position: relative;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 30px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text p {
+  line-height: 14px;
+  font-weight: 600px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text p span {
+  color: #fc6782;
+  font-weight: 700;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 5px 0 14px 0;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text a {
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text a i {
+  transition: all linear 0.2s;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .fashionimg_text a:hover i {
+  transform: translatex(50%);
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 30px 30px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text h3 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600px;
+  color: #fff;
+  padding-bottom: 23px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text p span {
+  color: #fc6782;
+  font-weight: 700;
+  color: #F77C29;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 14px;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text a i {
+  transition: all linear 0.2s;
+}
+#header .main_menu .brows_category .category_box .category_menu .mega_menuhome .category_img .homeimg_text a:hover i {
+  transform: translatex(50%);
+}
+#header .main_menu .brows_category .category_box .category_menu:hover .mega_menufashion {
+  visibility: visible;
+  opacity: 1;
+  left: 100%;
+}
+#header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
   visibility: visible;
   opacity: 1;
   left: 100%;
