@@ -722,109 +722,6 @@
               .homeimg_text {
                 // ======Home & Garden=======
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                padding: 0 0 30px 30px;
-
-                h6 {
-                  font-size: 16px;
-                  line-height: 19px;
-                  color: #fff;
-                  padding-bottom: 5px;
-                }
-
-                h3 {
-                  font-size: 25px;
-                  line-height: 30px;
-                  color: #fff;
-                  font-weight: 700;
-
-                }
-
-                p {
-                  font-size: 20px;
-                  line-height: 20px;
-                  font-weight: 600px;
-                  color: #fff;
-                  padding-bottom: 23px;
-
-                  span {
-                    color: #fc6782;
-                    font-weight: 700;
-                    color: #F77C29;
-                  }
-                }
-
-                a {
-                  font-size: 13px;
-                  color: #fff;
-                  font-weight: 600;
-                  line-height: 14px;
-
-                  i {
-                    transition: all linear .2s;
-                  }
-
-                  &:hover i {
-                    transform: translatex(50%);
-
-                  }
-                }
-              }
-            }
-          }
-
-          //======Mega Menu for Furniture========
-          .mega_menufurniture {
-
-            display: flex;
-            gap: 20px;
-            position: absolute;
-            top: 75%;
-            left: 96%;
-            width: 685px;
-            background: #fff;
-
-            transition: all linear .2s;
-            padding-left: 20px;
-            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
-            // visibility: hidden; // mega menu hidden, mega menu hidden 
-            // opacity: 0; // mega menu hidden, mega menu hidden 
-
-            .megamenu_items {
-              h4 {
-                border-bottom: 1px solid $secondary_clr;
-                padding-bottom: 10px;
-                font-size: 14px;
-                line-height: 14px;
-                font-weight: 600;
-                padding-top: 25px;
-              }
-
-              ul {
-                width: 195px;
-                padding-top: 6px;
-
-                li {
-                  padding-top: 10px;
-                }
-
-                a {
-
-                  font-size: 14px;
-                  line-height: 14px;
-                  color: $mega_clr;
-                }
-
-              }
-            }
-
-            .category_img {
-              position: relative;
-
-              .homeimg_text {
-                // ======Home & Garden=======
-                position: absolute;
                 top: 0;
                 left: 0;
                 padding: 30px 0 0 30px;
@@ -877,6 +774,8 @@
             }
           }
 
+        
+
 
           // ====Fashion Mega Menu hover=======
           &:hover .mega_menufashion {
@@ -899,13 +798,7 @@
             left: 100%;
           }
 
-          // ====Furniture Mega Menu hover=======
-          &:hover .mega_menufurniture {
-            visibility: visible;
-            opacity: 1;
-            left: 100%;
-          }
-
+        
         }
 
       }
