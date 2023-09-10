@@ -443,7 +443,7 @@
         width: 100%;
         padding: 8px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        position: relative;
+
 
         .category_menu {
           >li {
@@ -564,6 +564,56 @@
                 }
 
               }
+            }
+          }
+
+          //======Mega Menu for Home========
+          .mega_menuhome {
+
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 25%;
+            left: 96%;
+            width: 685px;
+            background: #fff;
+
+            transition: all linear .2s;
+            padding-left: 20px;
+            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+            visibility: hidden; // mega menu hidden, mega menu hidden 
+            opacity: 0; // mega menu hidden, mega menu hidden 
+
+            .megamenu_items {
+              h4 {
+                border-bottom: 1px solid $secondary_clr;
+                padding-bottom: 10px;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 600;
+                padding-top: 25px;
+              }
+
+              ul {
+                width: 195px;
+                padding-top: 6px;
+
+                li {
+                  padding-top: 10px;
+                }
+
+                a {
+
+                  font-size: 14px;
+                  line-height: 14px;
+                  color: $mega_clr;
+                }
+
+              }
+            }
+
+            .category_img {
+              position: relative;
 
               .homeimg_text {
                 // ======Home & Garden=======
@@ -620,8 +670,9 @@
             }
           }
 
-          //=====Mega Menu for Home========
-          .mega_menuhome {
+
+          //======Mega Menu for Electronics========
+          .mega_menuelectronics {
 
             display: flex;
             gap: 20px;
@@ -668,47 +719,6 @@
             .category_img {
               position: relative;
 
-              .fashionimg_text {
-                // ======Fashion=======
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 30px 0 0 30px;
-
-                p {
-                  line-height: 14px;
-                  font-weight: 600px;
-
-                  span {
-                    color: #fc6782;
-                    font-weight: 700;
-                  }
-                }
-
-                h3 {
-                  font-size: 25px;
-                  line-height: 30px;
-                  font-weight: 700;
-                  padding: 5px 0 14px 0;
-                }
-
-                a {
-                  font-size: 13px;
-                  color: #000;
-                  font-weight: 600;
-
-                  i {
-                    transition: all linear .2s;
-                  }
-
-                  &:hover i {
-                    transform: translatex(50%);
-
-                  }
-                }
-
-              }
-
               .homeimg_text {
                 // ======Home & Garden=======
                 position: absolute;
@@ -764,6 +774,110 @@
             }
           }
 
+          //======Mega Menu for Furniture========
+          .mega_menufurniture {
+
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 75%;
+            left: 96%;
+            width: 685px;
+            background: #fff;
+
+            transition: all linear .2s;
+            padding-left: 20px;
+            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+            // visibility: hidden; // mega menu hidden, mega menu hidden 
+            // opacity: 0; // mega menu hidden, mega menu hidden 
+
+            .megamenu_items {
+              h4 {
+                border-bottom: 1px solid $secondary_clr;
+                padding-bottom: 10px;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 600;
+                padding-top: 25px;
+              }
+
+              ul {
+                width: 195px;
+                padding-top: 6px;
+
+                li {
+                  padding-top: 10px;
+                }
+
+                a {
+
+                  font-size: 14px;
+                  line-height: 14px;
+                  color: $mega_clr;
+                }
+
+              }
+            }
+
+            .category_img {
+              position: relative;
+
+              .homeimg_text {
+                // ======Home & Garden=======
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 30px 0 0 30px;
+
+                p {
+                  font-size: 14px;
+                  line-height: 17px;
+                  font-weight: 400px;
+                  color: #ccc;
+                  padding-bottom: 11px;
+                }
+
+                h3 {
+                  font-size: 22px;
+                  font-weight: 700;
+                  line-height: 25px;
+                  color: #fff;
+                  padding-bottom: 3px;
+                }
+
+                h6 {
+                  font-size: 22px;
+                  line-height: 22px;
+                  color: #f77c29;
+                  font-weight: 700;
+                  padding-bottom: 16px;
+                }
+
+                button {
+                  background: transparent;
+                  border: 2px solid #fff;
+                  border-radius: 3px;
+
+                  a {
+                    font-size: 13px;
+                    color: #fff;
+                    font-weight: 600;
+                    line-height: 14px;
+                    padding: 10px 20px;
+                    transition: all linear .3s;
+                  }
+
+                  &:hover a {
+                    background: #fff;
+                    color: $brand_clr;
+                  }
+
+                }
+              }
+            }
+          }
+
+
           // ====Fashion Mega Menu hover=======
           &:hover .mega_menufashion {
             visibility: visible;
@@ -773,6 +887,20 @@
 
           // ====Home Mega Menu hover=======
           &:hover .mega_menuhome {
+            visibility: visible;
+            opacity: 1;
+            left: 100%;
+          }
+
+          // ====Electronics Mega Menu hover=======
+          &:hover .mega_menuelectronics {
+            visibility: visible;
+            opacity: 1;
+            left: 100%;
+          }
+
+          // ====Furniture Mega Menu hover=======
+          &:hover .mega_menufurniture {
             visibility: visible;
             opacity: 1;
             left: 100%;
