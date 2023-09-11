@@ -1,75 +1,6 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
-// #header {
-//   @include title;
-
-//   .header_top {
-//     background: $primary_clr;
-//     padding: 14px;
-
-//     .header_right {
-//       display: flex;
-//       gap: 20px;
-//       cursor: pointer;
-
-//       .dropdown {
-//         position: relative;
-//         width: fit-content;
-
-// img{
-//   width: 15px;
-// }
-//         a {
-//           color: $brand_clr;
-//         padding-right: 2px;
-//         padding-left: 2px;
-//         }
-
-
-//         ul {
-//           width: 50px;
-//           height: 60px;
-//           background-color: rgb(66, 245, 30);
-
-//           text-align: center;
-//           position: absolute;
-//           left: 50%;
-//           top: 100%;
-//           display: flex;
-//           flex-direction: column;
-//           justify-content: center;
-//           transition: 0.3s;
-//           transform: translateX(-50%);
-//           visibility: hidden;
-//           opacity: 0;
-
-
-//           // &:after {
-//           //   content: "";
-//           //   width: 15px;
-//           //   height: 100px;
-//           //   background: rgb(120, 8, 185);
-//           //   position: absolute;
-//           //   top: -10px;
-//           //   left: 50%;
-//           //   transform: translateX(-50%);
-//           //  z-index: -10;
-//           // }
-//         }
-
-
-//         &:hover {
-//           ul {
-//             visibility: visible;
-//             opacity: 1;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
 #header {
   @include title;
 
@@ -415,9 +346,11 @@
     }
   }
 
-  // ============= Main menu start ===========
+  // ============= Main Menu Start ===========
 
   .main_menu {
+
+    // ===========Browse Categories Start=========
     .brows_category {
       h2 {
         font-size: 14px;
@@ -441,14 +374,15 @@
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 8px;
+        padding: 8px 0 8px 8px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 
         .category_menu {
           >li {
             border-bottom: 1px solid $secondary_clr;
-            padding: 13px 5px 13px 12px;
+            padding: 13px 14px 13px 12px;
+            cursor: pointer;
 
             a {
               display: flex;
@@ -956,6 +890,7 @@
             padding: 18px 12px 10px 12px;
             border-bottom: none;
             display: flex;
+
             a {
               display: flex;
               gap: 5px;
@@ -968,5 +903,156 @@
         }
       }
     }
+
+    // ===========Browse Categories End=========
+
+
+    // ============= Menu part Start ==============
+
+    .menu {}
+
+    // ============= Menu part End ==============
+
+
   }
+
 }
+
+
+// ========== Service & Offer part Start===========
+
+#service {
+  @include title;
+  margin-top: 610px;
+  margin-bottom: 60px;
+
+  .service_items {
+    border: 1px solid $secondary_clr;
+    padding: 23px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .service_option {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 30px;
+        color: $brand_clr;
+      }
+
+      h4 {
+        font-size: 14px;
+        color: $text_clr;
+        line-height: 17px;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 13px;
+        color: $mega_clr;
+      }
+    }
+  }
+
+  .offer {
+    img {
+      border-radius: 3px;
+    }
+
+    position: relative;
+
+    .offertext_right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px 0 0 30px;
+
+      h6 {
+        font-size: 18px;
+        line-height: 22px;
+        color: $text_clr;
+        padding-bottom: 7px;
+
+        span {
+          font-weight: 700;
+          color: #f77c29;
+        }
+      }
+
+      h3 {
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 800;
+        color: $text_clr;
+      }
+
+      h4 {
+        font-weight: 400;
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        color: $mega_clr;
+
+        span {
+          font-weight: 700;
+          color: #f77c29;
+        }
+      }
+    }
+
+    .offertext_left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px 0 0 30px;
+
+      h6 {
+        font-size: 18px;
+        line-height: 22px;
+        color: $text_clr;
+        padding-bottom: 7px;
+        color: #c4c4c5;
+      }
+
+      h3 {
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 800;
+        color: #fff;
+      }
+
+      h4 {
+        font-weight: 400;
+        padding-bottom: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #fff;
+
+        span {
+          font-weight: 700;
+          color: #f77c29;
+        }
+      }
+    }
+
+  }
+
+}
+
+// ========== Service & Offer part End===========
+
+
