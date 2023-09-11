@@ -1231,6 +1231,7 @@
           line-height: 14px;
           color: #fff;
         }
+
         &::after {
           content: "";
           position: absolute;
@@ -1314,3 +1315,112 @@
 }
 
 // ========= Popular Departments part End ========
+
+// ========= Clothing & Apparel part Start ========
+
+#cloth_apparel {
+  @include title;
+  margin-bottom: 55px;
+
+  .cloth_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary_clr;
+    padding-bottom: 15px;
+
+    h2 {
+      @include heading
+    }
+
+    p {
+      line-height: 22px;
+      font-weight: 600;
+
+      a {
+        color: $text_clr;
+        transition: all linear .3s;
+      }
+
+      &:hover a {
+        color: $brand_clr;
+      }
+    }
+  }
+
+  .clothside_banner {
+    margin-top: 20px;
+
+    img {
+      border-radius: 5px;
+    }
+
+    position: relative;
+
+    .sidebanner_text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 40px;
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: $text_clr;
+        font-weight: 400;
+        padding-bottom: 10px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: $text_clr;
+          width: 15%;
+          height: 3px;
+  
+        }
+      }
+
+ 
+
+      h3 {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color: $text_clr;
+        margin-top: 10px;
+      }
+
+      h4 {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 400;
+        color: $text_clr;
+        margin-bottom: 25px;
+      }
+
+      button {
+        border-radius: 3px;
+        padding: 6px 20px;
+
+        a {
+          font-size: 13px;
+          line-height: 13px;
+          font-weight: 600;
+          color: $text_clr;
+        }
+      }
+    }
+  }
+
+.clothitems_top{
+  margin-top: 20px;
+
+
+ 
+}
+
+}
+
+// ========= Clothing & Apparel part End ========
