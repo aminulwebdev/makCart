@@ -912,4 +912,126 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   bottom: 20%;
   left: 50%;
   transform: translateY(-80%);
+}
+
+#popular_department {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#popular_department .popular_heading {
+  text-align: center;
+}
+#popular_department .popular_heading h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+#popular_department h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#popular_department .popular_banner {
+  position: relative;
+}
+#popular_department .popular_banner img {
+  border-radius: 3px;
+}
+#popular_department .popular_banner .popubantext_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 30px;
+}
+#popular_department .popular_banner .popubantext_right p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #eeeeee;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#popular_department .popular_banner .popubantext_right h3 {
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #fff;
+  width: 70%;
+  margin-bottom: 30px;
+}
+#popular_department .popular_banner .popubantext_right button {
+  border: none;
+  background: transparent;
+  position: relative;
+}
+#popular_department .popular_banner .popubantext_right button a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #fff;
+}
+#popular_department .popular_banner .popubantext_right button::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 15%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all linear 0.3s;
+}
+#popular_department .popular_banner .popubantext_right button:hover::after {
+  width: 100%;
+}
+#popular_department .popular_banner .popubantext_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 30px;
+}
+#popular_department .popular_banner .popubantext_left p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#popular_department .popular_banner .popubantext_left h3 {
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #333333;
+  width: 70%;
+  margin-bottom: 30px;
+}
+#popular_department .popular_banner .popubantext_left button {
+  border: none;
+  background: transparent;
+  position: relative;
+}
+#popular_department .popular_banner .popubantext_left button a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #333333;
+}
+#popular_department .popular_banner .popubantext_left button::after {
+  content: "";
+  position: absolute;
+  background: #333333;
+  width: 0;
+  height: 15%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all linear 0.3s;
+}
+#popular_department .popular_banner .popubantext_left button:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

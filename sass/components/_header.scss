@@ -1168,3 +1168,149 @@
 
 // ========== Top Categories part End ===========
 
+// ========= Popular Departments part Start ========
+#popular_department {
+  @include title;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .popular_heading {
+    text-align: center;
+
+    h2 {
+      @include heading
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  // =======Popular bottom banner=======
+
+  .popular_banner {
+    img {
+      border-radius: 3px;
+    }
+
+    position: relative;
+
+    .popubantext_right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px 0 0 30px;
+
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #eeeeee;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 28px;
+        line-height: 31px;
+        font-weight: 700;
+        color: #fff;
+        width: 70%;
+        margin-bottom: 30px;
+      }
+
+      button {
+        border: none;
+        background: transparent;
+        position: relative;
+
+        a {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 14px;
+          color: #fff;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background: #fff;
+          width: 0;
+          height: 15%;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all linear .3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+    .popubantext_left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 30px 0 0 30px;
+
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: $text_clr;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+      }
+
+      h3 {
+        font-size: 28px;
+        line-height: 31px;
+        font-weight: 700;
+        color: $text_clr;
+        width: 70%;
+        margin-bottom: 30px;
+      }
+
+      button {
+        border: none;
+        background: transparent;
+        position: relative;
+
+        a {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 14px;
+          color: $text_clr;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: $text_clr;
+          width: 0;
+          height: 15%;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all linear .3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+      }
+
+
+
+    }
+
+  }
+
+}
+
+// ========= Popular Departments part End ========
