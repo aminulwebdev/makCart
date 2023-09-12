@@ -1,0 +1,77 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+#banner {
+  @include title;
+
+  .banner_one {
+    display: flex;
+    align-items: center;
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    height: 582px;
+    // padding: 92px;
+
+    .bannerone_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 20px;
+
+      .bannerone_text {
+        text-align: right;
+
+        h3 {
+          font-size: 40px;
+          line-height: 40px;
+          color: $mega_clr;
+          padding-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 700;
+          color: $text_clr;
+        }
+
+        p {
+          font-size: 24px;
+          line-height: 45px;
+          color: $mega_clr;
+          padding-bottom: 21px;
+
+          span {
+            color: $offer_clr;
+            font-weight: 700;
+          }
+        }
+
+        button {
+          border: 2px solid $text_clr;
+          border-radius: 3px;
+          padding: 15px 40px;
+          background: none;
+          transition: .3s;
+
+          a {
+            line-height: 14px;
+            font-weight: 600;
+            color: $text_clr;
+            transition: .3s;
+          }
+          &:hover {
+            background: $text_clr;
+            a{
+              color: #fff;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

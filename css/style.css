@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -318,6 +319,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   width: 100%;
   padding: 8px 0 8px 8px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 999;
 }
 #header .main_menu .brows_category .category_box .category_menu > li {
   border-bottom: 1px solid rgba(102, 102, 102, 0.2);
@@ -715,6 +717,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: #fc6782;
   font-weight: 600;
 }
+
 #service {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -1124,4 +1127,67 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #cloth_apparel .clothitems_top {
   margin-top: 20px;
+}
+
+#banner {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+}
+#banner .banner_one {
+  display: flex;
+  align-items: center;
+  height: 582px;
+}
+#banner .banner_one .bannerone_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+#banner .banner_one .bannerone_content .bannerone_text {
+  text-align: right;
+}
+#banner .banner_one .bannerone_content .bannerone_text h3 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #666666;
+  padding-bottom: 10px;
+}
+#banner .banner_one .bannerone_content .bannerone_text h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #333333;
+}
+#banner .banner_one .bannerone_content .bannerone_text p {
+  font-size: 24px;
+  line-height: 45px;
+  color: #666666;
+  padding-bottom: 21px;
+}
+#banner .banner_one .bannerone_content .bannerone_text p span {
+  color: #f77c29;
+  font-weight: 700;
+}
+#banner .banner_one .bannerone_content .bannerone_text button {
+  border: 2px solid #333333;
+  border-radius: 3px;
+  padding: 15px 40px;
+  background: none;
+  transition: 0.3s;
+}
+#banner .banner_one .bannerone_content .bannerone_text button a {
+  line-height: 14px;
+  font-weight: 600;
+  color: #333333;
+  transition: 0.3s;
+}
+#banner .banner_one .bannerone_content .bannerone_text button:hover {
+  background: #333333;
+}
+#banner .banner_one .bannerone_content .bannerone_text button:hover a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
