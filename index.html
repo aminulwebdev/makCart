@@ -58,7 +58,9 @@
                   <li><a href="">Blog</a></li>
                   <li><a href="">Contact us</a></li>
                   <li><a href="">My Account</a></li>
-                  <li> <span><i class="fa-regular fa-user"></i></span> <a href="">Sign In / Register</a></li>
+                  <li> <span><i class="fa-regular fa-user"></i></span> <a data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" href="">Sign In /
+                      Register</a></li>
                 </ul>
               </div>
             </div>
@@ -66,6 +68,30 @@
         </div>
       </div>
     </div>
+
+    <!-- -------------- -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- -->
 
     <!-- =====End of Header Top====== -->
 
@@ -593,25 +619,53 @@
         </div>
       </div>
     </div>
-    <div class="banner_one"
-      style="background: url(./images/bannerbg-one.jpg) no-repeat center ; background-size: cover;">
+
+    <!-- ======Banner two Sart===== -->
+    <div class="banner_two"
+      style="background: url(./images/bannerbg_two.jpg) no-repeat center ; background-size: cover;">
       <div class="container">
-        <div class="row bannerone_content">
-          <div class=" offset-3 col-lg-5">
-            <img src="images/banner_shoes.png" alt="">
+        <div class="row bannertwo_content">
+
+          <div class=" offset-3 col-lg-4">
+            <div class="bannertwo_text">
+              <h3>Mountain-<span>Climbing</span></h3>
+              <h1>Hot & Packback</h1>
+              <p>Only until the end of this week.</p>
+              <button><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
+            </div>
+          </div>
+
+          <div class="  col-lg-5">
+            <img src="images/banner_men.png" class="img-fluid w-100 h-100" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- ======Banner two End===== -->
+
+    <!-- ======Banner two Sart===== -->
+    <div class="banner_three"
+      style="background: url(./images/bannerbg-three.jpg) no-repeat center ; background-size: cover;">
+      <div class="container">
+        <div class="row bannerthree_content">
+          <div class=" offset-4 col-lg-4">
+            <img src="images/banner_skate.png" alt="">
           </div>
 
           <div class="col-lg-4">
-            <div class="bannerone_text">
-              <h3>Custom Men's</h3>
-              <h1>RUNNING SHOES</h1>
-              <p>Sale up to <span>30% OFF</span></p>
+            <div class="bannerthree_text">
+              <p>TOP WEEKLY SELLER</p>
+              <h3>Trending Collection</h3>
+              <h1>Roller<span>-skate</span></h1>
               <button><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- ======Banner two End===== -->
+
   </section>
 
   <!-- ==========================
@@ -706,12 +760,127 @@
     <section id="hot_deals">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <h2>Deals Hot of The Day - plugins</h2>
+          <div class="col-lg-9">
+            <div class="dealMega_main">
+              <h2>Deals Hot of The Day</h2>
+
+              <div class="deals_megaslide">
+
+                <!-- ========== Slider Start============ -->
+
+                <div id="carouselExampleIndicators" class="carousel slide deals_product">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"><img src="images/dealsproduct_one.jpg"
+                        class="img-fluid w-100 h-100" alt=""></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"><img src="images/dealsproduct_two.jpg" class="img-fluid w-100 h-100"
+                        alt=""></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"><img src="images/dealsproduct_three.jpg" class="img-fluid w-100 h-100"
+                        alt=""></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 4"><img src="images/dealsproduct_four.jpg" class="img-fluid w-100 h-100"
+                        alt=""></button>
+
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/dealsproduct_one.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/dealsproduct_two.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/dealsproduct_three.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/dealsproduct_four.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                </div>
+                <!-- ========== Slider End============ -->
+                
+                <!-- ========== Mega Slide Text Start============ -->
+                <div class="deals_megaslidetext">
+                  <h3>Coat Pool Comfort Jacket</h3>
+                  <div class="megaSlideText_items">
+                    <h4>$150.00-$180.00</h4>
+                    <p>Offer Ends In: <span>O days, 00 : 00 : 00</span></p>
+
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-regular fa-star"></i></li>
+                      <p>(3 Reviews)</p>
+                    </ul>
+
+                    <div class="deals_size">
+                      <h6>Size:</h6>
+                      <ul>
+                        <li>Extra Large</li>
+                        <li>Large</li>
+                        <li>Medium</li>
+                        <li>Small</li>
+                      </ul>
+                    </div>
+
+                    <div class="deals_cart">
+                      <div class="deals_count">
+                        <p>1</p>
+                        <ul>
+                          <li><i class="fa-solid fa-minus"></i></li>
+                          <li><i class="fa-solid fa-plus"></i></li>
+                        </ul>
+                      </div>
+                      <div class="addTo_cart">
+                        <p><span><i class="fa-solid fa-bag-shopping"></i></span>ADD TO CART</p>
+                      </div>
+                    </div>
+                    <div class="deal_socialicon">
+                      <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                      </ul>
+                      <div class="icon">
+                        <ul>
+                          <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                          <li><a href=""><i class="fa-solid fa-scale-balanced"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ========== Mega Slide Text End============ -->
+
+
+
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4">
+
+
+          <div class="col-lg-3">
             <h3>Top 20 Best Seller - plugins</h3>
           </div>
+
         </div>
       </div>
     </section>
@@ -964,7 +1133,7 @@
   <!--===========================
             Header part end
     ============================= -->
-    <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+  <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>

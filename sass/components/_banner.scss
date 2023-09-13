@@ -11,7 +11,7 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
-    height: 582px;
+    height: 560px;
     // padding: 92px;
 
     .bannerone_content {
@@ -74,4 +74,149 @@
     }
 
   }
+
+  .banner_two {
+    display: flex;
+    align-items: center;
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    height: 560px;
+    // padding: 92px;
+
+    .bannertwo_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 50px;
+
+      .bannertwo_text {
+
+
+        h3 {
+          font-size: 38px;
+          line-height: 46px;
+          color: $mega_clr;
+          padding-bottom: 10px;
+          span{
+            color: $offer_clr;
+          }
+        }
+
+        h1 {
+          font-size: 49px;
+          line-height: 54px;
+          font-weight: 700;
+          color: $text_clr;
+        }
+
+        p {
+          font-size: 24px;
+          line-height: 45px;
+          color: $mega_clr;
+          padding-bottom: 21px;
+
+      
+        }
+
+        button {
+          border: 2px solid $text_clr;
+          border-radius: 3px;
+          padding: 15px 40px;
+          background: none;
+          transition: .3s;
+
+          a {
+            line-height: 14px;
+            font-weight: 600;
+            color: $text_clr;
+            transition: .3s;
+          }
+          &:hover {
+            background: $text_clr;
+            a{
+              color: #fff;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .banner_three {
+    display: flex;
+    align-items: center;
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    height: 560px;
+    // padding: 92px;
+
+    .bannerthree_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding-left: 20px;
+
+      .bannerthree_text {
+        text-align: right;
+
+        p {
+          font-size: 22px;
+          line-height: 35px;
+          color: $mega_clr;
+
+        }
+
+        h3 {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 400;
+          color: $mega_clr;
+          padding-bottom: 3px;
+        }
+
+        h1 {
+          font-size: 50px;
+          line-height: 60px;
+          font-weight: 700;
+          color: $text_clr;
+          padding-bottom: 23px;
+
+          span {
+            color: $text_clr;
+            
+          }
+        }
+
+        button {
+          border: 2px solid $text_clr;
+          border-radius: 3px;
+          padding: 15px 40px;
+          background: none;
+          transition: .3s;
+
+          a {
+            line-height: 14px;
+            font-weight: 600;
+            color: $text_clr;
+            transition: .3s;
+          }
+          &:hover {
+            background: $text_clr;
+            a{
+              color: #fff;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
 }
