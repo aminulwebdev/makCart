@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -719,120 +720,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: 600;
 }
 
-#service {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  background: #fff;
-  color: #333333;
-  margin-top: 610px;
-  margin-bottom: 60px;
-}
-#service .service_items {
-  border: 1px solid rgba(102, 102, 102, 0.2);
-  padding: 23px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 60px;
-}
-#service .service_items .service_option {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center;
-}
-#service .service_items .service_option i {
-  font-size: 30px;
-  color: #fc6782;
-}
-#service .service_items .service_option h4 {
-  font-size: 14px;
-  color: #333333;
-  line-height: 17px;
-  font-weight: 600;
-  padding-bottom: 5px;
-}
-#service .service_items .service_option p {
-  font-size: 13px;
-  line-height: 13px;
-  color: #666666;
-}
-#service .offer {
-  position: relative;
-}
-#service .offer img {
-  border-radius: 3px;
-}
-#service .offer .offertext_right {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 30px 0 0 30px;
-}
-#service .offer .offertext_right h6 {
-  font-size: 18px;
-  line-height: 22px;
-  color: #333333;
-  padding-bottom: 7px;
-}
-#service .offer .offertext_right h6 span {
-  font-weight: 700;
-  color: #f77c29;
-}
-#service .offer .offertext_right h3 {
-  font-size: 26px;
-  line-height: 30px;
-  font-weight: 800;
-  color: #333333;
-}
-#service .offer .offertext_right h4 {
-  font-weight: 400;
-  padding-bottom: 20px;
-}
-#service .offer .offertext_right p {
-  font-size: 14px;
-  line-height: 22px;
-  color: #666666;
-}
-#service .offer .offertext_right p span {
-  font-weight: 700;
-  color: #f77c29;
-}
-#service .offer .offertext_left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 30px 0 0 30px;
-}
-#service .offer .offertext_left h6 {
-  font-size: 18px;
-  line-height: 22px;
-  color: #333333;
-  padding-bottom: 7px;
-  color: #c4c4c5;
-}
-#service .offer .offertext_left h3 {
-  font-size: 26px;
-  line-height: 30px;
-  font-weight: 800;
-  color: #fff;
-}
-#service .offer .offertext_left h4 {
-  font-weight: 400;
-  padding-bottom: 20px;
-  color: #fff;
-}
-#service .offer .offertext_left p {
-  font-size: 14px;
-  line-height: 22px;
-  color: #fff;
-}
-#service .offer .offertext_left p span {
-  font-weight: 700;
-  color: #f77c29;
-}
-
 #top_categories {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -1121,11 +1008,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: 400;
   background: #fff;
   color: #333333;
+  position: relative;
 }
 #banner .banner_one {
   display: flex;
   align-items: center;
-  height: 560px;
+  height: 582px;
 }
 #banner .banner_one .bannerone_content {
   display: flex;
@@ -1180,7 +1068,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #banner .banner_two {
   display: flex;
   align-items: center;
-  height: 560px;
+  height: 582px;
 }
 #banner .banner_two .bannertwo_content {
   display: flex;
@@ -1231,7 +1119,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #banner .banner_three {
   display: flex;
   align-items: center;
-  height: 560px;
+  height: 582px;
 }
 #banner .banner_three .bannerthree_content {
   display: flex;
@@ -1282,6 +1170,158 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #banner .banner_three .bannerthree_content .bannerthree_text button:hover a {
   color: #fff;
 }
+#banner .prevArrow {
+  font-size: 30px;
+  position: absolute;
+  color: #fc6782;
+  left: 0;
+  top: 50%;
+  z-index: 99;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all linear 0.2s;
+  left: 90px;
+  visibility: hidden;
+  opacity: 0;
+}
+#banner .nextArrow {
+  font-size: 30px;
+  position: absolute;
+  color: #fc6782;
+  right: 0;
+  top: 50%;
+  z-index: 99;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all linear 0.2s;
+  right: 90px;
+  visibility: hidden;
+  opacity: 0;
+}
+#banner:hover .prevArrow {
+  left: 225px;
+  visibility: visible;
+  opacity: 1;
+}
+#banner:hover .nextArrow {
+  right: 225px;
+  visibility: visible;
+  opacity: 1;
+}
+
+#service {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+#service .service_items {
+  border: 1px solid rgba(102, 102, 102, 0.2);
+  padding: 23px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#service .service_items .service_option {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+#service .service_items .service_option i {
+  font-size: 30px;
+  color: #fc6782;
+}
+#service .service_items .service_option h4 {
+  font-size: 14px;
+  color: #333333;
+  line-height: 17px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+#service .service_items .service_option p {
+  font-size: 13px;
+  line-height: 13px;
+  color: #666666;
+}
+#service .offer {
+  position: relative;
+}
+#service .offer img {
+  border-radius: 3px;
+}
+#service .offer .offertext_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 30px;
+}
+#service .offer .offertext_right h6 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  padding-bottom: 7px;
+}
+#service .offer .offertext_right h6 span {
+  font-weight: 700;
+  color: #f77c29;
+}
+#service .offer .offertext_right h3 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #333333;
+}
+#service .offer .offertext_right h4 {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+#service .offer .offertext_right p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+}
+#service .offer .offertext_right p span {
+  font-weight: 700;
+  color: #f77c29;
+}
+#service .offer .offertext_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 30px;
+}
+#service .offer .offertext_left h6 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  padding-bottom: 7px;
+  color: #c4c4c5;
+}
+#service .offer .offertext_left h3 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+#service .offer .offertext_left h4 {
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #fff;
+}
+#service .offer .offertext_left p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+#service .offer .offertext_left p span {
+  font-weight: 700;
+  color: #f77c29;
+}
 
 #hot_deals {
   font-family: "Poppins", sans-serif;
@@ -1302,22 +1342,22 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: #333333;
   padding-bottom: 15px;
 }
-#hot_deals .dealMega_main .deals_megaslide {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide {
   border-top: 1px solid rgba(102, 102, 102, 0.2);
   padding-top: 20px;
   display: flex;
   gap: 20px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_product {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product {
   display: flex;
   align-items: start;
   gap: 15px;
   width: 50%;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_product h2 {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product h2 {
   color: orange;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_product .carousel-indicators {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .carousel-indicators {
   position: static;
   padding: 0;
   margin-right: 0;
@@ -1326,7 +1366,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   flex-direction: column;
   gap: 20px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_product .carousel-indicators [data-bs-target] {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   width: 60px;
   height: 68px;
@@ -1335,51 +1375,92 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   cursor: pointer;
   border: 0;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_prev,
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_next {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fc6782;
+  transition: all linear 0.2s;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_prev:hover,
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_next:hover {
+  background: #fc6782;
+  color: #fff;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_prev {
+  left: 80px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product .productsArrow_next {
+  right: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product:hover .productsArrow_prev {
+  left: 110px;
+  visibility: visible;
+  opacity: 1;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_product:hover .productsArrow_next {
+  right: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext {
   margin-top: 25px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext h3 {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext h3 {
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
   color: #333333;
   margin-bottom: 15px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items {
   border-top: 1px solid rgba(102, 102, 102, 0.2);
   padding-top: 25px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items h4 {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items h4 {
   font: 24px;
   line-height: 26px;
   font-weight: 700;
   color: #333333;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items p {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items p {
   font-size: 15px;
   line-height: 24px;
   color: #666666;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items p span {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items p span {
   font-weight: 700;
   color: #fc6782;
   margin-left: 10px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul {
   display: flex;
   align-items: center;
   padding-top: 12px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul li {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul li {
   color: #f77c29;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul p {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items > ul p {
   font-size: 12px;
   line-height: 12px;
   color: #999;
   padding-left: 5px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size {
   display: flex;
   gap: 40px;
   align-items: center;
@@ -1387,17 +1468,17 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size h6 {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size h6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   color: #333333;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size ul {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size ul {
   display: flex;
   gap: 8px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size ul li {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_size ul li {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -1405,12 +1486,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   border: 1px solid #ccc;
   padding: 6px 8px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart {
   margin-top: 20px;
   display: flex;
   gap: 10px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count {
   display: flex;
   gap: 60px;
   align-items: center;
@@ -1418,18 +1499,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 10px 15px;
   justify-content: space-between;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count p {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count p {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #666666;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count ul {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count ul {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count ul li {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .deals_count ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1439,32 +1520,34 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   background: #eeeeee;
   color: #666666;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart {
   padding: 13px 75px;
   background: #eeeeee;
   border-radius: 3px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart p {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart button {
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
   color: #666666;
+  border: none;
+  background: transparent;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart p span {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart button span {
   font-size: 18px;
   padding-right: 8px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon {
   margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul {
   display: flex;
   gap: 8px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul li {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul li {
   border: 1px solid #ccc;
   height: 32px;
   width: 32px;
@@ -1473,19 +1556,41 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   justify-content: center;
   align-items: center;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul li a {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon > ul li a {
   color: #666666;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon {
   border-left: 1px solid #ccc;
   padding-left: 20px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon ul {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon ul {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-#hot_deals .dealMega_main .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon ul li a {
+#hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deal_socialicon .icon ul li a {
   font-size: 18px;
   color: #666666;
+}
+#hot_deals .dealMega_main .dealMega_content .preArrow {
+  font-size: 15px;
+  position: absolute;
+  color: #fc6782;
+  top: -25px;
+  z-index: 99;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all linear 0.2s;
+  right: 15px;
+}
+#hot_deals .dealMega_main .dealMega_content .nexArrow {
+  font-size: 15px;
+  position: absolute;
+  color: #fc6782;
+  top: -25px;
+  z-index: 99;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all linear 0.2s;
+  right: 0px;
 }/*# sourceMappingURL=style.css.map */

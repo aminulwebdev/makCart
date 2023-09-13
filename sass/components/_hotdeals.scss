@@ -4,338 +4,335 @@
 #hot_deals {
     @include title;
     background: #ffffff;
-
+   
     .dealMega_main {
         border: 1px solid $secondary_clr;
         padding: 25px 20px;
+       
 
         h2 {
             @include heading;
             padding-bottom: 15px;
-            // color: yellow;
         }
 
-        .deals_megaslide {
-            border-top: 1px solid $secondary_clr;
-            padding-top: 20px;
-            display: flex;
-            gap: 20px;
+        .dealMega_content {
 
-            .deals_product {
+            .deals_megaslide {
+                border-top: 1px solid $secondary_clr;
+                padding-top: 20px;
                 display: flex;
-                align-items: start;
-                gap: 15px;
+                gap: 20px;
 
-                width: 50%;
+                .deals_product {
+                    display: flex;
+                    align-items: start;
+                    gap: 15px;
+                    width: 50%;
 
-                h2 {
-                    color: orange;
-                }
-
-                .carousel-indicators {
-                    position: static;
-                    padding: 0;
-                    margin-right: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    flex-direction: column;
-                    gap: 20px;
-                }
-
-                .carousel-indicators [data-bs-target] {
-                    box-sizing: content-box;
-                    width: 60px;
-                    height: 68px;
-                    margin-left: 0;
-                    text-indent: 0;
-                    cursor: pointer;
-                    border: 0;
-
-                }
-
-
-            }
-
-            .deals_megaslidetext {
-                margin-top: 25px;
-
-                h3 {
-                    font-size: 20px;
-                    line-height: 32px;
-                    font-weight: 600;
-                    color: $text_clr;
-
-                    margin-bottom: 15px;
-                    // border-bottom: 1px solid $secondary_clr;
-                }
-
-                .megaSlideText_items {
-                    border-top: 1px solid $secondary_clr;
-                    padding-top: 25px;
-
-                    h4 {
-                        font: 24px;
-                        line-height: 26px;
-                        font-weight: 700;
-                        color: $text_clr;
+                    h2 {
+                        color: orange;
                     }
 
-                    p {
+                    .carousel-indicators {
+                        position: static;
+                        padding: 0;
+                        margin-right: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    .carousel-indicators [data-bs-target] {
+                        box-sizing: content-box;
+                        width: 60px;
+                        height: 68px;
+                        margin-left: 0;
+                        text-indent: 0;
+                        cursor: pointer;
+                        border: 0;
+
+                    }
+
+
+
+                    .productsArrow_prev,
+                    .productsArrow_next {
+                        position: absolute;
+                        border: none;
+                        background: transparent;
                         font-size: 15px;
-                        line-height: 24px;
-                        color: $mega_clr;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        color: $brand_clr;
+                        transition: all linear .2s;
 
-                        span {
+                        &:hover {
+                            background: $brand_clr;
+                            color: #fff;
+                        }
+                    }
+
+                    .productsArrow_prev {
+                        left: 80px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .2s;
+                    }
+
+                    .productsArrow_next {
+                        right: 0px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .2s;
+                    }
+
+
+                    &:hover .productsArrow_prev {
+                        left: 110px;
+                        visibility: visible;
+                        opacity: 1;
+
+                    }
+
+                    &:hover .productsArrow_next {
+                        right: 30px;
+                        visibility: visible;
+                        opacity: 1;
+
+                    }
+
+                }
+
+                // ========== Mega Slide Text Start============
+
+                .deals_megaslidetext {
+                    margin-top: 25px;
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 32px;
+                        font-weight: 600;
+                        color: $text_clr;
+
+                        margin-bottom: 15px;
+                        // border-bottom: 1px solid $secondary_clr;
+                    }
+
+                    .megaSlideText_items {
+                        border-top: 1px solid $secondary_clr;
+                        padding-top: 25px;
+
+                        h4 {
+                            font: 24px;
+                            line-height: 26px;
                             font-weight: 700;
-                            color: $brand_clr;
-                            margin-left: 10px;
-                        }
-                    }
-
-                    >ul {
-                        display: flex;
-                        align-items: center;
-                        padding-top: 12px;
-
-                        li {
-                            color: $offer_clr;
-                        }
-
-                        p {
-                            font-size: 12px;
-                            line-height: 12px;
-                            color: #999;
-                            padding-left: 5px;
-                        }
-                    }
-
-                    .deals_size {
-                        display: flex;
-                        gap: 40px;
-                        align-items: center;
-                        border-bottom: 1px solid $secondary_clr;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-
-                        h6 {
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 14px;
                             color: $text_clr;
                         }
 
-                        ul {
-                            display: flex;
-                            gap: 8px;
+                        p {
+                            font-size: 15px;
+                            line-height: 24px;
+                            color: $mega_clr;
 
-                            li {
-                                font-size: 12px;
-                                line-height: 12px;
-                                font-weight: 400;
-                                color: $mega_clr;
-                                border: 1px solid #ccc;
-                                padding: 6px 8px;
+                            span {
+                                font-weight: 700;
+                                color: $brand_clr;
+                                margin-left: 10px;
                             }
                         }
-                    }
-
-                    .deals_cart {
-                        margin-top: 20px;
-                        display: flex;
-                        gap: 10px;
-
-                        .deals_count {
-                            display: flex;
-                            gap: 60px;
-                            align-items: center;
-                            border: 1px solid #ccc;
-                            padding: 10px 15px;
-                            justify-content: space-between;
-
-                            p {
-                                font-size: 13px;
-                                line-height: 20px;
-                                font-weight: 400;
-                                color: $mega_clr;
-                            }
-
-                            ul {
-                                display: flex;
-                                align-items: center;
-                                gap: 5px;
-
-                                li {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 50%;
-                                    width: 24px;
-                                    height: 24px;
-                                    background: #eeeeee;
-                                    color: $mega_clr;
-                                }
-                            }
-                        }
-
-                        .addTo_cart {
-                            padding: 13px 75px;
-                            background: #eeeeee;
-                            border-radius: 3px;
-
-                            p {
-                                font-size: 14px;
-                                line-height: 14px;
-                                font-weight: 600;
-                                color: $mega_clr;
-
-                                span {
-                                    font-size: 18px;
-                                    padding-right: 8px;
-                                }
-                            }
-                        }
-
-                    }
-
-                    .deal_socialicon {
-                        margin-top: 20px;
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
 
                         >ul {
                             display: flex;
-                            gap: 8px;
+                            align-items: center;
+                            padding-top: 12px;
 
                             li {
-                                border: 1px solid #ccc;
-                                height: 32px;
-                                width: 32px;
-                                border-radius: 50%;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
+                                color: $offer_clr;
+                            }
 
-                                a {
+                            p {
+                                font-size: 12px;
+                                line-height: 12px;
+                                color: #999;
+                                padding-left: 5px;
+                            }
+                        }
+
+                        .deals_size {
+                            display: flex;
+                            gap: 40px;
+                            align-items: center;
+                            border-bottom: 1px solid $secondary_clr;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+
+                            h6 {
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 14px;
+                                color: $text_clr;
+                            }
+
+                            ul {
+                                display: flex;
+                                gap: 8px;
+
+                                li {
+                                    font-size: 12px;
+                                    line-height: 12px;
+                                    font-weight: 400;
                                     color: $mega_clr;
+                                    border: 1px solid #ccc;
+                                    padding: 6px 8px;
                                 }
                             }
                         }
 
-                        .icon {
-                            border-left: 1px solid #ccc;
-                            padding-left: 20px;
-                            ul {
+                        .deals_cart {
+                            margin-top: 20px;
+                            display: flex;
+                            gap: 10px;
+
+                            .deals_count {
                                 display: flex;
+                                gap: 60px;
                                 align-items: center;
-                                gap: 15px;
+                                border: 1px solid #ccc;
+                                padding: 10px 15px;
+                                justify-content: space-between;
+
+                                p {
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    color: $mega_clr;
+                                }
+
+                                ul {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+
+                                    li {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 50%;
+                                        width: 24px;
+                                        height: 24px;
+                                        background: #eeeeee;
+                                        color: $mega_clr;
+                                    }
+                                }
+                            }
+
+                            .addTo_cart {
+                                padding: 13px 75px;
+                                background: #eeeeee;
+                                border-radius: 3px;
+
+
+                                button {
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: 600;
+                                    color: $mega_clr;
+                                    border: none;
+                                    background: transparent;
+
+                                    span {
+                                        font-size: 18px;
+                                        padding-right: 8px;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .deal_socialicon {
+                            margin-top: 20px;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            >ul {
+                                display: flex;
+                                gap: 8px;
 
                                 li {
+                                    border: 1px solid #ccc;
+                                    height: 32px;
+                                    width: 32px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
                                     a {
-                                        font-size: 18px;
                                         color: $mega_clr;
+                                    }
+                                }
+                            }
+
+                            .icon {
+                                border-left: 1px solid #ccc;
+                                padding-left: 20px;
+
+                                ul {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+
+                                    li {
+                                        a {
+                                            font-size: 18px;
+                                            color: $mega_clr;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
+
                 }
 
             }
 
+            // ===== Arrow part css Start ======
+
+
+
+            .preArrow {
+                font-size: 15px;
+                position: absolute;
+                color: $brand_clr;
+                top: -25px;
+                z-index: 99;
+                cursor: pointer;
+                transform: translateY(-50%);
+                transition: all linear .2s;
+                right: 15px;
+             
+              }
+            
+              .nexArrow {
+                font-size: 15px;
+                position: absolute;
+                color: $brand_clr;
+                top: -25px;
+                z-index: 99;
+                cursor: pointer;
+                transform: translateY(-50%);
+                transition: all linear .2s;
+                right: 0px;
+               
+              }
+            
+
         }
-
-
     }
 }
-
-
-
-
-
-
-// 
-// 
-// gap: 15px;
-// width: 50%;
-
-//========== Slider Start============
-// .carousel-indicators {
-//     position: static;
-//     padding: 0;
-//     margin-right: 0;
-//     margin-bottom: 0;
-//     margin-left: 0;
-//     flex-direction: column;
-//     gap: 20px;
-// }
-
-// .carousel-indicators [data-bs-target] {
-//     box-sizing: content-box;
-//     width: 60px;
-//     height: 68px;
-//     margin-left: 0;
-//     text-indent: 0;
-//     cursor: pointer;
-//     border: 0;
-
-// }
-
-//========== Slider End===============
-
-
-
-
-
-
-
-
-
-
-// .dealMega_main {
-//     border: 1px solid $secondary_clr;
-//     padding: 25px 20px;
-//    
-//     display: flex;
-
-//     h2 {
-//         @include heading;
-//         padding-bottom: 15px;
-//     }
-
-//     .deals_megaslide {
-
-//         border-top: 1px solid $secondary_clr;
-//         padding-top: 20px;
-
-//         .deals_product {
-
-//             display: flex;
-//             align-items: start;
-//             gap: 12px;
-//             width: 50%;
-
-//             .carousel-indicators {
-//                 position: static;
-//                 padding: 0;
-//                 margin-right: 0;
-//                 margin-bottom: 0;
-//                 margin-left: 0;
-//                 flex-direction: column;
-//                 gap: 12px;
-//             }
-
-//             .carousel-indicators [data-bs-target] {
-//                 box-sizing: content-box;
-//                 width: 60px;
-//                 height: 68px;
-//                 margin-left: 0;
-//                 text-indent: 0;
-//                 cursor: pointer;
-
-//                 border: 0;
-
-//             }
-//         }
-//     }
-// }

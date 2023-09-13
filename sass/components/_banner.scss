@@ -3,17 +3,11 @@
 
 #banner {
   @include title;
-
+ 
   .banner_one {
     display: flex;
     align-items: center;
-
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    height: 560px;
-    // padding: 92px;
-
+    height: 582px;
     .bannerone_content {
       display: flex;
       align-items: center;
@@ -62,9 +56,11 @@
             color: $text_clr;
             transition: .3s;
           }
+
           &:hover {
             background: $text_clr;
-            a{
+
+            a {
               color: #fff;
             }
           }
@@ -78,13 +74,7 @@
   .banner_two {
     display: flex;
     align-items: center;
-
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    height: 560px;
-    // padding: 92px;
-
+    height: 582px;
     .bannertwo_content {
       display: flex;
       align-items: center;
@@ -99,7 +89,8 @@
           line-height: 46px;
           color: $mega_clr;
           padding-bottom: 10px;
-          span{
+
+          span {
             color: $offer_clr;
           }
         }
@@ -117,7 +108,7 @@
           color: $mega_clr;
           padding-bottom: 21px;
 
-      
+
         }
 
         button {
@@ -133,9 +124,11 @@
             color: $text_clr;
             transition: .3s;
           }
+
           &:hover {
             background: $text_clr;
-            a{
+
+            a {
               color: #fff;
             }
           }
@@ -149,13 +142,7 @@
   .banner_three {
     display: flex;
     align-items: center;
-
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    height: 560px;
-    // padding: 92px;
-
+    height: 582px;
     .bannerthree_content {
       display: flex;
       align-items: center;
@@ -189,7 +176,7 @@
 
           span {
             color: $text_clr;
-            
+
           }
         }
 
@@ -206,9 +193,11 @@
             color: $text_clr;
             transition: .3s;
           }
+
           &:hover {
             background: $text_clr;
-            a{
+
+            a {
               color: #fff;
             }
           }
@@ -218,5 +207,53 @@
     }
 
   }
+
+  position: relative;
+
+  // ===== Arrow Start ======
+
+  .prevArrow {
+    font-size: 30px;
+    position: absolute;
+    color: $brand_clr;
+    left: 0;
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all linear .2s;
+    left: 90px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .nextArrow {
+    font-size: 30px;
+    position: absolute;
+    color: $brand_clr;
+    right: 0;
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all linear .2s;
+    right: 90px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover .prevArrow{
+    left: 225px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &:hover .nextArrow{
+    right: 225px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  // ===== Arrow End ======
 
 }
