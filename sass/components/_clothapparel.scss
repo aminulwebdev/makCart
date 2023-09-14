@@ -1,0 +1,182 @@
+#cloth_apparel {
+    @include title;
+    margin-bottom: 55px;
+
+    .cloth_heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $secondary_clr;
+        padding-bottom: 15px;
+
+        h2 {
+            @include heading
+        }
+
+        p {
+            line-height: 22px;
+            font-weight: 600;
+
+            a {
+                color: $text_clr;
+                transition: all linear .3s;
+            }
+
+            &:hover a {
+                color: $brand_clr;
+            }
+        }
+    }
+
+    .clothside_banner {
+        margin-top: 20px;
+
+        img {
+            border-radius: 5px;
+        }
+
+        position: relative;
+
+        .sidebanner_text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 40px;
+
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                color: $text_clr;
+                font-weight: 400;
+                padding-bottom: 10px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: $text_clr;
+                    width: 15%;
+                    height: 3px;
+
+                }
+            }
+
+
+
+            h3 {
+                font-size: 30px;
+                line-height: 35px;
+                font-weight: 700;
+                color: $text_clr;
+                margin-top: 10px;
+            }
+
+            h4 {
+                font-size: 30px;
+                line-height: 35px;
+                font-weight: 400;
+                color: $text_clr;
+                margin-bottom: 25px;
+            }
+
+            button {
+                border-radius: 3px;
+                padding: 6px 20px;
+
+                a {
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-weight: 600;
+                    color: $text_clr;
+                }
+            }
+        }
+    }
+
+    .cloth_content {
+        margin-top: 20px;
+
+        .cloth_items {
+            img {
+                cursor: pointer;
+            }
+
+            .clothItems_text {
+                margin-top: 16px;
+                text-align: center;
+
+                h4 {
+                    font-size: 13px;
+                    line-height: 16px;
+                    font-weight: 500;
+
+                    a {
+                        color: $text_clr;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    color: $offer_clr;
+                    padding: 5px 0;
+                }
+
+                span {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    color: $text_clr;
+                }
+            }
+
+            position: relative;
+
+            .clothHover_items {
+                position: absolute;
+                top: 18px;
+                right: 18px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all linear .2s;
+                cursor: pointer;
+
+                ul {
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 6px;
+                        background: #fff;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        transition: all linear .3s;
+
+                        a {
+                            font-size: 16px;
+                            color: #999999;
+                            transition: all linear .3s;
+                        }
+
+                        &:hover {
+                            background: $brand_clr;
+
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover .clothHover_items {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+}

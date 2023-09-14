@@ -5,11 +5,11 @@ $('#banner').slick({
     autoplaySpeed: 2000,
     prevArrow: '<i class="fa-solid fa-chevron-left prevArrow"></i>',
     nextArrow: '<i class="fa-solid fa-chevron-right nextArrow"></i>'
-  });
+});
 
 // ======= Hot deals part zoom effect ========
 
-  $(document).ready(function () {
+$(document).ready(function () {
     var anik = document.querySelectorAll("#NZoomImg")
     var arr = Array.from(anik)
     arr.map((item, index) => {
@@ -41,14 +41,24 @@ $('#banner').slick({
 })
 
 
-// =====Slick Slide======
+// =====Hot deals Main Mega menu======
 
 $('.dealMega_content').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  prevArrow: '<i class="fa-solid fa-chevron-left preArrow"></i>',
-  nextArrow: '<i class="fa-solid fa-chevron-right nexArrow"></i>'
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    prevArrow: '<i class="fa-solid fa-chevron-left preArrow"></i>',
+    nextArrow: '<i class="fa-solid fa-chevron-right nexArrow"></i>'
 });
 
+
+// =====Hot deals Side Mega menu======
+$('.side_megaMenu').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    prevArrow: '<i class="fa-solid fa-chevron-left preArrow"></i>',
+    nextArrow: '<i class="fa-solid fa-chevron-right nexArrow"></i>'
+});
