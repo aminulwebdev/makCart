@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1576,7 +1579,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: 400;
   background: #fff;
   color: #333333;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 #cloth_apparel .cloth_heading {
   display: flex;
@@ -1721,6 +1724,399 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: #fff;
 }
 #cloth_apparel .cloth_content .cloth_items:hover .clothHover_items {
+  visibility: visible;
+  opacity: 1;
+}
+
+#consumer_electric {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-bottom: 60px;
+}
+#consumer_electric .electric_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  padding-bottom: 15px;
+}
+#consumer_electric .electric_heading h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+#consumer_electric .electric_heading p {
+  line-height: 22px;
+  font-weight: 600;
+}
+#consumer_electric .electric_heading p a {
+  color: #333333;
+  transition: all linear 0.3s;
+}
+#consumer_electric .electric_heading p:hover a {
+  color: #fc6782;
+}
+#consumer_electric .electricside_banner {
+  margin-top: 20px;
+  position: relative;
+}
+#consumer_electric .electricside_banner img {
+  border-radius: 5px;
+}
+#consumer_electric .electricside_banner .sidebanner_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+#consumer_electric .electricside_banner .sidebanner_text p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 400;
+  padding-bottom: 10px;
+  position: relative;
+}
+#consumer_electric .electricside_banner .sidebanner_text p::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333333;
+  width: 15%;
+  height: 3px;
+}
+#consumer_electric .electricside_banner .sidebanner_text h3 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 10px;
+}
+#consumer_electric .electricside_banner .sidebanner_text h4 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 25px;
+}
+#consumer_electric .electricside_banner .sidebanner_text button {
+  border-radius: 3px;
+  padding: 6px 20px;
+}
+#consumer_electric .electricside_banner .sidebanner_text button a {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+  color: #333333;
+}
+#consumer_electric .electric_content {
+  margin-top: 20px;
+}
+#consumer_electric .electric_content .electric_items {
+  position: relative;
+}
+#consumer_electric .electric_content .electric_items img {
+  cursor: pointer;
+}
+#consumer_electric .electric_content .electric_items .electricItems_text {
+  margin-top: 16px;
+  text-align: center;
+}
+#consumer_electric .electric_content .electric_items .electricItems_text h4 {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+#consumer_electric .electric_content .electric_items .electricItems_text h4 a {
+  color: #333333;
+}
+#consumer_electric .electric_content .electric_items .electricItems_text ul {
+  display: flex;
+  justify-content: center;
+  color: #f77c29;
+  padding: 5px 0;
+}
+#consumer_electric .electric_content .electric_items .electricItems_text span {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #333333;
+}
+#consumer_electric .electric_content .electric_items .electricHover_items {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+#consumer_electric .electric_content .electric_items .electricHover_items ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#consumer_electric .electric_content .electric_items .electricHover_items ul li a {
+  font-size: 16px;
+  color: #999999;
+  transition: all linear 0.3s;
+}
+#consumer_electric .electric_content .electric_items .electricHover_items ul li:hover {
+  background: #fc6782;
+}
+#consumer_electric .electric_content .electric_items .electricHover_items ul li:hover a {
+  color: #fff;
+}
+#consumer_electric .electric_content .electric_items:hover .electricHover_items {
+  visibility: visible;
+  opacity: 1;
+}
+#consumer_electric .offer_today {
+  margin-top: 55px;
+  position: relative;
+}
+#consumer_electric .offer_today img {
+  border-radius: 5px;
+}
+#consumer_electric .offer_today .offerToday_text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  left: 102px;
+}
+#consumer_electric .offer_today .offerToday_text .off_25 {
+  display: flex;
+  align-items: end;
+  color: #f77c29;
+}
+#consumer_electric .offer_today .offerToday_text .off_25 h6 {
+  font-size: 70px;
+  line-height: 50px;
+  font-weight: 700;
+}
+#consumer_electric .offer_today .offerToday_text .off_25 .percent_off {
+  display: flex;
+  flex-direction: column;
+}
+#consumer_electric .offer_today .offerToday_text .off_25 .percent_off span {
+  line-height: 30px;
+  font-size: 45px;
+  font-weight: 600;
+}
+#consumer_electric .offer_today .offerToday_text .off_25 .percent_off p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+#consumer_electric .offer_today .offerToday_text .offer_info {
+  margin-left: 40px;
+  margin-right: 370px;
+  border-left: 2px solid #545655;
+  padding-left: 40px;
+}
+#consumer_electric .offer_today .offerToday_text .offer_info h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+#consumer_electric .offer_today .offerToday_text .offer_info p {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #fff;
+}
+#consumer_electric .offer_today .offerToday_text .offer_info p span {
+  font-weight: 600;
+  line-height: 25px;
+  background: #fff;
+  padding: 0 5px;
+  color: #333333;
+}
+#consumer_electric .offer_today .offerToday_text button {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 10px 30px;
+  background: none;
+  transition: all linear 0.3s;
+}
+#consumer_electric .offer_today .offerToday_text button a {
+  line-height: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: all linear 0.3s;
+}
+#consumer_electric .offer_today .offerToday_text button:hover {
+  background: #fff;
+}
+#consumer_electric .offer_today .offerToday_text button:hover a {
+  color: #336699;
+}
+
+#garden_kitchen {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-bottom: 60px;
+}
+#garden_kitchen .kitchen_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  padding-bottom: 15px;
+}
+#garden_kitchen .kitchen_heading h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+#garden_kitchen .kitchen_heading p {
+  line-height: 22px;
+  font-weight: 600;
+}
+#garden_kitchen .kitchen_heading p a {
+  color: #333333;
+  transition: all linear 0.3s;
+}
+#garden_kitchen .kitchen_heading p:hover a {
+  color: #fc6782;
+}
+#garden_kitchen .kitchenside_banner {
+  margin-top: 20px;
+  position: relative;
+}
+#garden_kitchen .kitchenside_banner img {
+  border-radius: 5px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 400;
+  padding-bottom: 10px;
+  position: relative;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text p::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333333;
+  width: 15%;
+  height: 3px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text h3 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 10px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text h4 {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 25px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text button {
+  border-radius: 3px;
+  padding: 6px 20px;
+}
+#garden_kitchen .kitchenside_banner .sidebanner_text button a {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+  color: #333333;
+}
+#garden_kitchen .kitchen_content {
+  margin-top: 20px;
+}
+#garden_kitchen .kitchen_content .kitchen_items {
+  position: relative;
+}
+#garden_kitchen .kitchen_content .kitchen_items img {
+  cursor: pointer;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenItems_text {
+  margin-top: 16px;
+  text-align: center;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenItems_text h4 {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenItems_text h4 a {
+  color: #333333;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenItems_text ul {
+  display: flex;
+  justify-content: center;
+  color: #f77c29;
+  padding: 5px 0;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenItems_text span {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #333333;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenHover_items {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenHover_items ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenHover_items ul li a {
+  font-size: 16px;
+  color: #999999;
+  transition: all linear 0.3s;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenHover_items ul li:hover {
+  background: #fc6782;
+}
+#garden_kitchen .kitchen_content .kitchen_items .kitchenHover_items ul li:hover a {
+  color: #fff;
+}
+#garden_kitchen .kitchen_content .kitchen_items:hover .kitchenHover_items {
   visibility: visible;
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */

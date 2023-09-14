@@ -1,17 +1,11 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
-
-
-
-
-
-
-#cloth_apparel {
+#consumer_electric {
     @include title;
     margin-bottom: 60px;
 
-    .cloth_heading {
+    .electric_heading {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -37,7 +31,7 @@
         }
     }
 
-    .clothside_banner {
+    .electricside_banner {
         margin-top: 20px;
 
         img {
@@ -104,15 +98,15 @@
         }
     }
 
-    .cloth_content {
+    .electric_content {
         margin-top: 20px;
 
-        .cloth_items {
+        .electric_items {
             img {
                 cursor: pointer;
             }
 
-            .clothItems_text {
+            .electricItems_text {
                 margin-top: 16px;
                 text-align: center;
 
@@ -143,7 +137,7 @@
 
             position: relative;
 
-            .clothHover_items {
+            .electricHover_items {
                 position: absolute;
                 top: 18px;
                 right: 18px;
@@ -181,10 +175,117 @@
                 }
             }
 
-            &:hover .clothHover_items {
+            &:hover .electricHover_items {
                 visibility: visible;
                 opacity: 1;
             }
+        }
+    }
+
+
+    .offer_today {
+        margin-top: 55px;
+
+        img {
+            border-radius: 5px;
+        }
+
+        position: relative;
+
+        .offerToday_text {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-45%);
+            left: 102px;
+
+
+
+            .off_25 {
+                display: flex;
+                align-items: end;
+                color: $offer_clr;
+
+
+                h6 {
+                    font-size: 70px;
+                    line-height: 50px;
+                    font-weight: 700;
+                }
+
+                .percent_off {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+
+                        line-height: 30px;
+                        font-size: 45px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .offer_info {
+                margin-left: 40px;
+                margin-right: 370px;
+                border-left: 2px solid #545655;
+                padding-left: 40px;
+
+                h3 {
+                    font-size: 30px;
+                    line-height: 36px;
+                    font-weight: 700;
+                    color: #fff;
+
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 33px;
+                    font-weight: 400;
+                    color: #fff;
+
+                    span {
+                        font-weight: 600;
+                        line-height: 25px;
+                        background: #fff;
+                        padding: 0 5px;
+                        color: $text_clr;
+                    }
+                }
+            }
+
+            button {
+                border: 2px solid #fff;
+                border-radius: 3px;
+                padding: 10px 30px;
+                background: none;
+                transition: all linear .3s;
+
+                a {
+                    line-height: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    transition: all linear .3s;
+                }
+
+                &:hover {
+                    background: #fff;
+
+                    a {
+                        color: #336699;
+                    }
+                }
+            }
+
         }
     }
 
