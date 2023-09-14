@@ -1,0 +1,37 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#our_clients {
+    @include title;
+    margin-bottom: 60px;
+
+    .clients_heading {
+        border-bottom: 1px solid $secondary_clr;
+        padding-bottom: 15px;
+
+        h2 {
+            @include heading;
+        }
+    }
+
+    .clientsName_box {
+     
+        border: 1px solid $secondary_clr;
+        margin-top: 20px;
+        // display: flex;
+
+        img {
+            width: 212px;
+            border-right:1px solid $secondary_clr;
+
+        }
+        .no_border{
+           border-right: none;
+        }
+    
+        .border_top{
+            border-top: 1px solid $secondary_clr;
+        }
+    }
+}

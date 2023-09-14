@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -2119,4 +2120,37 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #garden_kitchen .kitchen_content .kitchen_items:hover .kitchenHover_items {
   visibility: visible;
   opacity: 1;
+}
+
+#our_clients {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-bottom: 60px;
+}
+#our_clients .clients_heading {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  padding-bottom: 15px;
+}
+#our_clients .clients_heading h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+#our_clients .clientsName_box {
+  border: 1px solid rgba(102, 102, 102, 0.2);
+  margin-top: 20px;
+}
+#our_clients .clientsName_box img {
+  width: 212px;
+  border-right: 1px solid rgba(102, 102, 102, 0.2);
+}
+#our_clients .clientsName_box .no_border {
+  border-right: none;
+}
+#our_clients .clientsName_box .border_top {
+  border-top: 1px solid rgba(102, 102, 102, 0.2);
 }/*# sourceMappingURL=style.css.map */
