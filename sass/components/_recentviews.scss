@@ -1,0 +1,80 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+
+#recent_views {
+    @include title;
+    margin-bottom: 60px;
+    display: flex;
+
+    .recentViews_heading {
+        border-bottom: 1px solid $secondary_clr;
+        padding-bottom: 15px;
+
+        h2 {
+            @include heading
+        }
+    }
+
+    .recentViews_content {
+        display: flex;
+        gap: 30px;
+
+        .recentViews_item {
+            margin-top: 20px;
+
+            .recentViews_img {
+                position: relative;
+
+                .overly {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.60);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .3s;
+
+                    .recentViews_text {
+                        position: absolute;
+                        top: 45%;
+                        visibility: hidden;
+                        transition: all linear .2s;
+
+                        h5 {
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #ffffff;
+                            width: 138px;
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+                &:hover .overly {
+                    visibility: visible;
+                    opacity: 1;
+
+                    .recentViews_text {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        visibility: visible;
+                        cursor: pointer;
+
+                        &:hover  h5 {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+}
