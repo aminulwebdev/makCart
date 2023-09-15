@@ -1,0 +1,126 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+#our_blog {
+    @include title;
+    margin-bottom: 60px;
+
+    .blog_heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $secondary_clr;
+        padding-bottom: 15px;
+
+        h2 {
+            @include heading
+        }
+
+        p {
+            line-height: 22px;
+            font-weight: 600;
+
+            a {
+                color: $text_clr;
+                transition: all linear .3s;
+            }
+
+            &:hover a {
+                color: $brand_clr;
+            }
+        }
+    }
+
+    .blog_item {
+        padding-top: 20px;
+     
+
+        .blog_img {
+            overflow: hidden;
+            border-radius: 5px;
+            img {
+                transition: all linear .2s;
+            }
+            &:hover img {
+                transform: scale(1.08);
+                cursor: pointer;
+            }
+        }
+
+        .blogItem_text {
+            margin-top: 16px;
+            text-align: center;
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 600;
+                color: $text_clr;
+                transition: all linear .3s;
+                // padding-bottom: 5px;
+
+                &:hover {
+                    color: $brand_clr;
+                }
+
+                span {
+                    font-size: 13px;
+                    line-height: 22px;
+                    color: #999999;
+                }
+
+                .date {
+                    color: $text_clr;
+                    font-weight: 400;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: $brand_clr;
+                    }
+                }
+
+            }
+
+            h4 {
+                a {
+                    font-size: 15px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: $text_clr;
+                    transition: all linear .3s;
+                    padding-bottom: 8px;
+
+                    &:hover {
+                        color: $brand_clr;
+                    }
+                }
+            }
+
+            .read_more {
+                font-size: 14px;
+                color: $text_clr;
+                font-weight: 400;
+                position: relative;
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 3px;
+                    background-color: $text_clr;
+                    transition: all linear .3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+}
