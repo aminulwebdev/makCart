@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -2327,4 +2328,61 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #recent_views .recentViews_content .recentViews_item .recentViews_img:hover .overly .recentViews_text:hover h5 {
   text-decoration: underline;
+}
+
+#subscribe {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-bottom: 60px;
+  background: #fc6782;
+}
+#subscribe .subscribe_box {
+  padding: 28px 0;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+#subscribe .subscribe_box .subscribe_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#subscribe .subscribe_box .subscribe_item .icon {
+  color: #fff;
+  font-size: 47px;
+}
+#subscribe .subscribe_box .subscribe_item .subscribe__text h4 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px;
+}
+#subscribe .subscribe_box .subscribe_item .subscribe__text p {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+}
+#subscribe .subscribe_box .subscribe_inputbox input {
+  width: 555px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 3px;
+}
+#subscribe .subscribe_box .subscribe_inputbox button {
+  border: none;
+  background: #454545;
+  padding: 13px 26px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+#subscribe .subscribe_box .subscribe_inputbox button a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
