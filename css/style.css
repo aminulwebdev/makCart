@@ -104,7 +104,234 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #header .header_top .header_right .header_account ul a {
   color: #fc6782;
 }
+#header .signIn_popup {
+  position: absolute;
+}
+#header .signIn_popup .close {
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: -35px;
+  left: 96%;
+  color: #fff;
+  transition: all linear 0.2s;
+}
+#header .signIn_popup .close:hover {
+  transform: scale(1.3) rotate(90deg);
+}
+#header .signIn_popup .signIn_content {
+  padding: 15px 35px;
+}
+#header .signIn_popup .signIn_content .nav {
+  gap: 10px;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #eee;
+}
+#header .signIn_popup .signIn_content .nav button {
+  width: 50%;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+#header .signIn_popup .signIn_content .nav .nav-link {
+  transition: all linear 0.3s;
+}
+#header .signIn_popup .signIn_content .nav .nav-link:hover {
+  color: #fc6782;
+  border: transparent;
+  border-bottom: 2px solid #fc6782;
+}
+#header .signIn_popup .signIn_content .nav .nav-link.active {
+  background: transparent;
+  border: transparent;
+  border-bottom: 2px solid #fc6782;
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form {
+  padding: 30px 0 26px;
+}
+#header .signIn_popup .signIn_content form .user_email {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form .user_email input {
+  margin: 5px 0 28px;
+  padding: 9px 20px;
+  border: 1px solid #eee;
+}
+#header .signIn_popup .signIn_content form .password {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form .password input {
+  margin-top: 5px;
+  padding: 9px 20px;
+  border: 1px solid #eee;
+}
+#header .signIn_popup .signIn_content form .privacy_policy {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #666666;
+  text-align: start;
+  margin: 30px 0 20px;
+}
+#header .signIn_popup .signIn_content form .privacy_policy a {
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form .privacy_policy a:hover {
+  text-decoration: underline;
+}
+#header .signIn_popup .signIn_content form .signUp_vendor a {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form .signUp_vendor a:hover {
+  color: #fc6782;
+  text-decoration: underline;
+}
+#header .signIn_popup .signIn_content form .form_checkbox {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .signIn_popup .signIn_content form .form_checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #666666;
+}
+#header .signIn_popup .signIn_content form .form_checkbox div input {
+  width: 13px;
+}
+#header .signIn_popup .signIn_content form .form_checkbox a {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #a94442;
+}
+#header .signIn_popup .signIn_content form .form_checkbox a:hover {
+  text-decoration: underline;
+}
+#header .signIn_popup .signIn_content form .formCheckbox_signup {
+  margin: 25px 0;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #666666;
+}
+#header .signIn_popup .signIn_content form .formCheckbox_signup a {
+  color: #fc6782;
+}
+#header .signIn_popup .signIn_content form .formCheckbox_signup a:hover {
+  color: #fc6782;
+  text-decoration: underline;
+}
+#header .signIn_popup .signIn_content form .formCheckbox_signup input {
+  width: 18px;
+}
+#header .signIn_popup .signIn_content form button {
+  background: #fc6782;
+  width: 100%;
+  padding: 11px 27px;
+  border: none;
+  transition: all linear 0.3s;
+}
+#header .signIn_popup .signIn_content form button a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+#header .signIn_popup .signIn_content form button:hover {
+  background: #3c78b4;
+}
+#header .signIn_popup .signIn_content p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 18px;
+}
+#header .signIn_popup .signIn_content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#header .signIn_popup .signIn_content ul .fb {
+  font-size: 14px;
+  color: #1b4f9b;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #1b4f9b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.3s;
+}
+#header .signIn_popup .signIn_content ul .fb:hover {
+  color: #fff;
+  border: 1px solid #1b4f9b;
+  background: #1b4f9b;
+}
+#header .signIn_popup .signIn_content ul .x {
+  font-size: 14px;
+  color: #000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.3s;
+}
+#header .signIn_popup .signIn_content ul .x:hover {
+  color: #fff;
+  border: 1px solid #000;
+  background-color: #000;
+}
+#header .signIn_popup .signIn_content ul .google {
+  font-size: 14px;
+  color: #dd4b39;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #dd4b39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 0.3s;
+}
+#header .signIn_popup .signIn_content ul .google:hover {
+  color: #fff;
+  border: 1px solid #dd4b39;
+  background: #dd4b39;
+}
 #header .header_middle {
+  border-bottom: 1px solid #eee;
   padding: 30px;
 }
 #header .header_middle .header_left {
@@ -206,7 +433,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding: 30px;
 }
 #header .header_middle .hadder_right .right_side .cart_offcanvas .offcanvas_title {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding: 0 0 14px 0;
 }
 #header .header_middle .hadder_right .right_side .cart_offcanvas .offcanvas_title h5 {
@@ -261,7 +488,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  border-top: 1px solid rgba(102, 102, 102, 0.2);
+  border-top: 1px solid #eee;
 }
 #header .header_middle .hadder_right .right_side .cart_offcanvas .cart_list .total_amount .price h6 {
   font-size: 14px;
@@ -333,7 +560,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   z-index: 999;
 }
 #header .main_menu .brows_category .category_box .category_menu > li {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding: 13px 14px 13px 12px;
   cursor: pointer;
 }
@@ -370,7 +597,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   opacity: 0;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menufashion .megamenu_items h4 {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
@@ -438,7 +665,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   opacity: 0;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menuhome .megamenu_items h4 {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
@@ -517,7 +744,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   opacity: 0;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics .megamenu_items h4 {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
@@ -600,7 +827,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   gap: 20px;
 }
 #header .main_menu .brows_category .category_box .category_menu .mega_menufurniture .megamenu_list .megamenu_items h4 {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
@@ -1483,7 +1710,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin-bottom: 60px;
 }
 #service .service_items {
-  border: 1px solid rgba(102, 102, 102, 0.2);
+  border: 1px solid #eee;
   padding: 23px;
   border-radius: 5px;
   display: flex;
@@ -1597,7 +1824,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding-bottom: 60px;
 }
 #hot_deals .dealMega_main {
-  border: 1px solid rgba(102, 102, 102, 0.2);
+  border: 1px solid #eee;
   padding: 25px 20px;
   border-radius: 5px;
 }
@@ -1609,7 +1836,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding-bottom: 15px;
 }
 #hot_deals .dealMega_main .dealMega_content .deals_megaslide {
-  border-top: 1px solid rgba(102, 102, 102, 0.2);
+  border-top: 1px solid #eee;
   padding-top: 20px;
   display: flex;
   gap: 20px;
@@ -1693,7 +1920,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin-bottom: 15px;
 }
 #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items {
-  border-top: 1px solid rgba(102, 102, 102, 0.2);
+  border-top: 1px solid #eee;
   padding-top: 25px;
 }
 #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items h4 {
@@ -1730,7 +1957,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
   gap: 40px;
   align-items: center;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1862,7 +2089,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #hot_deals .hotDeals_sideMegaMenu {
   padding: 25px 20px;
-  border: 1px solid rgba(102, 102, 102, 0.2);
+  border: 1px solid #eee;
   border-radius: 5px;
   position: relative;
 }
@@ -1872,7 +2099,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: 700;
   color: #333333;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
 }
 #hot_deals .hotDeals_sideMegaMenu .side_megaMenu .sideMegamenu_content {
   padding-top: 10px;
@@ -2005,7 +2232,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #cloth_apparel .cloth_heading h2 {
@@ -2160,7 +2387,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #consumer_electric .electric_heading h2 {
@@ -2398,7 +2625,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #garden_kitchen .kitchen_heading h2 {
@@ -2550,7 +2777,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin-bottom: 60px;
 }
 #our_clients .clients_heading {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #our_clients .clients_heading h2 {
@@ -2560,18 +2787,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: #333333;
 }
 #our_clients .clientsName_box {
-  border: 1px solid rgba(102, 102, 102, 0.2);
+  border: 1px solid #eee;
   margin-top: 20px;
 }
 #our_clients .clientsName_box img {
   width: 212px;
-  border-right: 1px solid rgba(102, 102, 102, 0.2);
+  border-right: 1px solid #eee;
 }
 #our_clients .clientsName_box .no_border {
   border-right: none;
 }
 #our_clients .clientsName_box .border_top {
-  border-top: 1px solid rgba(102, 102, 102, 0.2);
+  border-top: 1px solid #eee;
 }
 
 #our_blog {
@@ -2586,7 +2813,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #our_blog .blog_heading h2 {
@@ -2689,7 +2916,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   display: flex;
 }
 #recent_views .recentViews_heading {
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
 #recent_views .recentViews_heading h2 {
@@ -2812,7 +3039,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #footer_part .footer_top {
   padding-bottom: 50px;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
 }
 #footer_part .footer_top .footer_logo img {
   width: 144px;
@@ -2929,7 +3156,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #footer_part .footer_middle {
   margin-top: 50px;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  border-bottom: 1px solid #eee;
   padding-bottom: 25px;
 }
 #footer_part .footer_middle .category_box .category_content {
@@ -2950,7 +3177,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   gap: 10px;
 }
 #footer_part .footer_middle .category_box .category_content ul li {
-  border-right: 1px solid rgba(102, 102, 102, 0.2);
+  border-right: 1px solid #eee;
   padding-right: 10px;
 }
 #footer_part .footer_middle .category_box .category_content ul li a {

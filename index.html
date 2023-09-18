@@ -58,8 +58,8 @@
                   <li><a href="">Blog</a></li>
                   <li><a href="">Contact us</a></li>
                   <li><a href="">My Account</a></li>
-                  <li> <span><i class="fa-regular fa-user"></i></span> <a data-bs-toggle="modal"
-                      data-bs-target="#exampleModal" href="">Sign In /
+                  <li>  <a data-bs-toggle="modal"
+                      data-bs-target="#exampleModal" href=""> <span><i class="fa-regular fa-user"></i></span> Sign In /
                       Register</a></li>
                 </ul>
               </div>
@@ -74,20 +74,106 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade signIn_popup " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <button class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
           <div class="modal-body">
-            ...
+
+            <div class="signIn_content">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active text-uppercase" id="nav-home-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Sign In</button>
+                  <button class="nav-link text-uppercase" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false">Sign Up</button>
+
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+
+                <!-- ======Sign In items===== -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                  tabindex="0">
+                  <form action="#">
+                    <div class="user_email">
+                      <label for="#">Username or email address *</label>
+                      <input type="text" required>
+                    </div>
+                    <div class="password">
+                      <label for="#">Password *</label>
+                      <input type="password" required>
+                    </div>
+                    <div class="form_checkbox">
+                      <div>
+                        <input class="input" type="checkbox" name="" id="" required>
+                        <label for="">Remember me</label>
+                      </div>
+                      <a href="">Last your password?</a>
+                    </div>
+
+                    <button><a href="">SIGN IN</a></button>
+                  </form>
+
+                  <p>Sign in with social account</p>
+                  <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
+                  </ul>
+                </div>
+
+                <!-- ======Sign Up items start===== -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                  tabindex="0">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <form action="#">
+                      <div class="user_email">
+                        <label for="#">Your Email address *</label>
+                        <input type="text" required>
+                      </div>
+                      <div class="password">
+                        <label for="#">Password *</label>
+                        <input type="password" required>
+                      </div>
+
+                      <p class="privacy_policy">Your personal data will be used to support your experience
+                        throughout this website, to manage access to your account,
+                        and for other purposes described in our <a href="">privacy policy</a>.</p>
+
+                      <div class="signUp_vendor">
+                        <a href="">Signup as a vendor?</a>
+                      </div>
+
+                      <div class="formCheckbox_signup">
+                        <input class="input" type="checkbox" name="" id="" required>
+                        <label for="">I agree to the <a href="">privacy policy</a></label>
+                      </div>
+
+                      <button><a href="">SIGN IN</a></button>
+                    </form>
+
+                    <p>Sign in with social account</p>
+                    <ul>
+                      <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
+                    </ul>
+                  </div>
+
+                </div>
+                <!-- ======Sign Up items end===== -->
+              </div>
+            </div>
+
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+
         </div>
       </div>
     </div>

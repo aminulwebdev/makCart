@@ -84,12 +84,299 @@
         }
       }
     }
+
+
+
+  }
+
+  .signIn_popup {
+   position: absolute;
+  
+    .close {
+      font-size: 22px;
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: -35px;
+      left: 96%;
+      color: #fff;
+      transition: all linear .2s;
+   
+
+      &:hover {
+        transform: scale(1.3) rotate(90deg);
+     
+      }
+    }
+
+    .signIn_content {
+      padding: 15px 35px;
+
+      .nav {
+        gap: 10px;
+        flex-wrap: nowrap;
+        border-bottom: 1px solid $secondary_clr;
+
+        button {
+          width: 50%;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+          color: $text_clr;
+
+        }
+
+        .nav-link {
+          transition: all linear .3s;
+
+          &:hover {
+
+            color: $brand_clr;
+            border: transparent;
+            border-bottom: 2px solid $brand_clr;
+          }
+        }
+
+        .nav-link.active {
+          background: transparent;
+          border: transparent;
+          border-bottom: 2px solid $brand_clr;
+
+          color: $brand_clr;
+        }
+
+      }
+
+      form {
+        padding: 30px 0 26px;
+
+        .user_email {
+          display: flex;
+          flex-direction: column;
+          // gap: 200px;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $brand_clr;
+
+
+          input {
+            margin: 5px 0 28px;
+            padding: 9px 20px;
+            border: 1px solid $secondary_clr;
+          }
+        }
+
+        .password {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $brand_clr;
+
+          input {
+            margin-top: 5px;
+            padding: 9px 20px;
+            border: 1px solid $secondary_clr;
+          }
+        }
+
+        .privacy_policy {
+          font-size: 13px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $mega_clr;
+          text-align: start;
+          margin: 30px 0 20px;
+
+          a {
+            color: $brand_clr;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .signUp_vendor {
+          a {
+            font-size: 13px;
+            line-height: 22px;
+            font-weight: 400;
+            color: $brand_clr;
+
+            &:hover {
+              color: $brand_clr;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .form_checkbox {
+          margin: 25px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $mega_clr;
+
+            input {
+              width: 13px;
+            }
+
+
+          }
+
+          a {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #a94442;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+        }
+
+        .formCheckbox_signup {
+          margin: 25px 0;
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: 400;
+          color: $mega_clr;
+
+          a {
+            color: $brand_clr;
+
+            &:hover {
+              color: $brand_clr;
+              text-decoration: underline;
+            }
+          }
+
+          input {
+            width: 18px;
+          }
+        }
+
+        button {
+          background: $brand_clr;
+          width: 100%;
+          padding: 11px 27px;
+          border: none;
+          transition: all linear .3s;
+
+          a {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+            color: #fff;
+
+          }
+
+          &:hover {
+            background: #3c78b4;
+          }
+
+        }
+
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $mega_clr;
+        text-align: center;
+        margin-bottom: 18px;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .fb {
+          font-size: 14px;
+          color: #1b4f9b;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 1px solid #1b4f9b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all linear .3s;
+
+          &:hover {
+            color: #fff;
+            border: 1px solid #1b4f9b;
+            background: #1b4f9b;
+          }
+        }
+
+        .x {
+          font-size: 14px;
+          color: #000;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 1px solid #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all linear .3s;
+
+          &:hover {
+            color: #fff;
+            border: 1px solid #000;
+            background-color: #000;
+          }
+
+        }
+
+        .google {
+          font-size: 14px;
+          color: #dd4b39;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 1px solid #dd4b39;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all linear .3s;
+
+          &:hover {
+            color: #fff;
+            border: 1px solid #dd4b39;
+            background: #dd4b39;
+          }
+        }
+
+      }
+
+    }
   }
 
   // ===========Header Middle Start=========
 
   .header_middle {
-
+    border-bottom: 1px solid $secondary_clr;
     padding: 30px;
 
     .header_left {
@@ -1403,6 +1690,7 @@
           }
 
         }
+
         // ===========Pages Menu============
         .menuItem_elements {
           padding: 12px 5px;
@@ -1486,13 +1774,6 @@
 
 }
 
-
-
-// ========== Top Categories part Start ==========
-
-
-
-// ========== Top Categories part End ===========
 
 // ========= Popular Departments part Start ========
 #popular_department {
