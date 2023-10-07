@@ -1,0 +1,16 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#shop_brand{
+    margin: 30px 0;
+    .brand_name{
+        display: flex;
+       
+        img{
+            width: 185px;
+   
+
+        }
+    }
+}

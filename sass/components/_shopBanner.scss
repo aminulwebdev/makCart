@@ -1,0 +1,54 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#shop_banner {
+    @include title;
+
+    .banner_content {
+
+        position: relative;
+
+        img {
+            border-radius: 3px;
+        }
+
+        .banner_text {
+
+            padding: 75px 90px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            h4 {
+                font-size: 28px;
+                line-height: 34px;
+                font-weight: 600;
+                color: $text_clr;
+            }
+
+            h3 {
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background: $text_clr;
+                border: 1px solid $text_clr;
+                padding: 15px 30px;
+                border-radius: 3px;
+
+                a {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
