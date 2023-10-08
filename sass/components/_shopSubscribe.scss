@@ -1,0 +1,65 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#subscribe {
+    @include title;
+    margin-bottom: 60px;
+    background: $brand_clr;
+
+    .subscribe_box {
+        padding: 28px 0;
+display: flex;
+gap: 150px;
+align-items: center;
+        .subscribe_item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .icon {
+                color: #fff;
+                font-size: 47px;
+            }
+
+            .subscribe__text {
+                h4 {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 2px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 21px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+
+        .subscribe_inputbox{
+           input{
+            width: 555px;
+            padding:13px 20px;
+            border: none;
+            border-radius: 3px;
+           }
+           button{
+            border: none;
+            background: #454545;
+            padding: 13px 26px;
+            border-radius: 3px;
+            margin-left: 10px;
+            a{
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 600;
+                color: #fff;
+            }
+           }
+        }
+    }
+}
