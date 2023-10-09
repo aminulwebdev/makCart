@@ -911,20 +911,21 @@
             Breadcrumb Start Start
     =============================== -->
 
-  <section id="bread_crumb">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Vendor</li>
-                    </ol>
-                  </nav>
+        <section id="bread_crumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Vendor</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-  </section>
+        </section>
 
         <!--=============================
             Breadcrumb Start End
@@ -938,14 +939,10 @@
         <section id="vendor_content">
             <div class="container">
                 <div class="row">
+
+                    <!-- ============== Vendor sidebar start =============== -->
                     <div class="col-lg-3">
                         <div class="vendor_sidebar">
-                            <div class="filter">
-                                <label for="">Filter :</label>
-                                <a href="">Clean All
-                                </a>
-                            </div>
-
                             <div class="sidebar_content">
 
                                 <!-- =========== All_categories ========= -->
@@ -1088,29 +1085,62 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- ============== Vendor sidebar end =============== -->
 
                     <div class="col-lg-9">
-
-                        <div id="vendor_banner">
+                        <!-- ============== Banner part start =============== -->
+                        <div class="vendor_banner">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="banner_content">
                                         <div class="banner_img">
                                             <img src="images/vendor_banner.jpg" class="img-fluid w-100 h-100" alt="">
                                         </div>
-                                        <div class="banner_text">
-                                            <h4>Accessories Collection</h4>
-                                            <h3>SMART WRIST WATCHES</h3>
-                                            <button><a href="">DISCOVER NOW <span><i
-                                                            class="fa-solid fa-arrow-right-long"></i></span></a>
-                                            </button>
+                                        <div class="banner_items">
+                                            <div class="vendor_logo">
+                                                <img src="images/vendor_logo.jpg" alt="">
+                                            </div>
+                                            <h4>Vendor 1</h4>
+                                            <ul class="vendor_info">
+                                                <li class="address"><i class="fa-solid fa-location-dot"></i>
+                                                    <span>Steven Street, El Carjon California,
+                                                        United States (US)</span>
+                                                </li>
+
+                                                <li class="phone"><i class="fa-solid fa-phone"></i>
+                                                    <a href="tel:01813933245">01813933245</a>
+                                                </li>
+
+                                                <li class="rating"><i class="fa-solid fa-star"></i>
+                                                    <span>4.33 rating from 3 reviews</span>
+                                                </li>
+
+                                                <li class="store_open"><i class="fa-solid fa-bag-shopping"></i>
+                                                    <span>Store Open</span>
+                                                </li>
+                                            </ul>
+                                            <div class="social_icon">
+                        
+                                                     <a href=""><i class="fa-brands fa-facebook-f fb"></i></a>
+                                                     <a href=""><i class="fa-brands fa-goodreads-g google"></i></a>
+                                                     <a href=""><i class="fa-brands fa-x-twitter x"></i></a>
+                                                     <a href=""><i class="fa-brands fa-pinterest pin"></i></a>
+                                                     <a href=""><i class="fa-brands fa-youtube youtube"></i></a>
+                                                     <a href=""><i class="fa-brands fa-instagram insta"></i></a>
+                                                    
+
+                                              
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
+                        <!-- ============== Banner part start =============== -->
+
+
+                        <!-- ============== Vendor toolbox part start =============== -->
 
                         <div class="row">
                             <div class="vendor_toolbox">
@@ -1139,6 +1169,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- ============== Vendor toolbox part end =============== -->
+
+                        <!-- ============== Vendor Products part start =============== -->
 
                         <div class="row">
                             <div class="col-lg-4">
@@ -1388,6 +1421,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- ============== Vendor Products part end =============== -->
+
+
+                        <!-- ============== Bottom toolbox  part start =============== -->
 
                         <div class="toolbox_bottom">
                             <div class="showing_info">
@@ -1415,7 +1452,7 @@
                                 <li class="next"><a href="">Next <i class="fa-solid fa-arrow-right"></i></a></li>
                             </div>
                         </div>
-
+                        <!-- ============== Bottom toolbox  part end =============== -->
                     </div>
                 </div>
             </div>

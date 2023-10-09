@@ -88,56 +88,251 @@
 
     }
 
-    #vendor_banner {
-    @include title;
+    .vendor_banner {
+        @include title;
 
-    .banner_content {
+        .banner_content {
 
-        position: relative;
+            position: relative;
 
-        img {
-            border-radius: 3px;
-        }
-
-        .banner_text {
-
-            padding: 75px 90px;
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            h4 {
-                font-size: 28px;
-                line-height: 34px;
-                font-weight: 600;
-                color: $text_clr;
+            img {
+                border-radius: 4px;
+                
             }
 
-            h3 {
-                font-size: 40px;
-                line-height: 48px;
-                font-weight: 700;
-                color: #fff;
-                margin-bottom: 20px;
-            }
+            .banner_items {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 40%;
+                padding: 50px;
+                background-color: rgba(37, 38, 42, 0.9);
+                border-radius: 4px;
+                height: 100%;
 
-            button {
-                background: $text_clr;
-                border: 1px solid $text_clr;
-                padding: 15px 30px;
-                border-radius: 3px;
+                .vendor_logo {
+                    margin-bottom: 25px;
 
-                a {
-                    font-size: 14px;
-                    line-height: 14px;
-                    font-weight: 600;
-                    color: #fff;
+                    img {
+                        border-radius: 50%;
+                    }
                 }
+
+                h4 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin-bottom: 16px;
+                }
+
+                .vendor_info {
+                    margin-bottom: 30px;
+                    .address {
+                        font-size: 14px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: #ffffffc2;
+                        display: flex;
+                        align-items: start;
+                        margin-bottom: 8px;
+
+                        i {
+                            font-size: 15px;
+                            padding-top: 5px;
+                        }
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .phone {
+                        font-size: 14px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: #ffffffc2;
+                        transition: all linear .2s;
+                        margin-bottom: 8px;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            color: #ffffffc2;
+                            margin-left: 2px;
+                            transition: all linear .2s;
+
+                            &:hover {
+                                color: #ff9933;
+                            }
+                        }
+
+                        &:hover {
+                            color: #ff9933;
+                        }
+                    }
+
+                    .rating {
+                        font-size: 14px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: #ffffffc2;
+                        margin-bottom: 8px;
+                    }
+
+                    .store_open {
+                        font-size: 14px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: #ffffffc2;
+                        margin-bottom: 8px;
+
+                        span {
+                            margin-left: 4px;
+                        }
+                    }
+                }
+
+                .social_icon {
+                    
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                     
+                           
+                            .fb  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #1d4785;
+                                    border: 1px solid #1d4785;
+                            }
+                            
+                               
+                            }
+                            .google  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #b84437;
+                                    border: 1px solid #b84437;
+                            }
+                            
+                               
+                            }
+                            .x  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #000;
+                                    border: 1px solid #000;
+                            }
+                            
+                               
+                            }
+                            .pin  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #ce5d0b;
+                                    border: 1px solid #ce5d0b;
+                            }
+                            
+                               
+                            }
+                            .youtube  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #2b4d6e;
+                                    border: 1px solid #2b4d6e;
+                            }
+                            
+                               
+                            }
+                            .insta  {
+                                overflow: hidden;
+                                color: #ffffffc2;
+                                border: 1px solid #ccc;
+                                fill-opacity: .8;
+                                font-size: 14px;
+                                width: 32px;
+                                height: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                transition: all linear .3s;
+                                &:hover{
+                                    background-color: #ab080a;
+                                    border: 1px solid #ab080a;
+                            }
+                            
+                               
+                            }
+                      
+                  
+
+
+
+                }
+
             }
         }
-    }
 
-}
+    }
 
 
     .vendor_toolbox {

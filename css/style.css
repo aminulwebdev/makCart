@@ -6526,49 +6526,212 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .items_list ul li a:hover {
   color: #fc6782;
 }
-#vendor_content #vendor_banner {
+#vendor_content .vendor_banner {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   background: #fff;
   color: #333333;
 }
-#vendor_content #vendor_banner .banner_content {
+#vendor_content .vendor_banner .banner_content {
   position: relative;
 }
-#vendor_content #vendor_banner .banner_content img {
-  border-radius: 3px;
+#vendor_content .vendor_banner .banner_content img {
+  border-radius: 4px;
 }
-#vendor_content #vendor_banner .banner_content .banner_text {
-  padding: 75px 90px;
+#vendor_content .vendor_banner .banner_content .banner_items {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 40%;
+  padding: 50px;
+  background-color: rgba(37, 38, 42, 0.9);
+  border-radius: 4px;
+  height: 100%;
 }
-#vendor_content #vendor_banner .banner_content .banner_text h4 {
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: 600;
-  color: #333333;
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_logo {
+  margin-bottom: 25px;
 }
-#vendor_content #vendor_banner .banner_content .banner_text h3 {
-  font-size: 40px;
-  line-height: 48px;
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_logo img {
+  border-radius: 50%;
+}
+#vendor_content .vendor_banner .banner_content .banner_items h4 {
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
-  color: #fff;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
-#vendor_content #vendor_banner .banner_content .banner_text button {
-  background: #333333;
-  border: 1px solid #333333;
-  padding: 15px 30px;
-  border-radius: 3px;
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info {
+  margin-bottom: 30px;
 }
-#vendor_content #vendor_banner .banner_content .banner_text button a {
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .address {
   font-size: 14px;
-  line-height: 14px;
-  font-weight: 600;
-  color: #fff;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7607843137);
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .address i {
+  font-size: 15px;
+  padding-top: 5px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .address span {
+  margin-left: 8px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .phone {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7607843137);
+  transition: all linear 0.2s;
+  margin-bottom: 8px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .phone a {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7607843137);
+  margin-left: 2px;
+  transition: all linear 0.2s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .phone a:hover {
+  color: #ff9933;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .phone:hover {
+  color: #ff9933;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .rating {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7607843137);
+  margin-bottom: 8px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .store_open {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7607843137);
+  margin-bottom: 8px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .vendor_info .store_open span {
+  margin-left: 4px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .fb {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .fb:hover {
+  background-color: #1d4785;
+  border: 1px solid #1d4785;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .google {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .google:hover {
+  background-color: #b84437;
+  border: 1px solid #b84437;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .x {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .x:hover {
+  background-color: #000;
+  border: 1px solid #000;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .pin {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .pin:hover {
+  background-color: #ce5d0b;
+  border: 1px solid #ce5d0b;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .youtube {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .youtube:hover {
+  background-color: #2b4d6e;
+  border: 1px solid #2b4d6e;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .insta {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7607843137);
+  border: 1px solid #ccc;
+  fill-opacity: 0.8;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendor_banner .banner_content .banner_items .social_icon .insta:hover {
+  background-color: #ab080a;
+  border: 1px solid #ab080a;
 }
 #vendor_content .vendor_toolbox {
   display: flex;
