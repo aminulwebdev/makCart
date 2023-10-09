@@ -6564,6 +6564,85 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .items_list ul li a:hover {
   color: #fc6782;
 }
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list {
+  padding: 20px 0 30px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input {
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  width: 306px;
+  padding: 10px 15px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input::-moz-placeholder {
+  color: #b399a6;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input::placeholder {
+  color: #b399a6;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea {
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea::-moz-placeholder {
+  color: #b399a6;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea::placeholder {
+  color: #b399a6;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list a {
+  padding: 15px 30px;
+  color: #fff;
+  border-color: #333;
+  background-color: #333;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: all linear 0.2s;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .contactItems_list a:hover {
+  background-color: #454545;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list {
+  padding: 10px 0 20px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_img img {
+  width: 98px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul li {
+  color: #ff9933;
+  font-size: 12px;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul .no_color {
+  color: #d6d6d6;
+}
+#vendor_content .vendor_sidebar .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text h6 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #333333;
+}
 #vendor_content .vendor_banner {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
