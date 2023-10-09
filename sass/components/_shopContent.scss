@@ -179,6 +179,53 @@
                 color: $text_clr;
             }
         }
+
+        position: relative;
+       
+
+        .hover_items {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear .2s;
+            cursor: pointer;
+
+            ul {
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 6px;
+                    background: #fff;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    transition: all linear .3s;
+
+                    a {
+                        font-size: 16px;
+                        color: #999999;
+                        transition: all linear .3s;
+                    }
+
+                    &:hover {
+                        background: $brand_clr;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover .hover_items {
+            visibility: visible;
+            opacity: 1;
+        }
+
     }
 
 

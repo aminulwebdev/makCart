@@ -4756,6 +4756,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #shop_content .shop_toolbox .toolBox_right ul i {
   font-size: 19px;
 }
+#shop_content .shopContent_products {
+  position: relative;
+}
 #shop_content .shopContent_products .products_text {
   text-align: center;
   padding-top: 17px;
@@ -4797,6 +4800,41 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   line-height: 26px;
   font-weight: 600;
   color: #333333;
+}
+#shop_content .shopContent_products .hover_items {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+#shop_content .shopContent_products .hover_items ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+#shop_content .shopContent_products .hover_items ul li a {
+  font-size: 16px;
+  color: #999999;
+  transition: all linear 0.3s;
+}
+#shop_content .shopContent_products .hover_items ul li:hover {
+  background: #fc6782;
+}
+#shop_content .shopContent_products .hover_items ul li:hover a {
+  color: #fff;
+}
+#shop_content .shopContent_products:hover .hover_items {
+  visibility: visible;
+  opacity: 1;
 }
 #shop_content .toolbox_bottom {
   display: flex;
@@ -6733,29 +6771,24 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   background-color: #ab080a;
   border: 1px solid #ab080a;
 }
-#vendor_content .vendor_toolbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 22px;
+#vendor_content .products {
+  margin: 20px 0;
+  border: 1px solid #eeeeee;
+  padding: 19px 15px;
+  border-radius: 2px;
 }
-#vendor_content .vendor_toolbox .toolBox_left .dropDown {
-  padding: 9px 14px 9px 14px;
+#vendor_content .products a {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #333333;
+  transition: all linear 0.2s;
 }
-#vendor_content .vendor_toolbox .toolBox_right {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+#vendor_content .products a:hover {
+  color: #fc6782;
 }
-#vendor_content .vendor_toolbox .toolBox_right select {
-  padding: 9px 13px 9px 13px;
-}
-#vendor_content .vendor_toolbox .toolBox_right ul {
-  display: flex;
-  gap: 10px;
-}
-#vendor_content .vendor_toolbox .toolBox_right ul i {
-  font-size: 19px;
+#vendor_content .vendorContent_products {
+  position: relative;
 }
 #vendor_content .vendorContent_products .products_text {
   text-align: center;
@@ -6799,54 +6832,38 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   font-weight: 600;
   color: #333333;
 }
-#vendor_content .toolbox_bottom {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0;
-  align-items: center;
-}
-#vendor_content .toolbox_bottom .showing_info p {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-#vendor_content .toolbox_bottom .showing_info p span {
-  color: #333333;
-  margin: 0 9px;
-}
-#vendor_content .toolbox_bottom .pagination .prev a {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #aaaaaa;
-  padding: 12px;
-}
-#vendor_content .toolbox_bottom .pagination .num {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-#vendor_content .toolbox_bottom .pagination .num .one {
-  border: 1px solid #eee;
-}
-#vendor_content .toolbox_bottom .pagination .num a {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #fc6782;
-  border: 1px solid red;
-  padding: 12px;
-  border-color: transparent;
+#vendor_content .vendorContent_products .hover_items {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  visibility: hidden;
+  opacity: 0;
   transition: all linear 0.2s;
+  cursor: pointer;
 }
-#vendor_content .toolbox_bottom .pagination .num a:hover {
-  border: 1px solid #eee;
+#vendor_content .vendorContent_products .hover_items ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all linear 0.3s;
 }
-#vendor_content .toolbox_bottom .pagination .next a {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #666666;
-  padding: 12px;
+#vendor_content .vendorContent_products .hover_items ul li a {
+  font-size: 16px;
+  color: #999999;
+  transition: all linear 0.3s;
+}
+#vendor_content .vendorContent_products .hover_items ul li:hover {
+  background: #fc6782;
+}
+#vendor_content .vendorContent_products .hover_items ul li:hover a {
+  color: #fff;
+}
+#vendor_content .vendorContent_products:hover .hover_items {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

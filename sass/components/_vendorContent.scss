@@ -335,39 +335,23 @@
     }
 
 
-    .vendor_toolbox {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 22px;
+    .products{
+    margin: 20px 0;
+    border: 1px solid #eeeeee;
+    padding: 19px 15px;
+    border-radius: 2px;
+    a{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+        color: $text_clr;
+        transition: all linear .2s;
 
-        .toolBox_left {
-            .dropDown {
-                padding: 9px 14px 9px 14px;
-            }
+        &:hover{
+            color: $brand_clr;
         }
-
-        .toolBox_right {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-
-            select {
-                padding: 9px 13px 9px 13px;
-            }
-
-            ul {
-                display: flex;
-                gap: 10px;
-
-                i {
-                    font-size: 19px;
-                }
-            }
-        }
-
     }
-
+  }
 
 
     .vendorContent_products {
@@ -426,74 +410,50 @@
                 color: $text_clr;
             }
         }
-    }
+        position: relative;
+       
 
+        .hover_items {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear .2s;
+            cursor: pointer;
 
-    .toolbox_bottom {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 0;
-        align-items: center;
+            ul {
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 6px;
+                    background: #fff;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    transition: all linear .3s;
 
-        .showing_info {
-            p {
-                font-size: 13px;
-                line-height: 24px;
-                font-weight: 400;
-                color: #aaaaaa;
+                    a {
+                        font-size: 16px;
+                        color: #999999;
+                        transition: all linear .3s;
+                    }
 
-                span {
-                    color: $text_clr;
-                    margin: 0 9px;
+                    &:hover {
+                        background: $brand_clr;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
                 }
             }
         }
 
-        .pagination {
-            .prev {
-                a {
-                    font-size: 14px;
-                    line-height: 14px;
-                    font-weight: 400;
-                    color: #aaaaaa;
-                    padding: 12px;
-                }
-            }
-
-            .num {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-
-                .one {
-                    border: 1px solid #eee;
-                }
-
-                a {
-                    font-size: 14px;
-                    line-height: 14px;
-                    font-weight: 400;
-                    color: $brand_clr;
-                    border: 1px solid red;
-                    padding: 12px;
-                    border-color: transparent;
-                    transition: all linear .2s;
-
-                    &:hover {
-                        border: 1px solid #eee;
-                    }
-                }
-            }
-
-            .next {
-                a {
-                    font-size: 14px;
-                    line-height: 14px;
-                    font-weight: 400;
-                    color: #666666;
-                    padding: 12px;
-                }
-            }
+        &:hover .hover_items {
+            visibility: visible;
+            opacity: 1;
         }
     }
 
