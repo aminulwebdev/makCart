@@ -8420,119 +8420,176 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 #blog_content .blogContent_items .contentItems_text .post_by .date:hover {
   color: #fc6782;
 }
-#blog_content .sidebar_content .sidebarContent_item {
-  --bs-border-width: 0px;
+#blog_content .blog_sidebar {
+  padding-top: 20px;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item {
+#blog_content .blog_sidebar .search_form {
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+#blog_content .blog_sidebar .search_form input {
   border: none;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item button {
-  background-color: transparent;
-  padding: 14px 0;
-  border-radius: 0;
-  border-bottom: 0;
-  border-bottom: 1px solid #eee;
+#blog_content .blog_sidebar .search_form input::-moz-placeholder {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #777777;
+}
+#blog_content .blog_sidebar .search_form input::placeholder {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #777777;
+}
+#blog_content .blog_sidebar .search_form button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #336699;
+}
+#blog_content .blog_sidebar .sidebar_content {
+  margin-top: 25px;
+}
+#blog_content .blog_sidebar .sidebar_content .all_categories h3 {
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
   color: #333333;
+  padding: 14px 25px 14px 0;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item button:focus {
-  outline: none;
-  box-shadow: none;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .items_list {
-  padding: 7px 0 10px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .items_list ul li {
-  padding: 10px 0 10px 2px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .items_list ul li a {
+#blog_content .blog_sidebar .sidebar_content .all_categories ul li a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #333333;
   transition: all linear 0.2s;
+  padding: 10px 0 10px 2px;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .items_list ul li a:hover {
+#blog_content .blog_sidebar .sidebar_content .all_categories ul li a:hover {
   color: #fc6782;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list {
-  padding: 20px 0 30px;
+#blog_content .blog_sidebar .sidebar_content .popular_posts {
+  margin-bottom: 15px;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input {
+#blog_content .blog_sidebar .sidebar_content .popular_posts h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #333333;
+  padding: 14px 25px 14px 0;
   margin-bottom: 10px;
-  border: 1px solid #e1e1e1;
-  border-radius: 3px;
-  width: 306px;
-  padding: 10px 15px;
+  margin-top: 15px;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input::-moz-placeholder {
-  color: #b399a6;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list input::placeholder {
-  color: #b399a6;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea {
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details {
+  display: flex;
+  gap: 18px;
+  align-items: center;
   margin-bottom: 20px;
-  border: 1px solid #e1e1e1;
+}
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details .popularPost_img img {
+  width: 80px;
+  border-radius: 5px;
+}
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details .popularPost_text .post_date a {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fc6782;
+}
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details .popularPost_text h4 {
+  width: 88%;
+}
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details .popularPost_text h4 a {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #333333;
+  transition: all linear 0.2s;
+}
+#blog_content .blog_sidebar .sidebar_content .popular_posts .popularPost_details .popularPost_text h4 a:hover {
+  color: #fc6782;
+}
+#blog_content .blog_sidebar .sidebar_content .custom_block h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #333333;
+  padding: 24px 25px 14px 0;
+  margin-bottom: 10px;
+}
+#blog_content .blog_sidebar .sidebar_content .custom_block .customBlock_text p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 25px;
+}
+#blog_content .blog_sidebar .sidebar_content .browse_tags h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #333333;
+  padding: 14px 25px 14px 0;
+  margin-bottom: 10px;
+}
+#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items {
+  width: 85%;
+}
+#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #333333;
+  transition: all linear 0.2s;
+  border: 1px solid #cccccc;
+  padding: 5px 9px;
   border-radius: 3px;
-  padding: 10px 15px;
+  margin: 5px 10px 5px 0;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea::-moz-placeholder {
-  color: #b399a6;
+#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items a:hover {
+  color: #fc6782;
+  border: 1px solid #fc6782;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list textarea::placeholder {
-  color: #b399a6;
+#blog_content .blog_sidebar .sidebar_content .calendar h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #333333;
+  padding: 50px 25px 14px 0;
+  margin-bottom: 10px;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list a {
-  padding: 15px 30px;
-  color: #fff;
-  border-color: #333;
-  background-color: #333;
+#blog_content .blog_sidebar .sidebar_content .calendar .calendar_header h4 {
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
+  color: #ffffff;
+  padding: 17px 10px;
+  background: #fc6782;
   border-radius: 3px;
-  transition: all linear 0.2s;
+  text-align: center;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .contactItems_list a:hover {
-  background-color: #454545;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list {
-  padding: 10px 0 20px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_img img {
-  width: 98px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text a {
+#blog_content .blog_sidebar .sidebar_content .calendar table thead th {
   font-size: 13px;
-  line-height: 16px;
-  font-weight: 500;
+  line-height: 17px;
+  font-weight: 700;
   color: #333333;
+  padding: 18px 0 9px;
+  width: 50px;
+  text-align: center;
 }
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul {
-  display: flex;
-  align-items: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul li {
-  color: #ff9933;
-  font-size: 12px;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text ul .no_color {
-  color: #d6d6d6;
-}
-#blog_content .sidebar_content .sidebarContent_item .accordion-item .bestTopitems_list .items_details .itemsDetails_text h6 {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 600;
+#blog_content .blog_sidebar .sidebar_content .calendar table tbody tr td {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
   color: #333333;
+  padding: 9px 0;
+  width: 50px;
+  text-align: center;
+}
+#blog_content .blog_sidebar .sidebar_content .calendar table tbody tr .day_disable {
+  color: #b4b4b4;
 }/*# sourceMappingURL=style.css.map */
