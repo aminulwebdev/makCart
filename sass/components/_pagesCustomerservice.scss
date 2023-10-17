@@ -38,6 +38,10 @@
                         color: $text_clr;
                         transition: all linear .2s;
 
+                        &:hover{
+                            color: $brand_clr;
+                        }
+
                         &:focus {
                             outline: none;
                             box-shadow: none;

@@ -31,6 +31,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8892,6 +8893,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: #333333;
   transition: all linear 0.2s;
 }
+#customer_service .customerService_text .customerService_accordion .accordion-item .accordion-header button:hover {
+  color: #fc6782;
+}
 #customer_service .customerService_text .customerService_accordion .accordion-item .accordion-header button:focus {
   outline: none;
   box-shadow: none;
@@ -8905,4 +8909,39 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 #customer_service .customerService_img img {
   border-radius: 15px;
+}
+
+#counter {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+#counter .counter_text {
+  text-align: center;
+}
+#counter .counter_text h3 {
+  font-size: 60px;
+  line-height: 92px;
+  font-weight: 800;
+  color: #cccccc;
+}
+#counter .counter_text h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  padding-bottom: 12px;
+}
+#counter .counter_text p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #666666;
+  padding-bottom: 20px;
+  width: 300px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

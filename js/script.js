@@ -62,3 +62,10 @@ $('.side_megaMenu').slick({
     prevArrow: '<i class="fa-solid fa-chevron-left preArrow"></i>',
     nextArrow: '<i class="fa-solid fa-chevron-right nexArrow"></i>'
 });
+
+// ============= Counter ===============
+
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
