@@ -1,0 +1,39 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#introduce {
+    @include title;
+
+    .introduce_heading {
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 700;
+            color: $text_clr;
+            margin: 0 auto;
+            text-align: center;
+            width: 65%;
+            padding-bottom: 13px;
+
+        }
+
+        p {
+            padding-bottom: 43px;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #666666;
+            text-align: center;
+            width: 570px;
+            margin: 0 auto;
+        }
+    }
+
+    .introduce_img {
+        img {
+            border-radius: 15px;
+            padding-bottom: 100px;
+        }
+    }
+}

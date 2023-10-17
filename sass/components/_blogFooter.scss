@@ -1,0 +1,230 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#footer_part {
+    @include title;
+    
+    .footer_top {
+        padding-bottom: 50px;
+        border-bottom: 1px solid $secondary_clr;
+
+        .footer_logo {
+
+            img {
+                width: 144px;
+                padding-bottom: 10px;
+            }
+
+            .footer_text {
+                .call {
+                    font-size: 13px;
+                    line-height: 27px;
+                    font-weight: 500;
+                    color: $text_clr;
+                    padding-bottom: 10px;
+                }
+
+                a {
+                    font-size: 18px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: $text_clr;
+                    padding-bottom: 8px;
+
+                    &:hover {
+                        color: $brand_clr;
+                    }
+                }
+
+                p {
+                    width: 70%;
+                    font-size: 13px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    color: #666666;
+                    padding-bottom: 20px;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    .fb {
+                        color: #fff;
+                        font-size: 14px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #1b4f9b;
+                        background-color: #1b4f9b;
+                        border-radius: 50%;
+                    }
+
+                    .x {
+                        color: #fff;
+                        font-size: 14px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #000;
+                        background-color: #000;
+                        border-radius: 50%;
+                    }
+
+                    .insta {
+                        color: #fff;
+                        font-size: 14px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #cc0001;
+                        background-color: #cc0001;
+                        border-radius: 50%;
+                    }
+
+                    .utube {
+                        color: #fff;
+                        font-size: 14px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #2c567e;
+                        background-color: #2c567e;
+                        border-radius: 50%;
+                    }
+
+                    .pin {
+                        color: #fff;
+                        font-size: 14px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: #f96a02;
+                        background-color: #f96a02;
+                        border-radius: 50%;
+                    }
+
+                }
+            }
+        }
+
+        .company {
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 14px;
+                color: $text_clr;
+                margin-bottom: 25px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        color: #906679;
+                        transition: all linear .3s;
+
+                        &:hover {
+                            color: $brand_clr;
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .footer_middle {
+        margin-top: 50px;
+        border-bottom: 1px solid $secondary_clr;
+        padding-bottom: 25px;
+
+        .category_box {
+            .category_content {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 22px;
+
+                h6 {
+                    color: $mega_clr;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 600;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    li {
+                        border-right: 1px solid $secondary_clr;
+                        padding-right: 10px;
+
+                        a {
+                            font-size: 13px;
+                            line-height: 13px;
+                            font-weight: 400;
+                            color: #906679;
+                            transition: all linear .3s;
+
+                            &:hover {
+                                color: $brand_clr;
+                            }
+                        }
+                    }
+
+                    .remove_border {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_right {
+            p {
+                font-size: 13px;
+                line-height: 25px;
+                font-weight: 400;
+                color: $mega_clr;
+            }
+        }
+
+        .footer_left {
+            span {
+                font-size: 13px;
+                line-height: 31px;
+                font-weight: 400;
+                color: $mega_clr;
+                margin-right: 40px;
+            }
+        }
+    }
+
+}

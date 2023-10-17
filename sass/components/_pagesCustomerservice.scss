@@ -1,0 +1,67 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+#customer_service {
+    @include title;
+
+    .customerService_text {
+        margin-right: 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 34px;
+            line-height: 41px;
+            font-weight: 700;
+            color: $text_clr;
+            margin-bottom: 17px;
+        }
+
+        .customerService_accordion {
+
+            .accordion-item {
+                border: none;
+                border-bottom: 1px solid $border_clr;
+
+                .accordion-header {
+                    margin: 0;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        padding: 14px 50px 14px 20px;
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 600;
+                        color: $text_clr;
+                        transition: all linear .2s;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+
+                        }
+                    }
+                }
+
+                .accordion-body {
+                    padding: 0 0 12px 20px;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    color: $text_clr;
+
+                }
+
+            }
+        }
+    }
+
+    .customerService_img {
+        img {
+            border-radius: 15px;
+        }
+    }
+}
