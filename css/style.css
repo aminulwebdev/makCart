@@ -32,6 +32,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8944,4 +8945,77 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   padding-bottom: 20px;
   width: 300px;
   margin: 0 auto;
+}
+
+#boost {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  color: #333333;
+  margin-bottom: 50px;
+  background: #fafafb;
+  padding: 50px 0;
+}
+#boost .boost_img img {
+  border-radius: 15px;
+}
+#boost .boost_text {
+  padding-left: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#boost .boost_text h4 {
+  font-size: 34px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #333333;
+  width: 95%;
+  padding-bottom: 13px;
+}
+#boost .boost_text p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #666666;
+  padding-bottom: 30px;
+}
+#boost .boost_text a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 17px 32px;
+  background-color: #333333;
+  border-radius: 3px;
+  transition: all linear 0.2s;
+}
+#boost .boost_text a:hover {
+  background-color: #454545;
+}
+#boost .award_headding h4 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 55px;
+}
+#boost .award_name {
+  text-align: center;
+}
+#boost .award_name .award_logo img {
+  margin-bottom: 20px;
+}
+#boost .award_name p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #333333;
+}
+#boost .award_name .num_three {
+  margin-top: 21px;
 }/*# sourceMappingURL=style.css.map */

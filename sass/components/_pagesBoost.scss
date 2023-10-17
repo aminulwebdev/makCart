@@ -1,0 +1,92 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+#boost {
+    @include title;
+    margin-bottom: 50px;
+    background: #fafafb;
+    padding: 50px 0;
+
+    .boost_img {
+
+
+        img {
+            border-radius: 15px;
+        }
+
+    }
+
+    .boost_text {
+        padding-left: 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            font-size: 34px;
+            line-height: 43px;
+            font-weight: 700;
+            color: $text_clr;
+            width: 95%;
+            padding-bottom: 13px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $mega_clr;
+            padding-bottom: 30px;
+        }
+
+        a {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+            color: #fff;
+            padding: 17px 32px;
+            background-color: $text_clr;
+            border-radius: 3px;
+            transition: all linear .2s;
+
+            &:hover {
+                background-color: #454545;
+            }
+
+        }
+    }
+
+    .award_headding {
+        h4 {
+            font-size: 30px;
+            line-height: 38px;
+            font-weight: 600;
+            color: $text_clr;
+            text-align: center;
+            margin-top: 90px;
+            margin-bottom: 55px;
+        }
+    }
+
+    .award_name {
+        text-align: center;
+
+        .award_logo {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
+            color: $text_clr;
+        }
+
+        .num_three {
+            margin-top: 21px;
+        }
+    }
+}
