@@ -1,0 +1,53 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#meet{
+    @include title;
+    margin-bottom: 70px;
+    .meet_heading{
+        text-align: center;
+        h4{
+            font-size: 34px;
+            line-height: 41px;
+            font-weight: 700;
+            color: $text_clr;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $mega_clr;
+            width: 45%;
+           margin: 0 auto;
+           padding-bottom: 40px;
+        }
+    }
+
+    .leaders_details{
+        .leaders_img{
+            margin-bottom: 25px;
+            img{
+                border-radius: 15px;
+            }
+        }
+
+        .leaders_text{
+            text-align: center;
+            h4{
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                color: $text_clr;
+            }
+            p{
+                font-size: 14px;
+                line-height: 25px;
+                font-weight: 400;
+                color: $mega_clr;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
