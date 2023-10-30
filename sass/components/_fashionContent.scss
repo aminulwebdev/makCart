@@ -1,0 +1,372 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+#shop_content {
+    @include title;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    margin: 0 18.5px;
+
+
+    .shop_toolbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0;
+
+
+        .toolBox_left {
+            a {
+                border: 2px solid $brand_clr;
+                padding: 10px 13px;
+                border-radius: 3px;
+                margin-right: 15px;
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 600;
+                color: $brand_clr;
+
+                span {
+                    padding-left: 5px;
+                }
+
+                transition: all linear .2s;
+
+                &:hover {
+                    background-color: $brand_clr;
+                    color: #fff;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 600;
+                color: $text_clr;
+            }
+
+            .dropDown {
+
+                padding: 9px 14px 9px 14px;
+                border: 1px solid #d7d7d7;
+                border-radius: 3px;
+                margin-left: 5px;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                color: $text_clr;
+            }
+        }
+
+        .toolBox_right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            select {
+                padding: 9px 13px 9px 13px;
+                border: 1px solid #d7d7d7;
+                border-radius: 3px;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                color: $text_clr;
+            }
+
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    cursor: pointer;
+
+                    i {
+                        font-size: 19px;
+                    }
+                }
+
+
+
+                .list {
+                    color: #dadada;
+                    transition: all linear .2s;
+
+                    &:hover {
+                        color: $text_clr;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .shopContent_products {
+
+        .products_img {
+            cursor: pointer;
+        }
+
+        .products_text {
+            text-align: center;
+            padding-top: 17px;
+
+            p {
+                a {
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #999999;
+                }
+            }
+
+            a {
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: 500;
+                color: $text_clr;
+
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 6px;
+                padding-bottom: 6px;
+
+                li {
+                    color: #ff9933;
+                    font-size: 12px;
+
+                }
+
+                p {
+                    color: #999999;
+                    font-size: 12px;
+                    line-height: 12px;
+                    font-weight: 400;
+                    margin-left: 8px;
+
+                    &:hover {
+                        color: $brand_clr;
+                    }
+                }
+            }
+
+            h6 {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+                color: $text_clr;
+            }
+        }
+
+        // position: relative;
+
+        // .hover_items {
+        //     position: absolute;
+        //     top: 18px;
+        //     right: 18px;
+        //     visibility: hidden;
+        //     opacity: 0;
+        //     transition: all linear .2s;
+        //     cursor: pointer;
+
+        //     ul {
+        //         li {
+        //             display: flex;
+        //             justify-content: center;
+        //             align-items: center;
+        //             margin-top: 6px;
+        //             background: #fff;
+        //             width: 36px;
+        //             height: 36px;
+        //             border-radius: 50%;
+        //             transition: all linear .3s;
+
+        //             a {
+        //                 font-size: 16px;
+        //                 color: #999999;
+        //                 transition: all linear .3s;
+        //             }
+
+        //             &:hover {
+        //                 background: $brand_clr;
+
+        //                 a {
+        //                     color: #fff;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        // &:hover .hover_items {
+        //     visibility: visible;
+        //     opacity: 1;
+        // }
+
+        position: relative;
+
+        .fashionlimit_items {
+            position: absolute;
+            bottom: 29%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all linear .2s;
+            ul {
+                display: flex;
+                // gap: 50px;
+                background: #4c4c4c;
+                border-radius: 3px;
+                padding: 9px 0;
+                width: fit-content;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 20px;
+                    color: #fff;
+
+                    span {
+                        font-size: 10px;
+                        font-weight: 500;
+
+                    }
+
+                    .num {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        &:hover .fashionlimit_items {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .fashionHover_items {
+            position: absolute;
+            bottom: 28%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            visibility: hidden;
+            opacity: 0;
+            transition: all linear .2s;
+
+
+            ul {
+                display: flex;
+                align-items: center;
+                background: #fff;
+                width: fit-content;
+                padding: 5px 15px;
+                border-radius: 3px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                li {
+                    a {
+                        font-size: 18px;
+                        color: $text_clr;
+                        margin: 6px 8px;
+                        transition: all linear .2s;
+
+                        &:hover {
+                            color: $brand_clr;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        &:hover .fashionHover_items {
+            visibility: visible;
+            opacity: 1;
+            bottom: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+
+    .toolbox_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        align-items: center;
+        border-top: 1px solid #f4f4f4;
+        margin: 20px 0 50px;
+
+        .showing_info {
+            p {
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #aaaaaa;
+
+                span {
+                    color: $text_clr;
+                    margin: 0 9px;
+                }
+            }
+        }
+
+        .pagination {
+            .prev {
+                a {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color: #aaaaaa;
+                    padding: 12px;
+                }
+            }
+
+            .num {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .one {
+                    border: 1px solid #eee;
+                }
+
+                a {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color: $brand_clr;
+                    border: 1px solid red;
+                    padding: 12px;
+                    border-color: transparent;
+                    transition: all linear .2s;
+
+                    &:hover {
+                        border: 1px solid #eee;
+                    }
+                }
+            }
+
+            .next {
+                a {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color: #666666;
+                    padding: 12px;
+                }
+            }
+        }
+    }
+
+
+
+}
