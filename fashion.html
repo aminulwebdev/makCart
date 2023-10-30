@@ -16,7 +16,7 @@
     <!--===========================
             Header part start
     ============================= -->
-    <header id="shop_header">
+    <header id="fashion_header">
         <div class="header_top">
             <div class="container">
                 <div class="row">
@@ -969,7 +969,9 @@
             <div class="col-lg-12">
                 <div class="shop_toolbox">
                     <div class="toolBox_left">
-                        <a href=""><i class="fa-solid fa-list-ul"></i><span>FILTERS</span></a>
+                        <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><i
+                                class="fa-solid fa-list-ul"></i><span>FILTERS</span></a>
                         <label for="">Sort By :</label>
                         <select name="" id="" class="dropDown">
                             <option value="">Default sorting</option>
@@ -993,6 +995,222 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- ===================
+              Filtters offcancas start
+            ========================= -->
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <!-- <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div> -->
+
+                    <div class="offcanvas-body cart_list">
+                        <div class="shop_sidebar">
+                            <div class="filter">
+                                <label for="">Filter :</label>
+                                <a href="">Clean All
+                                </a>
+                            </div>
+
+                            <div class="sidebar_content">
+
+                                <!-- =========== All_categories ========= -->
+                                <div class="accordion sidebarContent_item" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                All Categories
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body items_list">
+                                                <ul>
+                                                    <li><a href="">Accessories</a></li>
+                                                    <li><a href="">Babies</a></li>
+                                                    <li><a href="">Beauty</a></li>
+                                                    <li><a href="">Decoration</a></li>
+                                                    <li><a href="">Electronics</a></li>
+                                                    <li><a href="">Fashion</a></li>
+                                                    <li><a href="">Food</a></li>
+                                                    <li><a href="">Furniture</a></li>
+                                                    <li><a href="">Kitchen</a></li>
+                                                    <li><a href="">Medical</a></li>
+                                                    <li><a href="">sports</a></li>
+                                                    <li><a href="">Watches</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- =========== Price ========= -->
+                                <div class="accordion sidebarContent_item" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">
+                                                Price
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body items_list">
+                                                <ul>
+                                                    <li><a href="">$0.00 - $100.00</a></li>
+                                                    <li><a href="">$100.00 - $200.00</a></li>
+                                                    <li><a href="">$200.00 - $300.00</a></li>
+                                                    <li><a href="">$300.00 - $500.00</a></li>
+                                                    <li><a href="">$500.00+</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- =========== Size ========= -->
+                                <div class="accordion sidebarContent_item" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="true"
+                                                aria-controls="collapseThree">
+                                                Size
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse show "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body items_list">
+                                                <form action="">
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="size1" name="" value="Bike">
+                                                        <label for="size1"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="size2" name="" value="Bike">
+                                                        <label for="size2"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="size3" name="" value="Bike">
+                                                        <label for="size3"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="size4" name="" value="Bike">
+                                                        <label for="size4"> Large</label>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- =========== Brand ========= -->
+                                <div class="accordion sidebarContent_item" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFour" aria-expanded="true"
+                                                aria-controls="collapseFour">
+                                                Brand
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse show "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body items_list">
+                                                <form action="">
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand1" name="" value="Bike">
+                                                        <label for="brand1"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand2" name="" value="Bike">
+                                                        <label for="brand2"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand3" name="" value="Bike">
+                                                        <label for="brand3"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand4" name="" value="Bike">
+                                                        <label for="brand4"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand5" name="" value="Bike">
+                                                        <label for="brand5"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand6" name="" value="Bike">
+                                                        <label for="brand6"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="brand7" name="" value="Bike">
+                                                        <label for="brand7"> Large</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- =========== Color ========= -->
+                                <div class="accordion sidebarContent_item" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFive" aria-expanded="true"
+                                                aria-controls="collapseFive">
+                                                Color
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse show "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body items_list">
+                                                <form action="">
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color1" name="" value="Bike">
+                                                        <label for="color1"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color2" name="" value="Bike">
+                                                        <label for="color2"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color3" name="" value="Bike">
+                                                        <label for="color3"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color4" name="" value="Bike">
+                                                        <label for="color4"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color5" name="" value="Bike">
+                                                        <label for="color5"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color6" name="" value="Bike">
+                                                        <label for="color6"> Large</label>
+                                                    </div>
+                                                    <div class="check_box">
+                                                        <input type="checkbox" id="color7" name="" value="Bike">
+                                                        <label for="color7"> Large</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ===================
+            Filtters offcancas end
+                ========================= -->
+
             </div>
         </div>
 
@@ -1000,7 +1218,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_one.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1016,7 +1234,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1030,7 +1248,8 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_two.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_ttwo.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1044,6 +1263,9 @@
                             <p>(3 Reviews)</p>
                         </ul>
                         <h6>$220.00 - $230.00</h6>
+                    </div>
+                    <div class="fashionHover_img">
+
                     </div>
                     <div class="fashionlimit_items">
                         <ul>
@@ -1066,7 +1288,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_three.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1082,7 +1304,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1096,7 +1318,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_four.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1112,7 +1334,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1126,7 +1348,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_five.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1142,7 +1364,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1156,7 +1378,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_six.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1172,7 +1394,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1183,13 +1405,14 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="row" style="margin-top: 20px;">
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_seven.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_sseven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1205,7 +1428,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1219,7 +1442,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_eight.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1235,7 +1458,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1249,7 +1472,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_nine.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1265,7 +1488,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1279,7 +1502,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_ten.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1295,7 +1518,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1309,7 +1532,8 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_eleven.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_eeleven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1325,7 +1549,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -1339,7 +1563,7 @@
             <div class="col-lg-2">
                 <div class="shopContent_products">
                     <div class="products_img">
-                        <img src="images/items_one.jpg" alt="" class="img-fluid w-100 h-100">
+                        <img src="images/fashionImg_twelve.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
                     <div class="products_text">
                         <p><a href="">ELECTRONICS</a></p>
@@ -1355,7 +1579,7 @@
                         <h6>$220.00 - $230.00</h6>
                     </div>
 
-                  
+
                     <div class="fashionHover_items">
                         <ul>
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>

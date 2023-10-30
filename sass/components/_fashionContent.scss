@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0 0;
+        padding: 30px 0 0;
 
 
         .toolBox_left {
@@ -100,12 +100,127 @@
 
     }
 
+    .shop_sidebar {
 
+        .filter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 11px 0 17px;
+
+            label {
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 600;
+                color: $text_clr;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+                color: $text_clr;
+            }
+        }
+
+        .sidebar_content {
+
+            .sidebarContent_item {
+                --bs-border-width: 0px;
+
+                .accordion-item {
+                    border: none;
+
+
+
+                    button {
+                        background-color: transparent;
+                        padding: 14px 0;
+                        border-radius: 0;
+                        border-bottom: 0;
+                        // border-bottom: 5px solid rgb(170, 26, 236);
+                        border-bottom: 1px solid #eee;
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 600;
+                        color: $text_clr;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+
+                        }
+                    }
+
+
+                    .items_list {
+                        padding: 7px 0 10px;
+
+                        ul {
+                            li {
+                                padding: 10px 0 10px 2px;
+
+                                a {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    font-weight: 400;
+                                    color: $text_clr;
+                                    transition: all linear .2s;
+
+                                    &:hover {
+                                        color: $brand_clr;
+                                    }
+                                }
+                            }
+                        }
+
+                        .check_box {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                            padding: 10px 0 10px;
+                            cursor: pointer;
+
+                            input {
+                                width: 18px;
+                                height: 18px;
+                                cursor: pointer;
+                            }
+                            label{
+                                cursor: pointer;
+                            }
+                            transition: all linear .2s;
+
+                            &:hover {
+                                color: $brand_clr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
     .shopContent_products {
 
         .products_img {
             cursor: pointer;
+            position: relative;
+
+            .hover_img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all linear .2s;
+            }
+
+            &:hover .hover_img {
+                visibility: visible;
+                opacity: 1;
+            }
         }
 
         .products_text {
@@ -162,52 +277,10 @@
             }
         }
 
-        // position: relative;
-
-        // .hover_items {
-        //     position: absolute;
-        //     top: 18px;
-        //     right: 18px;
-        //     visibility: hidden;
-        //     opacity: 0;
-        //     transition: all linear .2s;
-        //     cursor: pointer;
-
-        //     ul {
-        //         li {
-        //             display: flex;
-        //             justify-content: center;
-        //             align-items: center;
-        //             margin-top: 6px;
-        //             background: #fff;
-        //             width: 36px;
-        //             height: 36px;
-        //             border-radius: 50%;
-        //             transition: all linear .3s;
-
-        //             a {
-        //                 font-size: 16px;
-        //                 color: #999999;
-        //                 transition: all linear .3s;
-        //             }
-
-        //             &:hover {
-        //                 background: $brand_clr;
-
-        //                 a {
-        //                     color: #fff;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-
-        // &:hover .hover_items {
-        //     visibility: visible;
-        //     opacity: 1;
-        // }
 
         position: relative;
+
+
 
         .fashionlimit_items {
             position: absolute;
@@ -215,10 +288,11 @@
             left: 50%;
             transform: translateX(-50%);
             transition: all linear .2s;
+
             ul {
                 display: flex;
                 // gap: 50px;
-                background: #4c4c4c;
+                background: #333333ef;
                 border-radius: 3px;
                 padding: 9px 0;
                 width: fit-content;

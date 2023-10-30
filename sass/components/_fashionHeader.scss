@@ -1,7 +1,7 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
-#vendor_header {
+#fashion_header {
     @include title;
 
     .header_top {
@@ -636,13 +636,16 @@
     // ============= Main Menu Start ===========
 
     .main_menu {
+        border-bottom: 1px solid #eee;
 
         // ===========Browse Categories Start=========
         .brows_category {
+            border-left:  1px solid #eee;
+            border-right:  1px solid #eee;
             h2 {
                 font-size: 14px;
                 font-weight: 600;
-                background: #f1f1f1;
+                // background: #240202;
                 padding: 20px;
                 transition: all linear .2s ease;
 
