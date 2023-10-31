@@ -638,408 +638,111 @@
     .main_menu {
         border-bottom: 1px solid #eee;
 
-        // ===========Browse Categories Start=========
-        .brows_category {
-            border-left:  1px solid #eee;
-            border-right:  1px solid #eee;
-            h2 {
-                font-size: 14px;
-                font-weight: 600;
-                // background: #240202;
-                padding: 20px;
-                transition: all linear .2s ease;
+        .mainMenu_content {
+            display: flex;
+            align-items: center;
 
-                a {
-                    display: flex;
-                    justify-content: space-between;
-                    color: $text_clr;
-                }
+            // ===========Browse Categories Start=========
+            .brows_category {
+                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
 
-                &:hover {
-                    background-color: $brand_clr;
+                h2 {
+                    font-size: 14px;
+                    font-weight: 600;
+                    // background: #240202;
+                    padding: 20px;
+                    transition: all linear .2s ease;
 
                     a {
-                        color: #fff;
+                        display: flex;
+                        justify-content: space-between;
+                        color: $text_clr;
                     }
-                }
 
-            }
-
-
-            position: relative;
-
-            &:hover .category_box {
-                visibility: visible;
-                opacity: 1;
-                top: 100%;
-                left: 0;
-
-            }
-
-            .category_box {
-                background: rgb(255, 255, 255);
-                position: absolute;
-                top: 75%;
-                left: 0;
-                width: 100%;
-                padding: 8px 0 8px 8px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                z-index: 999;
-                transition: .2s;
-                visibility: hidden;
-                opacity: 0;
-
-
-                .category_menu {
-                    >li {
-                        border-bottom: 1px solid $secondary_clr;
-                        padding: 13px 14px 13px 12px;
-                        cursor: pointer;
+                    &:hover {
+                        background-color: $brand_clr;
 
                         a {
-                            display: flex;
-
-                            justify-content: space-between;
-                            font-size: 13px;
-                            font-weight: 500;
-                            color: $text_clr;
-
-                            span i {
-                                padding-right: 7px; //brows_category logo to fashion gap
-                                font-size: 15px;
-
-                            }
-
-                            .catemenu_arrow i {
-                                font-size: 10px;
-                                transition: all linear .2s;
-                            }
-
-                        }
-
-                        &:hover .catemenu_arrow i {
-                            transform: translateX(50%);
+                            color: #fff;
                         }
                     }
 
-                    //========Mega Menu for Fashion========
-                    .mega_menufashion {
+                }
 
-                        display: flex;
-                        gap: 20px;
-                        position: absolute;
-                        top: 0;
-                        left: 96%;
-                        width: 685px;
-                        background: #fff;
 
-                        transition: all linear .1s;
-                        padding-left: 20px;
-                        box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
-                        visibility: hidden; // mega menu hidden, mega menu hidden 
-                        opacity: 0; // mega menu hidden, mega menu hidden 
+                position: relative;
 
-                        .megamenu_items {
-                            h4 {
-                                border-bottom: 1px solid $secondary_clr;
-                                padding-bottom: 10px;
-                                font-size: 14px;
-                                line-height: 14px;
-                                font-weight: 600;
-                                padding-top: 25px;
-                            }
+                &:hover .category_box {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;
+                    left: 0;
 
-                            ul {
-                                width: 195px;
-                                padding-top: 6px;
+                }
 
-                                li {
-                                    padding-top: 10px;
+                .category_box {
+                    background: rgb(255, 255, 255);
+                    position: absolute;
+                    top: 75%;
+                    left: 0;
+                    width: 100%;
+                    padding: 8px 0 8px 8px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    z-index: 999;
+                    transition: .2s;
+                    visibility: hidden;
+                    opacity: 0;
+
+
+                    .category_menu {
+                        >li {
+                            border-bottom: 1px solid $secondary_clr;
+                            padding: 13px 14px 13px 12px;
+                            cursor: pointer;
+
+                            a {
+                                display: flex;
+
+                                justify-content: space-between;
+                                font-size: 13px;
+                                font-weight: 500;
+                                color: $text_clr;
+
+                                span i {
+                                    padding-right: 7px; //brows_category logo to fashion gap
+                                    font-size: 15px;
+
                                 }
 
-                                a {
-
-                                    font-size: 14px;
-                                    line-height: 14px;
-                                    color: $mega_clr;
-                                }
-
-                            }
-                        }
-
-                        .category_img {
-                            position: relative;
-
-                            .fashionimg_text {
-                                // ======Fashion=======
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                padding: 30px 0 0 30px;
-
-                                p {
-                                    line-height: 14px;
-                                    font-weight: 600px;
-
-                                    span {
-                                        color: #fc6782;
-                                        font-weight: 700;
-                                    }
-                                }
-
-                                h3 {
-                                    font-size: 25px;
-                                    line-height: 30px;
-                                    font-weight: 700;
-                                    padding: 5px 0 14px 0;
-                                }
-
-                                a {
-                                    font-size: 13px;
-                                    color: #000;
-                                    font-weight: 600;
-
-                                    i {
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover i {
-                                        transform: translatex(50%);
-
-                                    }
+                                .catemenu_arrow i {
+                                    font-size: 10px;
+                                    transition: all linear .2s;
                                 }
 
                             }
-                        }
-                    }
 
-                    //======Mega Menu for Home========
-                    .mega_menuhome {
-
-                        display: flex;
-                        gap: 20px;
-                        position: absolute;
-                        top: 10%;
-                        left: 96%;
-                        width: 685px;
-                        background: #fff;
-
-                        transition: all linear .1s;
-                        padding-left: 20px;
-                        box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
-                        visibility: hidden; // mega menu hidden, mega menu hidden 
-                        opacity: 0; // mega menu hidden, mega menu hidden 
-
-                        .megamenu_items {
-                            h4 {
-                                border-bottom: 1px solid $secondary_clr;
-                                padding-bottom: 10px;
-                                font-size: 14px;
-                                line-height: 14px;
-                                font-weight: 600;
-                                padding-top: 25px;
-                            }
-
-                            ul {
-                                width: 195px;
-                                padding-top: 6px;
-
-                                li {
-                                    padding-top: 10px;
-                                }
-
-                                a {
-
-                                    font-size: 14px;
-                                    line-height: 14px;
-                                    color: $mega_clr;
-                                }
-
+                            &:hover .catemenu_arrow i {
+                                transform: translateX(50%);
                             }
                         }
 
-                        .category_img {
-                            position: relative;
+                        //========Mega Menu for Fashion========
+                        .mega_menufashion {
 
-                            .homeimg_text {
-                                // ======Home & Garden=======
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                padding: 0 0 30px 30px;
-
-                                h6 {
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    color: #fff;
-                                    padding-bottom: 5px;
-                                }
-
-                                h3 {
-                                    font-size: 25px;
-                                    line-height: 30px;
-                                    color: #fff;
-                                    font-weight: 700;
-
-                                }
-
-                                p {
-                                    font-size: 20px;
-                                    line-height: 20px;
-                                    font-weight: 600px;
-                                    color: #fff;
-                                    padding-bottom: 23px;
-
-                                    span {
-                                        color: #fc6782;
-                                        font-weight: 700;
-                                        color: #F77C29;
-                                    }
-                                }
-
-                                a {
-                                    font-size: 13px;
-                                    color: #fff;
-                                    font-weight: 600;
-                                    line-height: 14px;
-
-                                    i {
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover i {
-                                        transform: translatex(50%);
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-
-                    //======Mega Menu for Electronics========
-                    .mega_menuelectronics {
-
-                        display: flex;
-                        gap: 20px;
-                        position: absolute;
-                        top: 18%;
-                        left: 96%;
-                        width: 685px;
-                        background: #fff;
-
-                        transition: all linear .1s;
-                        padding-left: 20px;
-                        box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
-                        visibility: hidden; // mega menu hidden, mega menu hidden 
-                        opacity: 0; // mega menu hidden, mega menu hidden 
-
-                        .megamenu_items {
-                            h4 {
-                                border-bottom: 1px solid $secondary_clr;
-                                padding-bottom: 10px;
-                                font-size: 14px;
-                                line-height: 14px;
-                                font-weight: 600;
-                                padding-top: 25px;
-                            }
-
-                            ul {
-                                width: 195px;
-                                padding-top: 6px;
-
-                                li {
-                                    padding-top: 10px;
-                                }
-
-                                a {
-
-                                    font-size: 14px;
-                                    line-height: 14px;
-                                    color: $mega_clr;
-                                }
-
-                            }
-                        }
-
-                        .category_img {
-                            position: relative;
-
-                            .homeimg_text {
-                                // ======Home & Garden=======
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                padding: 30px 0 0 30px;
-
-                                p {
-                                    font-size: 14px;
-                                    line-height: 17px;
-                                    font-weight: 400px;
-                                    color: #ccc;
-                                    padding-bottom: 11px;
-                                }
-
-                                h3 {
-                                    font-size: 22px;
-                                    font-weight: 700;
-                                    line-height: 25px;
-                                    color: #fff;
-                                    padding-bottom: 3px;
-                                }
-
-                                h6 {
-                                    font-size: 22px;
-                                    line-height: 22px;
-                                    color: #f77c29;
-                                    font-weight: 700;
-                                    padding-bottom: 16px;
-                                }
-
-                                button {
-                                    background: transparent;
-                                    border: 2px solid #fff;
-                                    border-radius: 3px;
-
-                                    a {
-                                        font-size: 13px;
-                                        color: #fff;
-                                        font-weight: 600;
-                                        line-height: 14px;
-                                        padding: 10px 20px;
-                                        transition: all linear .3s;
-                                    }
-
-                                    &:hover a {
-                                        background: #fff;
-                                        color: $brand_clr;
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-
-                    //======Mega Menu for Furniture========
-                    .mega_menufurniture {
-
-                        // display: flex;
-                        // gap: 20px;
-                        position: absolute;
-                        top: 26%;
-                        left: 96%;
-                        width: 880px;
-                        background: #fff;
-
-                        transition: all linear .1s;
-                        padding-left: 20px;
-                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                        visibility: hidden; // mega menu hidden, mega menu hidden 
-                        opacity: 0; // mega menu hidden, mega menu hidden 
-
-                        .megamenu_list {
                             display: flex;
                             gap: 20px;
+                            position: absolute;
+                            top: 0;
+                            left: 96%;
+                            width: 685px;
+                            background: #fff;
+
+                            transition: all linear .1s;
+                            padding-left: 20px;
+                            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+                            visibility: hidden; // mega menu hidden, mega menu hidden 
+                            opacity: 0; // mega menu hidden, mega menu hidden 
 
                             .megamenu_items {
                                 h4 {
@@ -1068,729 +771,1056 @@
 
                                 }
                             }
-                        }
-
-                        .img_list {
-                            display: flex;
-                            gap: 20px;
-                            padding-top: 30px;
-                            padding-bottom: 20px;
 
                             .category_img {
                                 position: relative;
 
-                                .imgtext_left {
-
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    padding: 25px 25px 0 0;
-
-                                    h6 {
-                                        font-size: 13px;
-                                        line-height: 16px;
-                                        color: #fff;
-                                        font-weight: 400;
-                                        padding-bottom: 4px;
-                                        text-align: end;
-                                        color: $mega_clr;
-                                    }
-
-                                    h3 {
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        line-height: 24px;
-                                        color: $text_clr;
-                                        padding-bottom: 14px;
-                                    }
-
-                                    p {
-                                        font-size: 13px;
-                                        line-height: 13px;
-                                        font-weight: 400px;
-                                        color: $text_clr;
-                                        text-align: end;
-
-                                        span {
-                                            font-size: 14px;
-                                            line-height: 14px;
-                                            font-weight: 700;
-                                        }
-                                    }
-                                }
-
-                                .imgtext_right {
-
+                                .fashionimg_text {
+                                    // ======Fashion=======
                                     position: absolute;
                                     top: 0;
                                     left: 0;
-                                    padding: 25px 0 0 25px;
-
-                                    h6 {
-                                        font-size: 13px;
-                                        line-height: 16px;
-                                        color: #fff;
-                                        font-weight: 400;
-                                        padding-bottom: 4px;
-                                    }
-
-                                    h3 {
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        line-height: 24px;
-                                        color: #fff;
-                                        padding-bottom: 14px;
-                                    }
+                                    padding: 30px 0 0 30px;
 
                                     p {
-                                        font-size: 13px;
-                                        line-height: 13px;
-                                        font-weight: 400px;
-                                        color: #fff;
+                                        line-height: 14px;
+                                        font-weight: 600px;
 
-                                        // padding-bottom: 11px;
                                         span {
-                                            font-size: 14px;
-                                            line-height: 14px;
+                                            color: #fc6782;
                                             font-weight: 700;
                                         }
                                     }
+
+                                    h3 {
+                                        font-size: 25px;
+                                        line-height: 30px;
+                                        font-weight: 700;
+                                        padding: 5px 0 14px 0;
+                                    }
+
+                                    a {
+                                        font-size: 13px;
+                                        color: #000;
+                                        font-weight: 600;
+
+                                        i {
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover i {
+                                            transform: translatex(50%);
+
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        //======Mega Menu for Home========
+                        .mega_menuhome {
+
+                            display: flex;
+                            gap: 20px;
+                            position: absolute;
+                            top: 10%;
+                            left: 96%;
+                            width: 685px;
+                            background: #fff;
+
+                            transition: all linear .1s;
+                            padding-left: 20px;
+                            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+                            visibility: hidden; // mega menu hidden, mega menu hidden 
+                            opacity: 0; // mega menu hidden, mega menu hidden 
+
+                            .megamenu_items {
+                                h4 {
+                                    border-bottom: 1px solid $secondary_clr;
+                                    padding-bottom: 10px;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: 600;
+                                    padding-top: 25px;
                                 }
 
-                                img {
-                                    border-radius: 3px;
+                                ul {
+                                    width: 195px;
+                                    padding-top: 6px;
+
+                                    li {
+                                        padding-top: 10px;
+                                    }
+
+                                    a {
+
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        color: $mega_clr;
+                                    }
+
+                                }
+                            }
+
+                            .category_img {
+                                position: relative;
+
+                                .homeimg_text {
+                                    // ======Home & Garden=======
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    padding: 0 0 30px 30px;
+
+                                    h6 {
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #fff;
+                                        padding-bottom: 5px;
+                                    }
+
+                                    h3 {
+                                        font-size: 25px;
+                                        line-height: 30px;
+                                        color: #fff;
+                                        font-weight: 700;
+
+                                    }
+
+                                    p {
+                                        font-size: 20px;
+                                        line-height: 20px;
+                                        font-weight: 600px;
+                                        color: #fff;
+                                        padding-bottom: 23px;
+
+                                        span {
+                                            color: #fc6782;
+                                            font-weight: 700;
+                                            color: #F77C29;
+                                        }
+                                    }
+
+                                    a {
+                                        font-size: 13px;
+                                        color: #fff;
+                                        font-weight: 600;
+                                        line-height: 14px;
+
+                                        i {
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover i {
+                                            transform: translatex(50%);
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        //======Mega Menu for Electronics========
+                        .mega_menuelectronics {
+
+                            display: flex;
+                            gap: 20px;
+                            position: absolute;
+                            top: 18%;
+                            left: 96%;
+                            width: 685px;
+                            background: #fff;
+
+                            transition: all linear .1s;
+                            padding-left: 20px;
+                            box-shadow: -9px 0px 13px -4px rgba(0, 0, 0, 0.1);
+                            visibility: hidden; // mega menu hidden, mega menu hidden 
+                            opacity: 0; // mega menu hidden, mega menu hidden 
+
+                            .megamenu_items {
+                                h4 {
+                                    border-bottom: 1px solid $secondary_clr;
+                                    padding-bottom: 10px;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: 600;
+                                    padding-top: 25px;
+                                }
+
+                                ul {
+                                    width: 195px;
+                                    padding-top: 6px;
+
+                                    li {
+                                        padding-top: 10px;
+                                    }
+
+                                    a {
+
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        color: $mega_clr;
+                                    }
+
+                                }
+                            }
+
+                            .category_img {
+                                position: relative;
+
+                                .homeimg_text {
+                                    // ======Home & Garden=======
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    padding: 30px 0 0 30px;
+
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 17px;
+                                        font-weight: 400px;
+                                        color: #ccc;
+                                        padding-bottom: 11px;
+                                    }
+
+                                    h3 {
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        line-height: 25px;
+                                        color: #fff;
+                                        padding-bottom: 3px;
+                                    }
+
+                                    h6 {
+                                        font-size: 22px;
+                                        line-height: 22px;
+                                        color: #f77c29;
+                                        font-weight: 700;
+                                        padding-bottom: 16px;
+                                    }
+
+                                    button {
+                                        background: transparent;
+                                        border: 2px solid #fff;
+                                        border-radius: 3px;
+
+                                        a {
+                                            font-size: 13px;
+                                            color: #fff;
+                                            font-weight: 600;
+                                            line-height: 14px;
+                                            padding: 10px 20px;
+                                            transition: all linear .3s;
+                                        }
+
+                                        &:hover a {
+                                            background: #fff;
+                                            color: $brand_clr;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        //======Mega Menu for Furniture========
+                        .mega_menufurniture {
+
+                            // display: flex;
+                            // gap: 20px;
+                            position: absolute;
+                            top: 26%;
+                            left: 96%;
+                            width: 880px;
+                            background: #fff;
+
+                            transition: all linear .1s;
+                            padding-left: 20px;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                            visibility: hidden; // mega menu hidden, mega menu hidden 
+                            opacity: 0; // mega menu hidden, mega menu hidden 
+
+                            .megamenu_list {
+                                display: flex;
+                                gap: 20px;
+
+                                .megamenu_items {
+                                    h4 {
+                                        border-bottom: 1px solid $secondary_clr;
+                                        padding-bottom: 10px;
+                                        font-size: 14px;
+                                        line-height: 14px;
+                                        font-weight: 600;
+                                        padding-top: 25px;
+                                    }
+
+                                    ul {
+                                        width: 195px;
+                                        padding-top: 6px;
+
+                                        li {
+                                            padding-top: 10px;
+                                        }
+
+                                        a {
+
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            color: $mega_clr;
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .img_list {
+                                display: flex;
+                                gap: 20px;
+                                padding-top: 30px;
+                                padding-bottom: 20px;
+
+                                .category_img {
+                                    position: relative;
+
+                                    .imgtext_left {
+
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        padding: 25px 25px 0 0;
+
+                                        h6 {
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #fff;
+                                            font-weight: 400;
+                                            padding-bottom: 4px;
+                                            text-align: end;
+                                            color: $mega_clr;
+                                        }
+
+                                        h3 {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            line-height: 24px;
+                                            color: $text_clr;
+                                            padding-bottom: 14px;
+                                        }
+
+                                        p {
+                                            font-size: 13px;
+                                            line-height: 13px;
+                                            font-weight: 400px;
+                                            color: $text_clr;
+                                            text-align: end;
+
+                                            span {
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+
+                                    .imgtext_right {
+
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        padding: 25px 0 0 25px;
+
+                                        h6 {
+                                            font-size: 13px;
+                                            line-height: 16px;
+                                            color: #fff;
+                                            font-weight: 400;
+                                            padding-bottom: 4px;
+                                        }
+
+                                        h3 {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            line-height: 24px;
+                                            color: #fff;
+                                            padding-bottom: 14px;
+                                        }
+
+                                        p {
+                                            font-size: 13px;
+                                            line-height: 13px;
+                                            font-weight: 400px;
+                                            color: #fff;
+
+                                            // padding-bottom: 11px;
+                                            span {
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+
+                                    img {
+                                        border-radius: 3px;
+                                    }
+
                                 }
 
                             }
-
                         }
+
+
+                        // ====Fashion Mega Menu hover=======
+                        &:hover .mega_menufashion {
+                            visibility: visible;
+                            opacity: 1;
+                            left: 100%;
+                        }
+
+                        // ====Home Mega Menu hover=======
+                        &:hover .mega_menuhome {
+                            visibility: visible;
+                            opacity: 1;
+                            left: 100%;
+                        }
+
+                        // ====Electronics Mega Menu hover=======
+                        &:hover .mega_menuelectronics {
+                            visibility: visible;
+                            opacity: 1;
+                            left: 100%;
+                        }
+
+                        // ====Furniture Mega Menu hover=======
+                        &:hover .mega_menufurniture {
+                            visibility: visible;
+                            opacity: 1;
+                            left: 100%;
+                        }
+
                     }
 
+                    .all_categories {
+                        li {
+                            padding: 18px 12px 10px 12px;
+                            border-bottom: none;
+                            display: flex;
 
-                    // ====Fashion Mega Menu hover=======
-                    &:hover .mega_menufashion {
-                        visibility: visible;
-                        opacity: 1;
-                        left: 100%;
+                            a {
+                                display: flex;
+                                gap: 5px;
+                                align-items: center;
+                                color: $brand_clr;
+                                font-weight: 600;
+                            }
+                        }
+
                     }
-
-                    // ====Home Mega Menu hover=======
-                    &:hover .mega_menuhome {
-                        visibility: visible;
-                        opacity: 1;
-                        left: 100%;
-                    }
-
-                    // ====Electronics Mega Menu hover=======
-                    &:hover .mega_menuelectronics {
-                        visibility: visible;
-                        opacity: 1;
-                        left: 100%;
-                    }
-
-                    // ====Furniture Mega Menu hover=======
-                    &:hover .mega_menufurniture {
-                        visibility: visible;
-                        opacity: 1;
-                        left: 100%;
-                    }
-
                 }
+            }
 
-                .all_categories {
-                    li {
-                        padding: 18px 12px 10px 12px;
-                        border-bottom: none;
-                        display: flex;
+            // ===========Browse Categories End=========
+
+
+            // ============= Menu part Start ==============
+            .menu {
+                height: 100%;
+                position: relative;
+
+                .menu_bar {
+
+                    // ===========Home Menu============
+                    .menuItem_home {
+                        padding: 12px 5px;
+                        cursor: pointer;
 
                         a {
-                            display: flex;
-                            gap: 5px;
-                            align-items: center;
-                            color: $brand_clr;
+                            font-size: 14px;
+                            line-height: 15px;
                             font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
                         }
                     }
 
+                    // ===========Shop Menu============
+                    .menuItem_shop {
+                        padding: 12px 5px;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 15px;
+                            font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 2px;
+                            }
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
+                        }
+
+                        .mega_menu {
+                            width: 800px;
+                            background: #fff;
+                            padding: 0 10px;
+                            display: flex;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 85%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .2s;
+
+                            .megaMenu_items {
+                                padding: 27px 10px 20px 10px;
+                                width: 195px;
+
+                                h4 {
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: 600;
+                                    color: $text_clr;
+                                    margin-bottom: 12px;
+                                }
+
+                                ul {
+                                    li {
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .mega_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+
+                    }
+
+                    // ===========Vendor Menu============
+
+                    .menuItem_vendor {
+                        padding: 12px 5px;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 15px;
+                            font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 2px;
+                            }
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
+                        }
+
+                        .mega_menu {
+                            width: 215px;
+                            background: #fff;
+
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 85%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .2s;
+
+                            .megaMenu_items {
+                                padding: 20px;
+
+                                ul {
+
+                                    // ========= Store Listing ============
+                                    .store_listing {
+
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            span {
+                                                margin-left: 78px;
+                                            }
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+
+
+                                        .subMega_menu {
+                                            padding: 20px;
+                                            width: 215px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: -50%;
+                                            left: 100%;
+                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                            visibility: 0;
+                                            opacity: 0;
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover .subMega_menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 0;
+                                        }
+
+                                    }
+
+                                    // ========= Vendor Store ============
+                                    .vendor_store {
+
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            span {
+                                                margin-left: 71px;
+                                            }
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+
+
+                                        .subMega_menu {
+                                            padding: 20px;
+                                            width: 215px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: 0%;
+                                            left: 100%;
+                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                            visibility: 0;
+                                            opacity: 0;
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover .subMega_menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 50%;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &:hover .mega_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+
+                    }
+
+                    // ===========Blog Menu============
+
+                    .menuItem_blog {
+                        padding: 12px 5px;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 15px;
+                            font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 2px;
+                            }
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
+                        }
+
+                        .mega_menu {
+                            width: 215px;
+                            background: #fff;
+
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 85%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .2s;
+
+                            .megaMenu_items {
+                                padding: 20px;
+
+                                ul {
+
+                                    // =========li============
+                                    li {
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+
+                                    }
+
+                                    // ========= Grid ============
+                                    .grid {
+                                        .subMega_heading {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            a {
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                font-weight: 400;
+                                                color: $mega_clr;
+                                                padding: 8px 0;
+                                                transition: all linear .3s;
+
+                                                &:hover {
+                                                    color: $brand_clr;
+                                                }
+                                            }
+                                        }
+
+
+
+                                        .subMega_menu {
+                                            padding: 20px;
+                                            width: 215px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: 0%;
+                                            left: 100%;
+                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                            visibility: 0;
+                                            opacity: 0;
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover .subMega_menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 30%;
+                                        }
+                                    }
+
+                                    // ========= Masonry ============
+                                    .masonry {
+                                        .subMega_heading {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            a {
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                font-weight: 400;
+                                                color: $mega_clr;
+                                                padding: 8px 0;
+                                                transition: all linear .3s;
+
+                                                &:hover {
+                                                    color: $brand_clr;
+                                                }
+                                            }
+                                        }
+
+
+
+                                        .subMega_menu {
+                                            padding: 20px;
+                                            width: 215px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: 30%;
+                                            left: 100%;
+                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover .subMega_menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 55%;
+                                        }
+                                    }
+
+                                    // ========= Mask ============
+                                    .mask {
+                                        .subMega_heading {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            a {
+                                                font-size: 14px;
+                                                line-height: 14px;
+                                                font-weight: 400;
+                                                color: $mega_clr;
+                                                padding: 8px 0;
+                                                transition: all linear .3s;
+
+                                                &:hover {
+                                                    color: $brand_clr;
+                                                }
+                                            }
+                                        }
+
+
+
+                                        .subMega_menu {
+                                            padding: 20px;
+                                            width: 215px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: 55%;
+                                            left: 100%;
+                                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            transition: all linear .2s;
+                                        }
+
+                                        &:hover .subMega_menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 70%;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &:hover .mega_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+
+                    }
+
+                    // ===========Pages Menu============
+                    .menuItem_pages {
+                        padding: 12px 5px;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 15px;
+                            font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 2px;
+                            }
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
+                        }
+
+                        .mega_menu {
+                            width: 215px;
+                            background: #fff;
+
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 85%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .2s;
+
+                            .megaMenu_items {
+                                padding: 20px;
+
+                                ul {
+
+                                    // =========li============
+                                    li {
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .mega_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+
+                    }
+
+                    // ===========Pages Menu============
+                    .menuItem_elements {
+                        padding: 12px 5px;
+                        cursor: pointer;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 15px;
+                            font-weight: 600;
+                            color: $text_clr;
+                            transition: all linear .3s;
+
+                            span {
+                                font-size: 12px;
+                                padding-left: 2px;
+                            }
+                        }
+
+                        &:hover a {
+                            color: $brand_clr;
+                        }
+
+                        .mega_menu {
+                            width: 215px;
+                            background: #fff;
+
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            position: absolute;
+                            z-index: 999;
+                            top: 85%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .2s;
+
+                            .megaMenu_items {
+                                padding: 20px;
+
+                                ul {
+
+                                    // =========li============
+                                    li {
+                                        a {
+                                            font-size: 14px;
+                                            line-height: 14px;
+                                            font-weight: 400;
+                                            color: $mega_clr;
+                                            padding: 8px 0;
+                                            transition: all linear .3s;
+
+                                            &:hover {
+                                                color: $brand_clr;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .mega_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+
+                    }
+                }
+            }
+
+            // ============= Menu part End ==============
+
+            .order_deals {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                justify-content: end;
+
+                a {
+                   span{
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    color: $text_clr;
+                    transition: all linear .2s;
+                   }
+
+                    i {
+                        font-size: 22px;
+                        color: $text_clr;
+                        margin-right: 8px; 
+                        transition: all linear .2s;
+                    }
+
+                    &:hover span, &:hover i{
+                        color: $brand_clr;
+                    }
+                
                 }
             }
         }
-
-        // ===========Browse Categories End=========
-
-
-        // ============= Menu part Start ==============
-        .menu {
-            height: 100%;
-            position: relative;
-
-            .menu_bar {
-
-                // ===========Home Menu============
-                .menuItem_home {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-                }
-
-                // ===========Shop Menu============
-                .menuItem_shop {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                        span {
-                            font-size: 12px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-
-                    .mega_menu {
-                        width: 800px;
-                        background: #fff;
-                        padding: 0 10px;
-                        display: flex;
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        position: absolute;
-                        z-index: 999;
-                        top: 85%;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: all linear .2s;
-
-                        .megaMenu_items {
-                            padding: 27px 10px 20px 10px;
-                            width: 195px;
-
-                            h4 {
-                                font-size: 14px;
-                                line-height: 14px;
-                                font-weight: 600;
-                                color: $text_clr;
-                                margin-bottom: 12px;
-                            }
-
-                            ul {
-                                li {
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .mega_menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-
-                }
-
-                // ===========Vendor Menu============
-
-                .menuItem_vendor {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                        span {
-                            font-size: 12px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-
-                    .mega_menu {
-                        width: 215px;
-                        background: #fff;
-
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        position: absolute;
-                        z-index: 999;
-                        top: 85%;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: all linear .2s;
-
-                        .megaMenu_items {
-                            padding: 20px;
-
-                            ul {
-
-                                // ========= Store Listing ============
-                                .store_listing {
-
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        span {
-                                            margin-left: 78px;
-                                        }
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-
-
-                                    .subMega_menu {
-                                        padding: 20px;
-                                        width: 215px;
-                                        background: #fff;
-                                        position: absolute;
-                                        top: -50%;
-                                        left: 100%;
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        visibility: 0;
-                                        opacity: 0;
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover .subMega_menu {
-                                        visibility: visible;
-                                        opacity: 1;
-                                        top: 0;
-                                    }
-
-                                }
-
-                                // ========= Vendor Store ============
-                                .vendor_store {
-
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        span {
-                                            margin-left: 71px;
-                                        }
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-
-
-                                    .subMega_menu {
-                                        padding: 20px;
-                                        width: 215px;
-                                        background: #fff;
-                                        position: absolute;
-                                        top: 0%;
-                                        left: 100%;
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        visibility: 0;
-                                        opacity: 0;
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover .subMega_menu {
-                                        visibility: visible;
-                                        opacity: 1;
-                                        top: 50%;
-                                    }
-                                }
-
-                            }
-                        }
-                    }
-
-                    &:hover .mega_menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-
-                }
-
-                // ===========Blog Menu============
-
-                .menuItem_blog {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                        span {
-                            font-size: 12px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-
-                    .mega_menu {
-                        width: 215px;
-                        background: #fff;
-
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        position: absolute;
-                        z-index: 999;
-                        top: 85%;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: all linear .2s;
-
-                        .megaMenu_items {
-                            padding: 20px;
-
-                            ul {
-
-                                // =========li============
-                                li {
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-
-                                }
-
-                                // ========= Grid ============
-                                .grid {
-                                    .subMega_heading {
-                                        display: flex;
-                                        justify-content: space-between;
-
-                                        a {
-                                            font-size: 14px;
-                                            line-height: 14px;
-                                            font-weight: 400;
-                                            color: $mega_clr;
-                                            padding: 8px 0;
-                                            transition: all linear .3s;
-
-                                            &:hover {
-                                                color: $brand_clr;
-                                            }
-                                        }
-                                    }
-
-
-
-                                    .subMega_menu {
-                                        padding: 20px;
-                                        width: 215px;
-                                        background: #fff;
-                                        position: absolute;
-                                        top: 0%;
-                                        left: 100%;
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        visibility: 0;
-                                        opacity: 0;
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover .subMega_menu {
-                                        visibility: visible;
-                                        opacity: 1;
-                                        top: 30%;
-                                    }
-                                }
-
-                                // ========= Masonry ============
-                                .masonry {
-                                    .subMega_heading {
-                                        display: flex;
-                                        justify-content: space-between;
-
-                                        a {
-                                            font-size: 14px;
-                                            line-height: 14px;
-                                            font-weight: 400;
-                                            color: $mega_clr;
-                                            padding: 8px 0;
-                                            transition: all linear .3s;
-
-                                            &:hover {
-                                                color: $brand_clr;
-                                            }
-                                        }
-                                    }
-
-
-
-                                    .subMega_menu {
-                                        padding: 20px;
-                                        width: 215px;
-                                        background: #fff;
-                                        position: absolute;
-                                        top: 30%;
-                                        left: 100%;
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        visibility: hidden;
-                                        opacity: 0;
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover .subMega_menu {
-                                        visibility: visible;
-                                        opacity: 1;
-                                        top: 55%;
-                                    }
-                                }
-
-                                // ========= Mask ============
-                                .mask {
-                                    .subMega_heading {
-                                        display: flex;
-                                        justify-content: space-between;
-
-                                        a {
-                                            font-size: 14px;
-                                            line-height: 14px;
-                                            font-weight: 400;
-                                            color: $mega_clr;
-                                            padding: 8px 0;
-                                            transition: all linear .3s;
-
-                                            &:hover {
-                                                color: $brand_clr;
-                                            }
-                                        }
-                                    }
-
-
-
-                                    .subMega_menu {
-                                        padding: 20px;
-                                        width: 215px;
-                                        background: #fff;
-                                        position: absolute;
-                                        top: 55%;
-                                        left: 100%;
-                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                        visibility: hidden;
-                                        opacity: 0;
-                                        transition: all linear .2s;
-                                    }
-
-                                    &:hover .subMega_menu {
-                                        visibility: visible;
-                                        opacity: 1;
-                                        top: 70%;
-                                    }
-                                }
-
-                            }
-                        }
-                    }
-
-                    &:hover .mega_menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-
-                }
-
-                // ===========Pages Menu============
-                .menuItem_pages {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                        span {
-                            font-size: 12px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-
-                    .mega_menu {
-                        width: 215px;
-                        background: #fff;
-
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        position: absolute;
-                        z-index: 999;
-                        top: 85%;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: all linear .2s;
-
-                        .megaMenu_items {
-                            padding: 20px;
-
-                            ul {
-
-                                // =========li============
-                                li {
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .mega_menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-
-                }
-
-                // ===========Pages Menu============
-                .menuItem_elements {
-                    padding: 12px 5px;
-                    cursor: pointer;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 15px;
-                        font-weight: 600;
-                        color: $text_clr;
-                        transition: all linear .3s;
-
-                        span {
-                            font-size: 12px;
-                            padding-left: 2px;
-                        }
-                    }
-
-                    &:hover a {
-                        color: $brand_clr;
-                    }
-
-                    .mega_menu {
-                        width: 215px;
-                        background: #fff;
-
-                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                        position: absolute;
-                        z-index: 999;
-                        top: 85%;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: all linear .2s;
-
-                        .megaMenu_items {
-                            padding: 20px;
-
-                            ul {
-
-                                // =========li============
-                                li {
-                                    a {
-                                        font-size: 14px;
-                                        line-height: 14px;
-                                        font-weight: 400;
-                                        color: $mega_clr;
-                                        padding: 8px 0;
-                                        transition: all linear .3s;
-
-                                        &:hover {
-                                            color: $brand_clr;
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .mega_menu {
-                        visibility: visible;
-                        opacity: 1;
-                        top: 100%;
-                    }
-
-                }
-
-
-            }
-
-        }
-
-
-        // ============= Menu part End ==============
-
 
 
     }

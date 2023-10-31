@@ -1,14 +1,14 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
-#shop_content {
+#fashion_content {
     @include title;
     margin-bottom: 100px;
     padding: 0 20px;
     margin: 0 18.5px;
 
 
-    .shop_toolbox {
+    .fashion_toolbox {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -100,7 +100,7 @@
 
     }
 
-    .shop_sidebar {
+    .fashion_sidebar {
 
         .filter {
             display: flex;
@@ -202,7 +202,7 @@
 
     }
 
-    .shopContent_products {
+    .fashionContent_products {
 
         .products_img {
             cursor: pointer;
