@@ -4,7 +4,8 @@
 #hot_deals {
     @include title;
     background: #ffffff;
-padding-bottom: 60px;
+    padding-bottom: 60px;
+
     .dealMega_main {
         border: 1px solid $secondary_clr;
         padding: 25px 20px;
@@ -53,7 +54,6 @@ padding-bottom: 60px;
                         border: 0;
 
                     }
-
 
 
                     .productsArrow_prev,

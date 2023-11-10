@@ -105,11 +105,17 @@
     }
 
     .cloth_content {
-        margin-top: 20px;
+        margin-top: 21px;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
 
         .cloth_items {
+            width: 216px;
+
             img {
                 cursor: pointer;
+                width: 216px;
             }
 
             .clothItems_text {

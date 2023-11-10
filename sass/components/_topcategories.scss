@@ -17,55 +17,66 @@
         }
     }
 
-    .categories_items {
-        position: relative;
-overflow: hidden;
-background-color: #fff;
-        .item_text {
-            position: absolute;
-            // background: rgb(71, 71, 6);
-            width: 100%;
-            height: 30px;
-            bottom: 10px;
-            left: 0;
-            text-align: center;
+    .categories_contents {
+        display: flex;
+        gap: 32px;
+
+        .categories_items {
+            position: relative;
             overflow: hidden;
+            background-color: #fff;
 
-            h5,
-            h6 {
-                font-size: 14px;
-                line-height: 14px;
-                color: $text_clr;
+            .item_text {
                 position: absolute;
+                // background: rgb(71, 71, 6);
+                width: 100%;
+                height: 30px;
                 bottom: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                transition: all linear .2s;
+                left: 0;
+                text-align: center;
+                overflow: hidden;
+
+                h5,
+                h6 {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $text_clr;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all linear .2s;
+                }
+
+                h6 {
+                    bottom: -15px;
+                }
             }
 
-            h6 {
-                bottom: -15px;
+            &:hover h5 {
+                bottom: 30px;
             }
-        }
 
-        &:hover h5 {
-            bottom: 30px;
-        }
+            &:hover h6 {
+                font-size: 15px;
+                font-weight: 600;
+                color: $brand_clr;
+                bottom: 10px;
+            }
 
-        &:hover h6 {
-            font-size: 15px;
-            font-weight: 600;
-            color: $brand_clr;
-            bottom: 10px;
-        }
-        img {
-            transition: transform 0.3s ease;
-          }
-        &:hover img{
-            // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            transform: scale(1.1);
+            img {
+                transition: transform 0.3s ease;
+            }
+
+            &:hover img {
+                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transform: scale(1.1);
+            }
+
         }
 
     }
+
+
 
 }
