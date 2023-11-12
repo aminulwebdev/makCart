@@ -2888,18 +2888,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   flex-wrap: wrap;
   margin-top: 15px;
 }
-#our_clients .items_us .us {
+#our_clients .items_us .clients_items {
   display: flex;
   flex-wrap: wrap;
 }
-#our_clients .items_us .us img {
-  border: 1px solid #eeeeee;
-}
-#our_clients .items_us .you {
-  display: flex;
-  flex-wrap: wrap;
-}
-#our_clients .items_us .you img {
+#our_clients .items_us .clients_items img {
   border: 1px solid #eeeeee;
 }
 

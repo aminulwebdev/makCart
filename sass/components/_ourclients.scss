@@ -55,7 +55,7 @@
         flex-wrap: wrap;
         margin-top: 15px;
 
-        .us {
+        .clients_items{
             display: flex;
             flex-wrap: wrap;
 
@@ -65,14 +65,14 @@
             }
         }
 
-        .you {
-            display: flex;
-            flex-wrap: wrap;
+        // .you {
+        //     display: flex;
+        //     flex-wrap: wrap;
 
-            img {
-                border: 1px solid #eeeeee;
+        //     img {
+        //         border: 1px solid #eeeeee;
 
-            }
-        }
+        //     }
+        // }
     }
 }
