@@ -2,36 +2,77 @@
 @import "../mixins/mixins";
 
 
+// #our_clients {
+//     @include title;
+//     margin-bottom: 60px;
+
+//     .clients_heading {
+//         border-bottom: 1px solid $secondary_clr;
+//         padding-bottom: 15px;
+
+//         h2 {
+//             @include heading;
+//         }
+//     }
+
+//     .clientsName_box {
+
+//         border: 1px solid $secondary_clr;
+//         margin-top: 20px;
+//         // display: flex;
+
+//         img {
+//             width: 212px;
+//             border-right:1px solid $secondary_clr;
+
+//         }
+//         .no_border{
+//            border-right: none;
+//         }
+
+//         .border_top{
+//             border-top: 1px solid $secondary_clr;
+//         }
+//     }
+// }
+
 #our_clients {
     @include title;
     margin-bottom: 60px;
 
     .clients_heading {
-        border-bottom: 1px solid $secondary_clr;
+        border-bottom: 2px solid $secondary_clr;
         padding-bottom: 15px;
 
         h2 {
-            @include heading;
+            @include heading
         }
     }
 
-    .clientsName_box {
-     
-        border: 1px solid $secondary_clr;
-        margin-top: 20px;
+    .items_us {
         // display: flex;
+        border: 1px solid #eeeeee;
+        flex-wrap: wrap;
+        margin-top: 15px;
 
-        img {
-            width: 212px;
-            border-right:1px solid $secondary_clr;
+        .us {
+            display: flex;
+            flex-wrap: wrap;
 
+            img {
+                border: 1px solid #eeeeee;
+
+            }
         }
-        .no_border{
-           border-right: none;
-        }
-    
-        .border_top{
-            border-top: 1px solid $secondary_clr;
+
+        .you {
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                border: 1px solid #eeeeee;
+
+            }
         }
     }
 }

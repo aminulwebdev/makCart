@@ -40,7 +40,6 @@
                     border: none;
 
 
-
                     button {
                         background-color: transparent;
                         padding: 14px 0;
@@ -81,7 +80,17 @@
                                 }
                             }
                         }
+
+                        .check_box{
+                            padding: 10px 0 10px 2px;
+                            label{
+                                margin-left: 5px;
+                            }
+                        }
                     }
+
+
+                    
                 }
             }
         }

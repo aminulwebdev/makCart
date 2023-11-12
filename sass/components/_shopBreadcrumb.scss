@@ -1,0 +1,27 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+
+#bread_crumbs {
+    @include title;
+    display: flex;
+
+    ol {
+        border-bottom: 0px solid #eeeeee;
+        padding-bottom: px;
+        padding-top: 18px;
+
+        li {
+            a {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 400;
+                color: $mega_clr
+            }
+
+            ~.active {
+                color: $text_clr;
+            }
+        }
+    }
+}

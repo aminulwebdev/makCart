@@ -6,7 +6,8 @@
     margin: 30px 0;
     .brand_name{
         display: flex;
-       
+       flex-wrap: wrap;
+       justify-content: center;
         img{
             width: 185px;
    

@@ -1,139 +1,139 @@
 /* -------------- x- Large --------------- */
 
-@media (min-width: 1200px) and (max-width: 1399.98px) { 
+@media (min-width: 1200px) and (max-width: 1399.98px) {
 
 
-        #header .header_middle {
-            border-bottom: 1px solid #eee;
-            padding: 20px;
-        }
-    
-    
-        #header .header_middle .header_left img {
-            width: 110px;
-        }
-    
-    
-        #header .header_middle .header_left {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-    
-        #header .header_middle .header_left .search_box input {
-            border: none;
-            width: 300px;
-        }
-    
-        #header .header_middle .hadder_right .right_side .live_chat .chat_info p {
-            font-size: 13px;
-            line-height: 15px;
-        }
-    
-    
-    
-        #header .header_middle .hadder_right .right_side .live_chat .chat_info a {
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 27px;
-            color: #333;
-        }
-    
-        #header .header_middle .hadder_right .right_side .live_chat {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-right: 1px solid #ccc;
-            padding-right: 10px;
-        }
-    
-        #header .header_middle .hadder_right .right_side .cart {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding-left: 20px;
-        }
-    
-    
-    
-        #header .main_menu .mainMenu_content .order_deals .option_one {
-            display: none;
-        }
-    
-        /* ================ Banner ============== */
-    
-    
-    
-        #banner .banner_three .bannerthree_content .bannerthree_text h3 {
-            font-size: 30px;
-        }
-    
-        #banner .banner_three .bannerthree_content .bannerthree_text h1 {
-            font-size: 46px;
-        }
-    
-        #banner:hover .prevArrow {
-            visibility: hidden;
-        }
-    
-        #banner:hover .nextArrow {
-            visibility: hidden;
-        }
-    
-        /* ============ Service ============ */
-    
-        #service .service_items .service_option i {
-            font-size: 25px;
-            color: #fc6782;
-        }
-    
-        #service .service_items .service_option h4 {
-            font-size: 13px;
-            color: #333333;
-            line-height: 12px;
-            font-weight: 600;
-            padding-bottom: 5px;
-        }
-    
-        #service .service_items .service_option p {
-            font-size: 12px;
-            line-height: 13px;
-            color: #666666;
-        }
-    
-    
-        #service .offer .offertext_right {
-    
-            padding: 20px 0 0 20px;
-        }
-    
-        #service .offer .offertext_right h4 {
-            font-weight: 400;
-            padding-bottom: 10px;
-        }
-    
-        #service .offer .offertext_left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 20px 0 0 20px;
-        }
-    
-        #service .offer .offertext_left h4 {
-            font-weight: 400;
-            padding-bottom: 10px;
-            color: #fff;
-        }
-    
-        /* ========= Hot deals ======== */
-    
-        #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart {
-            padding: 13px 47px;
-            background: #eeeeee;
-            border-radius: 3px;
-        }
+    #header .header_middle {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+    }
 
-        /* #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext {
+
+    #header .header_middle .header_left img {
+        width: 110px;
+    }
+
+
+    #header .header_middle .header_left {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    #header .header_middle .header_left .search_box input {
+        border: none;
+        width: 300px;
+    }
+
+    #header .header_middle .hadder_right .right_side .live_chat .chat_info p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+
+
+    #header .header_middle .hadder_right .right_side .live_chat .chat_info a {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #333;
+    }
+
+    #header .header_middle .hadder_right .right_side .live_chat {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-right: 1px solid #ccc;
+        padding-right: 10px;
+    }
+
+    #header .header_middle .hadder_right .right_side .cart {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+
+
+    #header .main_menu .mainMenu_content .order_deals .option_one {
+        display: none;
+    }
+
+    /* ================ Banner ============== */
+
+
+
+    #banner .banner_three .bannerthree_content .bannerthree_text h3 {
+        font-size: 30px;
+    }
+
+    #banner .banner_three .bannerthree_content .bannerthree_text h1 {
+        font-size: 46px;
+    }
+
+    #banner:hover .prevArrow {
+        visibility: hidden;
+    }
+
+    #banner:hover .nextArrow {
+        visibility: hidden;
+    }
+
+    /* ============ Service ============ */
+
+    #service .service_items .service_option i {
+        font-size: 25px;
+        color: #fc6782;
+    }
+
+    #service .service_items .service_option h4 {
+        font-size: 13px;
+        color: #333333;
+        line-height: 12px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    #service .service_items .service_option p {
+        font-size: 12px;
+        line-height: 13px;
+        color: #666666;
+    }
+
+
+    #service .offer .offertext_right {
+
+        padding: 20px 0 0 20px;
+    }
+
+    #service .offer .offertext_right h4 {
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+
+    #service .offer .offertext_left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 0 0 20px;
+    }
+
+    #service .offer .offertext_left h4 {
+        font-weight: 400;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+
+    /* ========= Hot deals ======== */
+
+    #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext .megaSlideText_items .deals_cart .addTo_cart {
+        padding: 13px 47px;
+        background: #eeeeee;
+        border-radius: 3px;
+    }
+
+    /* #hot_deals .dealMega_main .dealMega_content .deals_megaslide .deals_megaslidetext {
             margin-top: 0px;
         }
     
@@ -218,117 +218,117 @@
     
         }
     */
-        #hot_deals .hotDeals_sideMegaMenu .side_megaMenu .sideMegamenu_content .sidemegaMenu_contentItem img {
-            width: 89px;
-        }
-    
-        #hot_deals .hotDeals_sideMegaMenu .side_megaMenu .sideMegamenu_content .sidemegaMenu_contentItem .contentItem_text ul {
-            font-size: 12px;
-        } 
-    
-        /* ============== top_categories =========*/
-    
-        #top_categories .categories_contents {
-            display: flex;
-            gap: 32px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    
-        /* ================== popular_department ============ */
-    
-        #popular_department .popular_banner .popubantext_right {
-            padding: 20px 0 0 20px;
-        }
-    
-        #popular_department .popular_banner .popubantext_right h3 {
-            margin-bottom: 10px;
-        }
-    
-        #popular_department .popular_banner .popubantext_left {
-            padding: 20px 0 0 20px;
-        }
-    
-        #popular_department .popular_banner .popubantext_left h3 {
-            margin-bottom: 10px;
-        }
-    
-        /* =============== cloth_apparel ============ */
-    
-        #cloth_apparel .cloth_content {
-            margin-top: 21px;
-            display: flex;
-            gap: 35px;
-            justify-content: start;
-        }
-    
+    #hot_deals .hotDeals_sideMegaMenu .side_megaMenu .sideMegamenu_content .sidemegaMenu_contentItem img {
+        width: 89px;
+    }
+
+    #hot_deals .hotDeals_sideMegaMenu .side_megaMenu .sideMegamenu_content .sidemegaMenu_contentItem .contentItem_text ul {
+        font-size: 12px;
+    }
+
+    /* ============== top_categories =========*/
+
+    #top_categories .categories_contents {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ================== popular_department ============ */
+
+    #popular_department .popular_banner .popubantext_right {
+        padding: 20px 0 0 20px;
+    }
+
+    #popular_department .popular_banner .popubantext_right h3 {
+        margin-bottom: 10px;
+    }
+
+    #popular_department .popular_banner .popubantext_left {
+        padding: 20px 0 0 20px;
+    }
+
+    #popular_department .popular_banner .popubantext_left h3 {
+        margin-bottom: 10px;
+    }
+
+    /* =============== cloth_apparel ============ */
+
+    #cloth_apparel .cloth_content {
+        margin-top: 21px;
+        display: flex;
+        gap: 35px;
+        justify-content: start;
+    }
+
     /* ================== consumer_electric ============= */
-        #consumer_electric .electric_content {
-            margin-top: 21px;
-            display: flex;
-            gap: 35px;
-            justify-content: start;
-        }
-    
-        #consumer_electric .offer_today .offerToday_text .offer_info {
-            margin-left: 40px;
-            margin-right: 60px;
-            border-left: 2px solid #545655;
-            padding-left: 40px;
-        }
-    
-        #consumer_electric .offer_today .offerToday_text {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-45%);
-            left: px;
-        }
-    
-        /* =========== garden_kitchen ========== */
-    
-        #garden_kitchen .kitchen_content {
-            justify-content: start;
-        }
-    
-    
-            /* =============== subscribe =========== */
-    
-        #subscribe .subscribe_box .subscribe_inputbox {
-            /* gap: 150px; */
-            display: flex;
-        }
-    
-        #subscribe .subscribe_box .subscribe_inputbox input {
-            width: 300px;
-            padding: 13px 20px;
-            border: none;
-            border-radius: 3px;
-        }
-    
-    
-    
-        #subscribe .subscribe_box .subscribe_inputbox button a {
-            display: flex;
-            gap: 10px;
-        }
-    
-        /* ============== footer_part ============ */
-    
-        #footer_part .footer_middle .category_box .category_content {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 22px;
-            flex-wrap: wrap;
-        }
-    
-        #our_clients {
-            display: none;
-        }
-    
-    
+    #consumer_electric .electric_content {
+        margin-top: 21px;
+        display: flex;
+        gap: 35px;
+        justify-content: start;
+    }
+
+    #consumer_electric .offer_today .offerToday_text .offer_info {
+        margin-left: 40px;
+        margin-right: 60px;
+        border-left: 2px solid #545655;
+        padding-left: 40px;
+    }
+
+    #consumer_electric .offer_today .offerToday_text {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        left: px;
+    }
+
+    /* =========== garden_kitchen ========== */
+
+    #garden_kitchen .kitchen_content {
+        justify-content: start;
+    }
+
+
+    /* =============== subscribe =========== */
+
+    #subscribe .subscribe_box .subscribe_inputbox {
+        /* gap: 150px; */
+        display: flex;
+    }
+
+    #subscribe .subscribe_box .subscribe_inputbox input {
+        width: 300px;
+        padding: 13px 20px;
+        border: none;
+        border-radius: 3px;
+    }
+
+
+
+    #subscribe .subscribe_box .subscribe_inputbox button a {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* ============== footer_part ============ */
+
+    #footer_part .footer_middle .category_box .category_content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+    }
+
+  #our_client {
+        display: none;
+    }
+
+
 
 }
 
@@ -589,7 +589,7 @@
         justify-content: start;
     }
 
-/* ================== consumer_electric ============= */
+    /* ================== consumer_electric ============= */
     #consumer_electric .electric_content {
         margin-top: 21px;
         display: flex;
@@ -620,7 +620,7 @@
     }
 
 
-        /* =============== subscribe =========== */
+    /* =============== subscribe =========== */
 
     #subscribe .subscribe_box .subscribe_inputbox {
         /* gap: 150px; */
@@ -651,7 +651,7 @@
         flex-wrap: wrap;
     }
 
-    #our_clients {
+  #our_client {
         display: none;
     }
 
@@ -842,11 +842,17 @@
 
     }
 
-    #header .main_menu .brows_category .category_box .category_menu a {
+
+
+    /* ======= Brows category hover Item ========= */
+
+    #header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+    #header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
 
@@ -856,21 +862,23 @@
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
+
 
     /* ========== Nav Bar ========= */
 
@@ -1021,7 +1029,7 @@
 
         margin-bottom: 10px;
 
-        padding: 15px 0px;
+        padding: 15px 15px;
     }
 
     #service .service_items .service_option {
@@ -1351,7 +1359,7 @@ Kitchen part
     Our Clients 
 ============================== */
 
-    #our_clients {
+  #our_client {
         display: none;
     }
 
@@ -1601,11 +1609,25 @@ Footer  part
 
     }
 
-    #header .main_menu .brows_category .category_box .category_menu a {
+
+
+    /* ======= Brows category hover Item ========= */
+
+    #header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu:hover a {
+    #header .main_menu .brows_category .category_box .category_menu:hover a span {
+        color: #666666;
+        transform: scale(1.03);
+
+    }
+
+    #header .main_menu .brows_category .category_box .category_menu a span {
+        transition: all linear .2s;
+    }
+
+    #header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
 
@@ -1615,21 +1637,23 @@ Footer  part
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
+
 
     /* ========== Nav Bar ========= */
 
@@ -2068,7 +2092,7 @@ Footer  part
         Our Clients 
 ============================== */
 
-    #our_clients {
+  #our_client {
         display: none;
     }
 
@@ -2308,11 +2332,16 @@ Footer  part
 
     }
 
-    #header .main_menu .brows_category .category_box .category_menu a {
+
+    /* ======= Brows category hover Item ========= */
+
+    #header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+    #header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
 
@@ -2322,19 +2351,20 @@ Footer  part
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
 
@@ -2776,7 +2806,7 @@ Footer  part
             Our Clients 
  ============================== */
 
-    #our_clients {
+  #our_client {
         display: none;
     }
 
