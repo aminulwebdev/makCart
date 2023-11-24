@@ -1,3 +1,6 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
 #categorie_header {
     @include title;
   

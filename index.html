@@ -9,11 +9,25 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+
+
+  <!-- ===========================================
+              Back to top part start
+============================================ -->
+  <div class="back_tp">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+  </div>
+
+  <!-- ===========================================
+            Back to top part end
+============================================ -->
+
 
   <!--===========================
             Header part start
@@ -898,6 +912,9 @@
     ============================= -->
 
 
+
+
+
   <!-- ==========================
          Banner part Start
   ===============================  -->
@@ -908,15 +925,17 @@
       <div class="container">
         <div class="row bannerone_content">
           <div class=" offset-lg-3 col-lg-5 col-md-6">
-            <img src="images/banner_shoes.png" alt="">
+            <img src="images/banner_shoes.png" alt="" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" >
           </div>
 
           <div class="col- 6 col-lg-4 col-md-6">
-            <div class="bannerone_text">
-              <h3>Custom Men's</h3>
-              <h1>RUNNING SHOES</h1>
-              <p>Sale up to <span>30% OFF</span></p>
-              <button><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
+            <div class="bannerone_text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000" >
+              <h3 data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000" >Custom Men's</h3>
+              <h1 data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000">RUNNING SHOES</h1>
+              <p data-aos="fade-right" data-aos-delay="500" data-aos-duration="2000">Sale up to <span>30% OFF</span></p>
+              <button ><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
             </div>
           </div>
         </div>
@@ -930,16 +949,17 @@
         <div class="row bannertwo_content">
 
           <div class="offset-lg-3 col-lg-4  col-md-4 col-12 ">
-            <div class="bannertwo_text">
-              <h3>Mountain-<span>Climbing</span></h3>
-              <h1>Hot & Packback</h1>
-              <p>Only until the end of this week.</p>
+            <div class="bannertwo_text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+              <h3  data-aos="fade-up" data-aos-delay="300" data-aos-duration="3000">Mountain-<span>Climbing</span></h3>
+              <h1 data-aos="fade-up" data-aos-delay="400" data-aos-duration="3000">Hot & Packback</h1>
+              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="3000">Only until the end of this week.</p>
               <button><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
             </div>
           </div>
 
-          <div class=" col-lg-5 col-md-8 col-12 ">
-            <img src="images/banner_men.png" alt="">
+          <div class=" col-lg-5 col-md-8 col-12 " >
+            <img src="images/banner_men.png" alt="" data-aos="fade-up" data-aos-delay="1500"
+     data-aos-duration="3000">
           </div>
 
         </div>
@@ -953,15 +973,17 @@
       <div class="container">
         <div class="row bannerthree_content">
           <div class="col-12 offset-xl-4 offset-lg-3 col-lg-4 col-md-6">
-            <img src="images/banner_skate.png" alt="">
+            <img src="images/banner_skate.png" alt="" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
           </div>
 
           <div class="col-12 col-lg-4 col-md-6">
-            <div class="bannerthree_text">
-              <p>TOP WEEKLY SELLER</p>
-              <h3>Trending Collection</h3>
-              <h1>Roller<span>-skate</span></h1>
-              <button><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
+            <div class="bannerthree_text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="3000">
+              <p data-aos="fade-left" data-aos-delay="300" data-aos-duration="3000">TOP WEEKLY SELLER</p>
+              <h3 data-aos="fade-left" data-aos-delay="400" data-aos-duration="3000">Trending Collection</h3>
+              <h1 data-aos="fade-left" data-aos-delay="500" data-aos-duration="3000">Roller<span>-skate</span></h1>
+              <button ><a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
             </div>
           </div>
         </div>
@@ -2345,26 +2367,26 @@
                   <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
                 </div>
               </div>
-            <div class="clients_items">
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+              <div class="clients_items">
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
+                  <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
+                </div>
               </div>
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
-              </div>
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
-              </div>
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
-              </div>
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
-              </div>
-              <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                <img src="images/ourclients_one.png" class="W-100 img-fluid " alt="">
-              </div>
-            </div>
 
             </div>
           </div>
@@ -2780,6 +2802,7 @@
 
 
   <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>

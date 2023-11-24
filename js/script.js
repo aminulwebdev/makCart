@@ -1,3 +1,37 @@
+
+
+
+AOS.init();
+
+let back_tp = document.querySelector('.back_tp')
+console.log(back_tp);
+
+window.addEventListener('scroll', () => {
+
+    let scrooling = window.scrollY
+
+    if (scrooling > 500) {
+
+        back_tp.classList.add('back_tp_fixed')
+    } else {
+        back_tp.classList.remove('back_tp_fixed')
+    }
+
+    back_tp.addEventListener('click', () => {
+
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+
+})
+
+
+
+
+// =================
+
 $('#banner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -41,6 +75,8 @@ $(document).ready(function () {
 })
 
 
+
+
 // =====Hot deals Main Mega menu======
 
 $('.dealMega_content').slick({
@@ -69,4 +105,9 @@ $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
+
+
+// ================
+
+
 
