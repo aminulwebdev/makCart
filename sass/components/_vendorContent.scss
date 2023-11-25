@@ -470,7 +470,7 @@
 
 
     .vendorContent_products {
-       
+        .products_img {}
 
         .products_text {
             text-align: center;
@@ -527,7 +527,7 @@
         }
 
         position: relative;
-
+       
 
         .hover_items {
             position: absolute;
@@ -571,7 +571,9 @@
             visibility: visible;
             opacity: 1;
         }
+
     }
+
 
 
 
