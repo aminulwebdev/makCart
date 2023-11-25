@@ -625,55 +625,36 @@ Main Menu
 }
 
 
-/* ========== blog_sidebar =========== */
-
-
-.blog_sidebar .sidebar_content .all_categories ul{
-    display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	column-gap: 50px;
+/* ========== Pages Content =========== */
+#introduce .introduce_heading h2 {
+	width: 100%;
+}
+#introduce .introduce_heading p {
+	width: 100%;
 }
 
-
-#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items {
-	width: unset;
-	display: flex;
-	flex-wrap: wrap;
+#customer_service .customerService_text {
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
-
-table {
-	caption-side: bottom;
-	border-collapse: collapse;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    padding: 15px 0;
-}
-
-
-#blog_content .blog_sidebar .sidebar_content .calendar table thead th {
-	font-size: 13px;
-	line-height: 17px;
+#boost .boost_text h4 {
+	font-size: 34px;
+	line-height: 43px;
 	font-weight: 700;
 	color: #333333;
-	padding: 18px 0 9px;
-	width: 95px;
-	text-align: center;
+	width: 95%;
+	padding-bottom: 13px;
+	padding-top: 20px;
 }
 
-#blog_content .blog_sidebar .sidebar_content .calendar table tbody tr td {
-	font-size: 13px;
-	line-height: 17px;
-	font-weight: 400;
-	color: #333333;
-	padding: 9px 0;
-	width: 95px;
-	text-align: center;
+#boost .award_name p {
+	font-size: 18px;
+	line-height: 24px;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
-
 
 /* ======================== 
 Subscribe  part
@@ -960,53 +941,34 @@ Main Menu
 
 }
 
-/* ========== blog_sidebar =========== */
-
-
-.blog_sidebar .sidebar_content .all_categories ul{
-    display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	column-gap: 50px;
+/* ========== Pages Content =========== */
+#introduce .introduce_heading h2 {
+	width: 100%;
+}
+#introduce .introduce_heading p {
+	width: 100%;
 }
 
-
-#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items {
-	width: unset;
-	display: flex;
-	flex-wrap: wrap;
+#customer_service .customerService_text {
+	margin-right: 15px;
+	margin-left: 15px;
 }
-
-
-table {
-	caption-side: bottom;
-	border-collapse: collapse;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    padding: 15px 0;
-}
-
-
-#blog_content .blog_sidebar .sidebar_content .calendar table thead th {
-	font-size: 13px;
-	line-height: 17px;
+#boost .boost_text h4 {
+	font-size: 34px;
+	line-height: 43px;
 	font-weight: 700;
 	color: #333333;
-	padding: 18px 0 9px;
-	width: 95px;
-	text-align: center;
+	width: 95%;
+	padding-bottom: 13px;
+	padding-top: 20px;
 }
 
-#blog_content .blog_sidebar .sidebar_content .calendar table tbody tr td {
-	font-size: 13px;
-	line-height: 17px;
-	font-weight: 400;
-	color: #333333;
-	padding: 9px 0;
-	width: 95px;
-	text-align: center;
+#boost .award_name p {
+	font-size: 18px;
+	line-height: 24px;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 
@@ -1277,55 +1239,36 @@ Footer  part
 
 }
 
-/* ========== blog_sidebar =========== */
-
-
-.blog_sidebar .sidebar_content .all_categories ul{
-    display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	column-gap: 50px;
+/* ========== Pages Content =========== */
+#introduce .introduce_heading h2 {
+	width: 100%;
+}
+#introduce .introduce_heading p {
+	width: 100%;
 }
 
-
-#blog_content .blog_sidebar .sidebar_content .browse_tags .browseTags_items {
-	width: unset;
-	display: flex;
-	flex-wrap: wrap;
+#customer_service .customerService_text {
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
-
-table {
-	caption-side: bottom;
-	border-collapse: collapse;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    padding: 15px 0;
-}
-
-
-#blog_content .blog_sidebar .sidebar_content .calendar table thead th {
-	font-size: 13px;
-	line-height: 17px;
+#boost .boost_text h4 {
+	font-size: 34px;
+	line-height: 43px;
 	font-weight: 700;
 	color: #333333;
-	padding: 18px 0 9px;
-	width: 95px;
-	text-align: center;
+	width: 95%;
+	padding-bottom: 13px;
+	padding-top: 20px;
 }
 
-#blog_content .blog_sidebar .sidebar_content .calendar table tbody tr td {
-	font-size: 13px;
-	line-height: 17px;
-	font-weight: 400;
-	color: #333333;
-	padding: 9px 0;
-	width: 95px;
-	text-align: center;
+#boost .award_name p {
+	font-size: 18px;
+	line-height: 24px;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
-
 
 /* ================= subscribe ==========  */
 
