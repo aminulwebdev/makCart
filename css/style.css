@@ -10756,13 +10756,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   line-height: 26px;
   font-weight: 400;
   color: #666666;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 #element_content .content_items {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
 }
 #element_content .content_items .items_details {
   background: #fff;

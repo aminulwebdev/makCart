@@ -22,7 +22,7 @@
             line-height: 26px;
             font-weight: 400;
             color: $mega_clr;
-            width: 40%;
+            width: 60%;
             margin: 0 auto;
             padding-bottom: 20px;
         }
@@ -30,14 +30,18 @@
 
     .content_items {
         display: flex;
-       justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+
         .items_details {
-            background:#fff;
+            background: #fff;
             padding: 30px 80px;
             text-align: center;
             border-radius: 5px;
             cursor: pointer;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
             &:hover .items_icon {
                 transform: scale(1.2);
             }
