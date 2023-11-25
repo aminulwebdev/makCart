@@ -633,6 +633,42 @@ Main Menu
     display: none;
 }
 
+
+/* ======= Brows category hover Item ========= */
+
+#categorie_header .main_menu .brows_category .category_box .category_menu a span {
+    transition: all linear .2s;
+}
+
+
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
+    color: #666666;
+    transform: scale(1.03);
+
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu .catemenu_arrow {
+    display: none;
+}
+
+#categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
+    display: none;
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
+    display: none;
+}
+
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
+    display: none;
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
+    display: none;
+}
+
 /* ========== Nav Bar ========= */
 
 .py-0 {
@@ -1095,6 +1131,43 @@ Main Menu
     display: none;
 }
 
+/* ======= Brows category hover Item ========= */
+
+#categorie_header .main_menu .brows_category .category_box .category_menu a span {
+    transition: all linear .2s;
+}
+
+
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
+    color: #666666;
+    transform: scale(1.03);
+
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu .catemenu_arrow {
+    display: none;
+}
+
+#categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
+    display: none;
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
+    display: none;
+}
+
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
+    display: none;
+}
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
+    display: none;
+}
+
+
+
 /* ========== Nav Bar ========= */
 
 .py-0 {
@@ -1464,34 +1537,41 @@ Footer  part
 
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu a {
+ /* ======= Brows category hover Item ========= */
+
+ #categorie_header .main_menu .brows_category .category_box .category_menu a span {
     transition: all linear .2s;
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
     color: #666666;
     transform: scale(1.03);
+
 }
 
 #categorie_header .main_menu .brows_category .category_box .category_menu .catemenu_arrow {
     display: none;
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+#categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
     display: none;
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
     display: none;
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
     display: none;
 }
 
-#categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+#categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
     display: none;
 }
+
 
 /* ========== Nav Bar ========= */
 

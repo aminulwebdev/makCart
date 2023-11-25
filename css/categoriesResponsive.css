@@ -1,45 +1,45 @@
 /* ====================== XX Large ============= */
 
-@media (min-width: 1400px)  {
+@media (min-width: 1400px) {
 
-        /* ========== categories_content =========== */
-    
-    
-     
-        #categories_content .categoriesContent_products:hover .categoriesHover_items {
-            bottom: 43%;
-        }
-    
-        #categories_content .categoriesContent_products .categoriesHover_items {
-            bottom: 38%;
-        }
-        
-        #categories_content .categoriesContent_products .categoriesHover_items ul {
-            padding: 5px 8px;
-        }
-    
-        #categories_content .categoriesContent_products .categoriesHover_items ul li a {
-            font-size: 14px;
-            margin: 5px 8px;
-        }
-    
-        #categories_content .categoriesContent_products .categorieslimit_items {
-            bottom: 42%;
-        }
-    
-        #categories_content .categoriesContent_products .categorieslimit_items ul li .num {
-            font-size: 10px;
-            font-weight: 600;
-        }
-    
-        #categories_content .categoriesContent_products .categorieslimit_items ul li {
-            margin: 0 5px;
-        }
-    
-        #categories_content .categoriesContent_products .categorieslimit_items ul {
-            padding: 5px 0;
-        }
-    
+    /* ========== categories_content =========== */
+
+
+
+    #categories_content .categoriesContent_products:hover .categoriesHover_items {
+        bottom: 43%;
+    }
+
+    #categories_content .categoriesContent_products .categoriesHover_items {
+        bottom: 38%;
+    }
+
+    #categories_content .categoriesContent_products .categoriesHover_items ul {
+        padding: 5px 8px;
+    }
+
+    #categories_content .categoriesContent_products .categoriesHover_items ul li a {
+        font-size: 14px;
+        margin: 5px 8px;
+    }
+
+    #categories_content .categoriesContent_products .categorieslimit_items {
+        bottom: 42%;
+    }
+
+    #categories_content .categoriesContent_products .categorieslimit_items ul li .num {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    #categories_content .categoriesContent_products .categorieslimit_items ul li {
+        margin: 0 5px;
+    }
+
+    #categories_content .categoriesContent_products .categorieslimit_items ul {
+        padding: 5px 0;
+    }
+
     /* ========== categories_content =========== */
     #categories_content .categoriesContent_products:hover .categoriesHover_items {
         bottom: 37%;
@@ -48,7 +48,7 @@
     #categories_content .categoriesContent_products .categoriesHover_items {
         bottom: 32%;
     }
-    
+
     #categories_content .categoriesContent_products .categoriesHover_items ul {
         padding: 5px 10px;
     }
@@ -74,49 +74,49 @@
     #categories_content .categoriesContent_products .categorieslimit_items ul {
         padding: 5px 0;
     }
-     
-    
-        /* =============== subscribe =========== */
 
-        #subscribe .subscribe_box {
-            justify-content: center;
-        }
-    
-        #subscribe .subscribe_box .subscribe_inputbox {
-            display: flex;
-        }
-    
-        #subscribe .subscribe_box .subscribe_inputbox input {
-            width: 300px;
-            padding: 13px 20px;
-            border: none;
-            border-radius: 3px;
-        }
-    
-    
-    
-        #subscribe .subscribe_box .subscribe_inputbox button a {
-            display: flex;
-            gap: 10px;
-        }
-    
-        /* ============== footer_part ============ */
-    
-        #footer_part .footer_middle .category_box .category_content {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 22px;
-            flex-wrap: wrap;
-        }
-    
-        #our_clients {
-            display: none;
-        }
-    
- 
 
- }
+    /* =============== subscribe =========== */
+
+    #subscribe .subscribe_box {
+        justify-content: center;
+    }
+
+    #subscribe .subscribe_box .subscribe_inputbox {
+        display: flex;
+    }
+
+    #subscribe .subscribe_box .subscribe_inputbox input {
+        width: 300px;
+        padding: 13px 20px;
+        border: none;
+        border-radius: 3px;
+    }
+
+
+
+    #subscribe .subscribe_box .subscribe_inputbox button a {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* ============== footer_part ============ */
+
+    #footer_part .footer_middle .category_box .category_content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+    }
+
+    #our_clients {
+        display: none;
+    }
+
+
+
+}
 
 
 /* -------------- x- Large --------------- */
@@ -191,7 +191,7 @@
     #categories_content .categoriesContent_products .categoriesHover_items {
         bottom: 38%;
     }
-    
+
     #categories_content .categoriesContent_products .categoriesHover_items ul {
         padding: 5px 8px;
     }
@@ -217,6 +217,7 @@
     #categories_content .categoriesContent_products .categorieslimit_items ul {
         padding: 5px 0;
     }
+
     /* =============== subscribe =========== */
 
     #subscribe .subscribe_box .subscribe_inputbox {
@@ -257,43 +258,43 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-      #categorie_header .header_middle {
+    #categorie_header .header_middle {
         border-bottom: 1px solid #eee;
         padding: 20px;
     }
 
 
-      #categorie_header .header_middle .header_left img {
+    #categorie_header .header_middle .header_left img {
         width: 110px;
     }
 
 
-      #categorie_header .header_middle .header_left {
+    #categorie_header .header_middle .header_left {
         display: flex;
         gap: 30px;
         align-items: center;
     }
 
-      #categorie_header .header_middle .header_left .search_box input {
+    #categorie_header .header_middle .header_left .search_box input {
         border: none;
         width: 200px;
     }
 
-      #categorie_header .header_middle .hadder_right .right_side .live_chat .chat_info p {
+    #categorie_header .header_middle .hadder_right .right_side .live_chat .chat_info p {
         font-size: 13px;
         line-height: 15px;
     }
 
 
 
-      #categorie_header .header_middle .hadder_right .right_side .live_chat .chat_info a {
+    #categorie_header .header_middle .hadder_right .right_side .live_chat .chat_info a {
         font-size: 14px;
         font-weight: 700;
         line-height: 27px;
         color: #333;
     }
 
-      #categorie_header .header_middle .hadder_right .right_side .live_chat {
+    #categorie_header .header_middle .hadder_right .right_side .live_chat {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -301,7 +302,7 @@
         padding-right: 10px;
     }
 
-      #categorie_header .header_middle .hadder_right .right_side .cart {
+    #categorie_header .header_middle .hadder_right .right_side .cart {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -310,14 +311,14 @@
 
 
 
-      #categorie_header .main_menu .mainMenu_content .order_deals .option_one {
+    #categorie_header .main_menu .mainMenu_content .order_deals .option_one {
         display: none;
     }
 
     /* ========== categories_content =========== */
 
 
- 
+
     #categories_content .categoriesContent_products:hover .categoriesHover_items {
         bottom: 43%;
     }
@@ -325,7 +326,7 @@
     #categories_content .categoriesContent_products .categoriesHover_items {
         bottom: 38%;
     }
-    
+
     #categories_content .categoriesContent_products .categoriesHover_items ul {
         padding: 5px 8px;
     }
@@ -352,7 +353,7 @@
         padding: 5px 0;
     }
 
-        /* =============== subscribe =========== */
+    /* =============== subscribe =========== */
 
     #subscribe .subscribe_box .subscribe_inputbox {
         /* gap: 150px; */
@@ -574,11 +575,15 @@ Main Menu
 
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu a {
+    /* ======= Brows category hover Item ========= */
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
 
@@ -588,19 +593,20 @@ Main Menu
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
 
@@ -625,7 +631,7 @@ Main Menu
     /* ========== categories_content =========== */
 
 
- 
+
     #categories_content .categoriesContent_products:hover .categoriesHover_items {
         bottom: 43%;
     }
@@ -633,7 +639,7 @@ Main Menu
     #categories_content .categoriesContent_products .categoriesHover_items {
         bottom: 38%;
     }
-    
+
     #categories_content .categoriesContent_products .categoriesHover_items ul {
         padding: 5px 8px;
     }
@@ -901,11 +907,15 @@ Footer  part
 
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu a {
+    /* ======= Brows category hover Item ========= */
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
 
@@ -915,19 +925,20 @@ Footer  part
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
 
@@ -1192,32 +1203,38 @@ Footer  part
 
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu a {
+    /* ======= Brows category hover Item ========= */
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu a span {
         transition: all linear .2s;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a {
+
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover a span {
         color: #666666;
         transform: scale(1.03);
+
     }
 
     #categorie_header .main_menu .brows_category .category_box .category_menu .catemenu_arrow {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufashion {
+    #categorie_header .main_menu .mainMenu_content .brows_category .category_box .category_menu:hover .mega_menufashion {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuhome {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuhome {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menuelectronics {
+
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menuelectronics {
         display: none;
     }
 
-    #categorie_header .main_menu .brows_category .category_box .category_menu .mega_menufurniture {
+    #categorie_header .main_menu .brows_category .category_box .category_menu:hover .mega_menufurniture {
         display: none;
     }
 
