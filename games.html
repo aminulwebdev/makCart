@@ -2,1807 +2,1794 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>makCart</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-   <link rel="stylesheet" href="css/categoriesResponsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>makCart</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/categoriesResponsive.css">
 
 </head>
 
 <body>
-    <!--===========================
+  <!--===========================
             Header part start
     ============================= -->
-    <header id="categorie_header">
-        <div class="header_top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4  col-6">
-                <div class="header_left">
-                  <p>WELCOME TO makCART!</p>
+  <header id="categorie_header">
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4  col-6">
+            <div class="header_left">
+              <p>WELCOME TO makCART!</p>
+            </div>
+          </div>
+          <div class="col-lg-8  col-6">
+            <div class="header_right">
+
+              <!-- ==========Dropdown part start========= -->
+              <div class="dropdown_elements">
+                <div class="dropdown">
+                  <div class="dropdown_item">
+                    <a>BDT<span><i class="fa-solid fa-angle-down"></i></span></a>
+                  </div>
+                  <ul class="dropdown_box">
+                    <li>BDT</li>
+                    <li>USD</li>
+                  </ul>
+                </div>
+
+                <div class="dropdown">
+                  <div class="dropdown_item">
+                    <img src="images/bd.png" alt="">
+                    <a>BD<span><i class="fa-solid fa-angle-down"></i></span></a>
+                  </div>
+                  <ul class="dropdown_box">
+                    <li> <span><img src="images/bd.png" alt=""></span>BD</li>
+                    <li> <span><img src="images/uk.png" alt=""></span>UK</li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-lg-8  col-6">
-                <div class="header_right">
-    
-                  <!-- ==========Dropdown part start========= -->
-                  <div class="dropdown_elements">
-                    <div class="dropdown">
-                      <div class="dropdown_item">
-                        <a>BDT<span><i class="fa-solid fa-angle-down"></i></span></a>
-                      </div>
-                      <ul class="dropdown_box">
-                        <li>BDT</li>
-                        <li>USD</li>
-                      </ul>
-                    </div>
-    
-                    <div class="dropdown">
-                      <div class="dropdown_item">
-                        <img src="images/bd.png" alt="">
-                        <a>BD<span><i class="fa-solid fa-angle-down"></i></span></a>
-                      </div>
-                      <ul class="dropdown_box">
-                        <li> <span><img src="images/bd.png" alt=""></span>BD</li>
-                        <li> <span><img src="images/uk.png" alt=""></span>UK</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- =========Dropdown part end========= -->
-    
-                  <div class="header_account">
-                    <ul>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Contact us</a></li>
-                      <li><a href="">My Account</a></li>
-                      <li> <a data-bs-toggle="modal" data-bs-target="#exampleModal" href=""> <span><i
-                              class="fa-regular fa-user"></i></span> Sign In /
-                          Register</a></li>
-                    </ul>
-                  </div>
-                </div>
+              <!-- =========Dropdown part end========= -->
+
+              <div class="header_account">
+                <ul>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">My Account</a></li>
+                  <li> <a data-bs-toggle="modal" data-bs-target="#exampleModal" href=""> <span><i
+                          class="fa-regular fa-user"></i></span> Sign In /
+                      Register</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-    
-        <!-- -------------- -->
-        <!-- Button trigger modal -->
-    
-    
-        <!-- Modal -->
-        <div class="modal fade signIn_popup " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-              <button class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    
-              <div class="modal-body">
-    
-                <div class="signIn_content">
-                  <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active text-uppercase" id="nav-home-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                        aria-selected="true">Sign In</button>
-                      <button class="nav-link text-uppercase" id="nav-profile-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                        aria-selected="false">Sign Up</button>
-    
-                    </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-    
-                    <!-- ======Sign In items===== -->
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
-                      tabindex="0">
-                      <form action="#">
-                        <div class="user_email">
-                          <label for="#">Username or email address *</label>
-                          <input type="text" required>
-                        </div>
-                        <div class="password">
-                          <label for="#">Password *</label>
-                          <input type="password" required>
-                        </div>
-                        <div class="form_checkbox">
-                          <div>
-                            <input class="input" type="checkbox" name="" id="" required>
-                            <label for="">Remember me</label>
-                          </div>
-                          <a href="">Last your password?</a>
-                        </div>
-    
-                        <button><a href="">SIGN IN</a></button>
-                      </form>
-    
-                      <p>Sign in with social account</p>
-                      <ul>
-                        <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
-                      </ul>
-                    </div>
-    
-                    <!-- ======Sign Up items start===== -->
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
-                      tabindex="0">
-                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
-                        tabindex="0">
-                        <form action="#">
-                          <div class="user_email">
-                            <label for="#">Your Email address *</label>
-                            <input type="text" required>
-                          </div>
-                          <div class="password">
-                            <label for="#">Password *</label>
-                            <input type="password" required>
-                          </div>
-    
-                          <p class="privacy_policy">Your personal data will be used to support your experience
-                            throughout this website, to manage access to your account,
-                            and for other purposes described in our <a href="">privacy policy</a>.</p>
-    
-                          <div class="signUp_vendor">
-                            <a href="">Signup as a vendor?</a>
-                          </div>
-    
-                          <div class="formCheckbox_signup">
-                            <input class="input" type="checkbox" name="" id="" required>
-                            <label for="">I agree to the <a href="">privacy policy</a></label>
-                          </div>
-    
-                          <button><a href="">SIGN IN</a></button>
-                        </form>
-    
-                        <p>Sign in with social account</p>
-                        <ul>
-                          <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
-                          <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
-                          <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
-                        </ul>
-                      </div>
-    
-                    </div>
-                    <!-- ======Sign Up items end===== -->
-                  </div>
+      </div>
+    </div>
+
+    <!-- -------------- -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade signIn_popup " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <button class="close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+
+          <div class="modal-body">
+
+            <div class="signIn_content">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active text-uppercase" id="nav-home-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Sign In</button>
+                  <button class="nav-link text-uppercase" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false">Sign Up</button>
+
                 </div>
-    
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+
+                <!-- ======Sign In items===== -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                  tabindex="0">
+                  <form action="#">
+                    <div class="user_email">
+                      <label for="#">Username or email address *</label>
+                      <input type="text" required>
+                    </div>
+                    <div class="password">
+                      <label for="#">Password *</label>
+                      <input type="password" required>
+                    </div>
+                    <div class="form_checkbox">
+                      <div>
+                        <input class="input" type="checkbox" name="" id="" required>
+                        <label for="">Remember me</label>
+                      </div>
+                      <a href="">Last your password?</a>
+                    </div>
+
+                    <button><a href="">SIGN IN</a></button>
+                  </form>
+
+                  <p>Sign in with social account</p>
+                  <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
+                  </ul>
+                </div>
+
+                <!-- ======Sign Up items start===== -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                  tabindex="0">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <form action="#">
+                      <div class="user_email">
+                        <label for="#">Your Email address *</label>
+                        <input type="text" required>
+                      </div>
+                      <div class="password">
+                        <label for="#">Password *</label>
+                        <input type="password" required>
+                      </div>
+
+                      <p class="privacy_policy">Your personal data will be used to support your experience
+                        throughout this website, to manage access to your account,
+                        and for other purposes described in our <a href="">privacy policy</a>.</p>
+
+                      <div class="signUp_vendor">
+                        <a href="">Signup as a vendor?</a>
+                      </div>
+
+                      <div class="formCheckbox_signup">
+                        <input class="input" type="checkbox" name="" id="" required>
+                        <label for="">I agree to the <a href="">privacy policy</a></label>
+                      </div>
+
+                      <button><a href="">SIGN IN</a></button>
+                    </form>
+
+                    <p>Sign in with social account</p>
+                    <ul>
+                      <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-x-twitter x"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-google google"></i></a></li>
+                    </ul>
+                  </div>
+
+                </div>
+                <!-- ======Sign Up items end===== -->
               </div>
-    
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- -------------- -->
+
+    <!-- =====End of Header Top====== -->
+
+    <div class="header_middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-9 col-8">
+            <div class="header_left">
+              <a href="./index.html"> <img src="images/logo.png" alt=""></a>
+              <div class="search_box">
+                <div class="categories_box">
+                  <select name="" id="" class="custom_dropdown">
+                    <option value="">All Categories</option>
+                    <option value="">Fashion</option>
+                    <option value="">Furniture</option>
+                    <option value="">Shoes</option>
+                    <option value="">Games</option>
+                    <option value="">Computers</option>
+                    <option value="">Electronics</option>
+                    <option value="">Kitchen</option>
+                    <option value="">Clothing</option>
+                  </select>
+
+                </div>
+                <input type="text" placeholder="Search in...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+
             </div>
           </div>
-        </div>
-        <!-- -------------- -->
-    
-        <!-- =====End of Header Top====== -->
-    
-        <div class="header_middle">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7 col-md-9 col-8">
-                <div class="header_left">
-                  <a href=""> <img src="images/logo.png" alt=""></a>
-    
-                  <div class="search_box">
-                    <div class="categories_box">
-                      <select name="" id="" class="custom_dropdown">
-                        <option value="">All Categories</option>
-                        <option value="">Fashion</option>
-                        <option value="">Furniture</option>
-                        <option value="">Shoes</option>
-                        <option value="">Games</option>
-                        <option value="">Computers</option>
-                        <option value="">Electronics</option>
-                        <option value="">Kitchen</option>
-                        <option value="">Clothing</option>
-                      </select>
-    
-                    </div>
-                    <input type="text" placeholder="Search in...">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </div>
-    
+          <div class="col-lg-5 col-md-3 col-4 hadder_right">
+            <div class="right_side">
+              <div class="live_chat">
+                <ul>
+                  <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+                <div class="chat_info">
+                  <p>Live Chat <span>or :</span></p>
+                  <a href="">(+880) 1813933245</a>
                 </div>
               </div>
-              <div class="col-lg-5 col-md-3 col-4 hadder_right">
-                <div class="right_side">
-                  <div class="live_chat">
-                    <ul>
-                      <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
-                    </ul>
-                    <div class="chat_info">
-                      <p>Live Chat <span>or :</span></p>
-                      <a href="">(+880) 1813933245</a>
-                    </div>
-                  </div>
-    
-    
-                  <div class="cart">
-                    <a href="">
-                      <i class="fa-solid fa-heart"></i><span>Wishlist</span>
-                    </a>
-                    <a href="" class="compare">
-                      <i class="fa-solid fa-scale-balanced"></i><span>compare</span>
-                    </a>
-                    <a class="cart_icon" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                      aria-controls="offcanvasRight">
-                      <i class="fa-solid fa-bag-shopping "></i><span>cart</span>
-                      <div class="select_items">2</div>
-                    </a>
-    
-                  </div>
-    
-                  <!-- ===================
+
+
+              <div class="cart">
+                <a href="">
+                  <i class="fa-solid fa-heart"></i><span>Wishlist</span>
+                </a>
+                <a href="" class="compare">
+                  <i class="fa-solid fa-scale-balanced"></i><span>compare</span>
+                </a>
+                <a class="cart_icon" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-bag-shopping "></i><span>cart</span>
+                  <div class="select_items">2</div>
+                </a>
+
+              </div>
+
+              <!-- ===================
                   Cart offcancas start
                 ========================= -->
-                  <div class="offcanvas offcanvas-end cart_offcanvas" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header  offcanvas_title">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
-                      <button data-bs-dismiss="offcanvas" aria-label="Close">Close <span><i
-                            class="fa-solid fa-arrow-right-long"></i></span></button>
+              <div class="offcanvas offcanvas-end cart_offcanvas" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header  offcanvas_title">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+                  <button data-bs-dismiss="offcanvas" aria-label="Close">Close <span><i
+                        class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+                <div class="offcanvas-body cart_list">
+                  <div class="cart_items">
+                    <div class="product_list">
+                      <div class="product_name">
+                        <h4>Electronics Black Wrist Watch</h4>
+                        <p>1 X <span>$25.98</span></p>
+                      </div>
+                      <img src="images/product_one.jpg" alt="">
                     </div>
-                    <div class="offcanvas-body cart_list">
-                      <div class="cart_items">
-                        <div class="product_list">
-                          <div class="product_name">
-                            <h4>Electronics Black Wrist Watch</h4>
-                            <p>1 X <span>$25.98</span></p>
-                          </div>
-                          <img src="images/product_one.jpg" alt="">
-                        </div>
-                        <div class="product_list">
-                          <div class="product_name">
-                            <h4>Electronics Black Wrist Watch</h4>
-                            <p>1 X <span>$25.98</span></p>
-                          </div>
-                          <img src="images/product_one.jpg" alt="">
-                        </div>
+                    <div class="product_list">
+                      <div class="product_name">
+                        <h4>Electronics Black Wrist Watch</h4>
+                        <p>1 X <span>$25.98</span></p>
                       </div>
-    
-                      <div class="total_amount">
-                        <div class="price">
-                          <h6>Subtotal:</h6>
-                          <p>$50.96</p>
-                        </div>
-                      </div>
-                      <div class="checkout">
-                        <button class="view_cart">VIEW CART</button>
-                        <button class="checkout_btn">CHECKOUT</button>
-                      </div>
-    
+                      <img src="images/product_one.jpg" alt="">
                     </div>
                   </div>
-    
-                  <!-- ===================
+
+                  <div class="total_amount">
+                    <div class="price">
+                      <h6>Subtotal:</h6>
+                      <p>$50.96</p>
+                    </div>
+                  </div>
+                  <div class="checkout">
+                    <button class="view_cart">VIEW CART</button>
+                    <button class="checkout_btn">CHECKOUT</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- ===================
                   Cart offcancas end
                 ========================= -->
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        <!-- =====End of Header Middle====== -->
-    
-    
-    
-        <!-- =======================
+      </div>
+    </div>
+    <!-- =====End of Header Middle====== -->
+
+
+
+    <!-- =======================
               Main menu part start
       ============================  -->
-    
-        <div class="main_menu">
-          <div class="container">
-            <div class="row">
-    
-              <div class="mainMenu_content">
-                <!-- ======== BROWSE CATEGORIES Part Start========== -->
-                <div class="col-xl-3 col-lg-3  col-12 ">
-                  <div class="brows_category">
-                    <h2><a href=""><span> <i class="fa-solid fa-bars"></i> BROWSE CATEGORIES</span> <span><i
-                            class="fa-solid fa-chevron-down"></i></span></a></h2>
-                    <!-- ======== BROWSE CATEGORIES List Start========== -->
-    
-                    <div class="category_box">
-                      <!-- =======Has Mega Menu part Start=============== -->
-                      <!-- ======== Fasion start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="fashion.html"><span><i class="fa-solid fa-shirt"></i>Fashion</span><span
-                              class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
-                          </a>
-                        </li>
-                        <!-- ======Mega Menu Start====== -->
-                        <div class="mega_menufashion">
-                          <div class="megamenu_items">
-                            <h4>WOMEN</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                              <li><a href="#">Bags</a></li>
-                              <li><a href="#">Accessories</a></li>
-                              <li><a href="#">Jewlery & Watches</a></li>
-                            </ul>
-                          </div>
-                          <div class="megamenu_items">
-                            <h4>MEN</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                              <li><a href="#">Bags</a></li>
-                              <li><a href="#">Accessories</a></li>
-                              <li><a href="#">Jewlery & Watches</a></li>
-                            </ul>
-                          </div>
-                          <div class="category_img">
-                            <div class="fashionimg_text">
-                              <p>Get up to <span>20%OFF</span></p>
-                              <h3>Hot Sales</h3>
-                              <a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
-                            </div>
-                            <img src="images/fasion.jpg" class="img-fluid w-100 h-100" alt="">
-                          </div>
+
+    <div class="main_menu">
+      <div class="container">
+        <div class="row">
+
+          <div class="mainMenu_content">
+            <!-- ======== BROWSE CATEGORIES Part Start========== -->
+            <div class="col-xl-3 col-lg-3  col-12 ">
+              <div class="brows_category">
+                <h2><a href=""><span> <i class="fa-solid fa-bars"></i> BROWSE CATEGORIES</span> <span><i
+                        class="fa-solid fa-chevron-down"></i></span></a></h2>
+                <!-- ======== BROWSE CATEGORIES List Start========== -->
+
+                <div class="category_box">
+                  <!-- =======Has Mega Menu part Start=============== -->
+                  <!-- ======== Fasion start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="fashion.html"><span><i class="fa-solid fa-shirt"></i>Fashion</span><span
+                          class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
+                      </a>
+                    </li>
+                    <!-- ======Mega Menu Start====== -->
+                    <div class="mega_menufashion">
+                      <div class="megamenu_items">
+                        <h4>WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Jewlery & Watches</a></li>
+                        </ul>
+                      </div>
+                      <div class="megamenu_items">
+                        <h4>MEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Jewlery & Watches</a></li>
+                        </ul>
+                      </div>
+                      <div class="category_img">
+                        <div class="fashionimg_text">
+                          <p>Get up to <span>20%OFF</span></p>
+                          <h3>Hot Sales</h3>
+                          <a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
                         </div>
-                        <!-- ======Mega Menu end====== -->
-                      </ul>
-                      <!-- ========= Fasion end ========== -->
-    
-                      <!-- ======== Home & Garden start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="garden.html"><span><i class="fa-solid fa-house"></i>Home & Garden</span><span
-                              class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
-                          </a>
-                        </li>
-                        <!-- ======Mega Menu Start====== -->
-                        <div class="mega_menuhome">
-    
-                          <div class="megamenu_items">
-                            <h4>BEDROOM</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-    
-                            <h4>LIVING ROOM</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-    
-                          </div>
-                          <div class="megamenu_items">
-                            <h4>MEN</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-                            <h4>KITCHEN & DINING</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-                          </div>
-                          <div class="category_img">
-                            <div class="homeimg_text">
-                              <h6>Restroom</h6>
-                              <h3>Furniture Sale</h3>
-                              <p>Up to <span>20%OFF</span></p>
-                              <a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
-                            </div>
-                            <img src="images/home_garden.jpg" class="img-fluid w-100 h-100" alt="">
-                          </div>
-                        </div>
-                        <!-- ======Mega Menu end====== -->
-                      </ul>
-                      <!-- ======== Home & Garden end ======== -->
-    
-                      <!-- ======== Electronics start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="electronics.html"><span><i class="fa-solid fa-desktop"></i>Electronics</span><span
-                              class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
-                          </a>
-                        </li>
-                        <!-- ======Mega Menu Start====== -->
-                        <div class="mega_menuelectronics">
-    
-                          <div class="megamenu_items">
-                            <h4>LAPTOPS & COMPUTERS</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-    
-                            <h4>TV & VIDEO</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-    
-                            </ul>
-    
-                          </div>
-                          <div class="megamenu_items">
-                            <h4>DIGITAL CAMERAS</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                              <li><a href="#">Shoes</a></li>
-                            </ul>
-                            <h4>CELL PHONES</h4>
-                            <ul>
-                              <li><a href="#">New Arrivals</a></li>
-                              <li><a href="#">Best sellers</a></li>
-                              <li><a href="#">Trending</a></li>
-                              <li><a href="#">Clothing</a></li>
-                            </ul>
-                          </div>
-                          <div class="category_img">
-                            <div class="homeimg_text">
-                              <p>Deals Of The Week</p>
-                              <h3>Save On Smart EarPhone</h3>
-                              <h6>20%OFF</h6>
-                              <button><a href="">SHOP NOW</a></button>
-                            </div>
-                            <img src="images/electronics.jpg" class="img-fluid w-100 h-100" alt="">
-                          </div>
-                        </div>
-                        <!-- ======Mega Menu end====== -->
-                      </ul>
-                      <!-- ======== Electronics end ======== -->
-    
-                      <!-- ======== Furniture Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="furniture.html"><span><i class="fa-solid fa-couch"></i>Furniture</span><span
-                              class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span>
-                          </a>
-                        </li>
-                        <!-- ======Mega Menu Start====== -->
-                        <div class="mega_menufurniture">
-    
-                          <div class="megamenu_list">
-                            <div class="megamenu_items">
-                              <h4>LAPTOPS & COMPUTERS</h4>
-                              <ul>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Best sellers</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Shoes</a></li>
-                              </ul>
-                            </div>
-                            <div class="megamenu_items">
-                              <h4>DIGITAL CAMERAS</h4>
-                              <ul>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Best sellers</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Shoes</a></li>
-                              </ul>
-                            </div>
-                            <div class="megamenu_items">
-                              <h4>DIGITAL CAMERAS</h4>
-                              <ul>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Best sellers</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Shoes</a></li>
-                              </ul>
-                            </div>
-                            <div class="megamenu_items">
-                              <h4>DIGITAL CAMERAS</h4>
-                              <ul>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Best sellers</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Shoes</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="img_list">
-                            <div class="category_img">
-                              <div class="imgtext_left">
-                                <h6>New Arrivals</h6>
-                                <h3>Amazin Sofa</h3>
-                                <p>Starting at <span>$125.00</span></p>
-                              </div>
-                              <img src="images/furniture_one.jpg" class="img-fluid w-100 h-100" alt="">
-                            </div>
-                            <div class="category_img">
-                              <div class="imgtext_right">
-                                <h6>Best Seller</h6>
-                                <h3>Chair & Lamp</h3>
-                                <p>From <span>$165.00</span></p>
-                              </div>
-                              <img src="images/furniture_two.jpg" class="img-fluid w-100 h-100" alt="">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- ======Mega Menu end====== -->
-                      </ul>
-                      <!-- ======== Furniture End ======== -->
-    
-                      <!-- =======Has Mega Menu part End=============== -->
-    
-                      <!-- =======Has No Mega Menu part start=============== -->
-    
-                      <!-- ======== Healthy & Beauty Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="healthy.html"><span><i class="fa-solid fa-heart-pulse"></i>Healthy &
-                              Beauty</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Healthy & Beauty End ======== -->
-    
-                      <!-- ======== Gift Ideas Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="gift.html"><span><i class="fa-solid fa-gift"></i>Gift Ideas</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Gift Ideas End ======== -->
-    
-                      <!-- ======== Toy & Games Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="games.html"><span><i class="fa-solid fa-gamepad"></i>Toy & Games</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Toy & Games End ======== -->
-    
-                      <!-- ======== Cooking Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="cooking.html"><span><i class="fa-solid fa-bowl-rice"></i>Cooking</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Cooking End ======== -->
-    
-                      <!-- ======== Smart Phones Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href="smartphones.html"><span><i class="fa-solid fa-mobile-screen-button"></i>Smart
-                              Phones</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Smart Phones End ======== -->
-    
-                      <!-- ======== Cameras & Photo Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href=""><span><i class="fa-solid fa-camera"></i>Cameras &
-                              Photo</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Cameras & Photo End ======== -->
-    
-                      <!-- ======== Accessories Start ======== -->
-                      <ul class="category_menu">
-                        <li>
-                          <a href=""><span><i class="fa-solid fa-gem"></i>Accessories</span></a>
-                        </li>
-                      </ul>
-                      <!-- ======== Accessories End ======== -->
-    
-                      <!-- =======Has No Mega Menu part End=============== -->
-    
-                      <ul class="category_menu all_categories">
-                        <li>
-                          <a href=""><span>VIEW ALL CATEGORIES</span><i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                      </ul>
-    
+                        <img src="images/fasion.jpg" class="img-fluid w-100 h-100" alt="">
+                      </div>
                     </div>
-    
-                    <!-- ======== BROWSE CATEGORIES List End========== -->
-    
-                  </div>
-                </div>
-                <!-- ======== BROWSE CATEGORIES Part End========== -->
-    
-                <!-- ============Menu Start========= -->
-                <div class="col-xl-6 col-lg-7  col-12 ">
-                  <nav class="navbar navbar-expand-lg menu py-0 ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                      aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav menu_bar">
-                        <!-- ===========Home Menu============ -->
-                        <li class="nav-item menuItem_home">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <!-- ===========Shop Menu============ -->
-                        <li class="nav-item menuItem_shop">
-                          <a class="nav-link active" aria-current="page" href="shop.html">Shop
-                            <span><i class="fa-solid fa-angle-down"></i></span></a>
-                          <!-- ======== Mega Menu Start ============ -->
-                          <ul class="mega_menu">
-                            <li class="megaMenu_items">
-                              <h4>SHOP PAGES</h4>
-                              <ul>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Boxed Banner</a></li>
-                                <li><a href="#">Full Width Banner</a></li>
-                                <li><a href="#">Horizontal Filter</a></li>
-                                <li><a href="#">Off Canvas Sidebar</a></li>
-                                <li><a href="#">Infinite Ajax Scroll</a></li>
-                                <li><a href="#">Right Sidebar</a></li>
-                                <li><a href="#">Both Sidebar</a></li>
-                              </ul>
-                            </li>
-                            <li class="megaMenu_items">
-                              <h4>SHOP LAYOUTS</h4>
-                              <ul>
-                                <li><a href="#">3 Columns Mode</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                              </ul>
-                            </li>
-                            <li class="megaMenu_items">
-                              <h4>PRODUCT PAGES</h4>
-                              <ul>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                              </ul>
-                            </li>
-                            <li class="megaMenu_items">
-                              <h4>PRODUCT LAYOUTS</h4>
-                              <ul>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                                <li><a href="#">Banner With Sidebar</a></li>
-                              </ul>
-                            </li>
-                            <!-- ======== Mega Menu End ============ -->
-                          </ul>
-                        </li>
-    
-                        <!-- ===========Vendor Menu============ -->
-                        <li class="nav-item menuItem_vendor">
-                          <a class="nav-link active" aria-current="page" href="vendor.html">Vendor
-                            <span><i class="fa-solid fa-angle-down"></i></span></a>
-                          <!-- ======== Mega Menu Start ============ -->
-                          <ul class="mega_menu">
-                            <li class="megaMenu_items">
-                              <ul>
-                                <li class="store_listing">
-                                  <a href="#">Store Listing <span><i class="fa-solid fa-angle-right"></i></span></a>
-                                  <ul class="subMega_menu">
-                                    <li><a href="#">Store Listing 1</a></li>
-                                    <li><a href="#">Store Listing 2</a></li>
-                                    <li><a href="#">Store Listing 3</a></li>
-                                    <li><a href="#">Store Listing 4</a></li>
-                                  </ul>
-                                </li>
-                                <li class="vendor_store">
-                                  <a href="#">Vendor Store <span><i class="fa-solid fa-angle-right"></i></span></a>
-                                  <ul class="subMega_menu">
-                                    <li><a href="#">Store Listing 1</a></li>
-                                    <li><a href="#">Store Listing 2</a></li>
-                                    <li><a href="#">Store Listing 3</a></li>
-                                    <li><a href="#">Store Listing 4</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-    
-                            <!-- ======== Mega Menu End ============ -->
-                          </ul>
-                        </li>
-    
-                        <!-- ===========Blog Menu============ -->
-                        <li class="nav-item menuItem_blog">
-                          <a class="nav-link active" aria-current="page" href="blog.html">Blog
-                            <span><i class="fa-solid fa-angle-down"></i></span></a>
-                          <!-- ======== Mega Menu Start ============ -->
-                          <ul class="mega_menu">
-                            <li class="megaMenu_items">
-                              <ul>
-                                <li><a href="#">Store Listing</a></li>
-    
-                                <li><a href="#">Store Listing</a></li>
-    
-    
-    
-    
-                                <li class="grid">
-                                  <ul class="subMega_heading">
-                                    <a href="#">Grid</a>
-                                    <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
-                                  </ul>
-                                  <ul class="subMega_menu">
-                                    <li><a href="#">Store Listing 1</a></li>
-                                    <li><a href="#">Store Listing 2</a></li>
-                                    <li><a href="#">Store Listing 3</a></li>
-                                    <li><a href="#">Store Listing 4</a></li>
-                                  </ul>
-                                </li>
-    
-                                <li class="masonry">
-                                  <ul class="subMega_heading">
-                                    <a href="#">Masonry</a>
-                                    <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
-                                  </ul>
-                                  <ul class="subMega_menu">
-                                    <li><a href="#">Store Listing 1</a></li>
-                                    <li><a href="#">Store Listing 2</a></li>
-                                    <li><a href="#">Store Listing 3</a></li>
-                                    <li><a href="#">Store Listing 4</a></li>
-                                  </ul>
-                                </li>
-    
-    
-                                <li class="mask">
-                                  <ul class="subMega_heading">
-                                    <a href="#">Mask</a>
-                                    <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
-                                  </ul>
-                                  <ul class="subMega_menu">
-                                    <li><a href="#">Store Listing 1</a></li>
-                                    <li><a href="#">Store Listing 2</a></li>
-                                    <li><a href="#">Store Listing 3</a></li>
-                                    <li><a href="#">Store Listing 4</a></li>
-                                  </ul>
-                                </li>
-    
-                                <li><a href="#">Store Listing</a></li>
-    
-                              </ul>
-                            </li>
-    
-                            <!-- ======== Mega Menu End ============ -->
-                          </ul>
-                        </li>
-    
-                        <!-- =========== Pages Menu ============ -->
-                        <li class="nav-item menuItem_pages">
-                          <a class="nav-link active" aria-current="page" href="pages.html">Pages
-                            <span><i class="fa-solid fa-angle-down"></i></span></a>
-                          <!-- ======== Mega Menu Start ============ -->
-                          <ul class="mega_menu">
-                            <li class="megaMenu_items">
-                              <ul>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-    
-                              </ul>
-                            </li>
-    
-                            <!-- ======== Mega Menu End ============ -->
-                          </ul>
-                        </li>
-    
-                        <!-- =========== Elements Menu ============ -->
-                        <li class="nav-item menuItem_elements">
-                          <a class="nav-link active" aria-current="page" href="elements.html">Elements
-                            <span><i class="fa-solid fa-angle-down"></i></span></a>
-                          <!-- ======== Mega Menu Start ============ -->
-                          <ul class="mega_menu">
-                            <li class="megaMenu_items">
-                              <ul>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-                                <li><a href="#">Store Listing</a></li>
-    
-                              </ul>
-                            </li>
-    
-                            <!-- ======== Mega Menu End ============ -->
-                          </ul>
-                        </li>
-                      </ul>
-    
+                    <!-- ======Mega Menu end====== -->
+                  </ul>
+                  <!-- ========= Fasion end ========== -->
+
+                  <!-- ======== Home & Garden start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="garden.html"><span><i class="fa-solid fa-house"></i>Home & Garden</span><span
+                          class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
+                      </a>
+                    </li>
+                    <!-- ======Mega Menu Start====== -->
+                    <div class="mega_menuhome">
+
+                      <div class="megamenu_items">
+                        <h4>BEDROOM</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+
+                        <h4>LIVING ROOM</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+
+                      </div>
+                      <div class="megamenu_items">
+                        <h4>MEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+                        <h4>KITCHEN & DINING</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+                      </div>
+                      <div class="category_img">
+                        <div class="homeimg_text">
+                          <h6>Restroom</h6>
+                          <h3>Furniture Sale</h3>
+                          <p>Up to <span>20%OFF</span></p>
+                          <a href="">SHOP NOW <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
+                        </div>
+                        <img src="images/home_garden.jpg" class="img-fluid w-100 h-100" alt="">
+                      </div>
                     </div>
-    
-                  </nav>
-                  <!-- ============Menu Start========= -->
+                    <!-- ======Mega Menu end====== -->
+                  </ul>
+                  <!-- ======== Home & Garden end ======== -->
+
+                  <!-- ======== Electronics start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="electronics.html"><span><i class="fa-solid fa-desktop"></i>Electronics</span><span
+                          class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span></a>
+                      </a>
+                    </li>
+                    <!-- ======Mega Menu Start====== -->
+                    <div class="mega_menuelectronics">
+
+                      <div class="megamenu_items">
+                        <h4>LAPTOPS & COMPUTERS</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+
+                        <h4>TV & VIDEO</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+
+                        </ul>
+
+                      </div>
+                      <div class="megamenu_items">
+                        <h4>DIGITAL CAMERAS</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                          <li><a href="#">Shoes</a></li>
+                        </ul>
+                        <h4>CELL PHONES</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best sellers</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Clothing</a></li>
+                        </ul>
+                      </div>
+                      <div class="category_img">
+                        <div class="homeimg_text">
+                          <p>Deals Of The Week</p>
+                          <h3>Save On Smart EarPhone</h3>
+                          <h6>20%OFF</h6>
+                          <button><a href="">SHOP NOW</a></button>
+                        </div>
+                        <img src="images/electronics.jpg" class="img-fluid w-100 h-100" alt="">
+                      </div>
+                    </div>
+                    <!-- ======Mega Menu end====== -->
+                  </ul>
+                  <!-- ======== Electronics end ======== -->
+
+                  <!-- ======== Furniture Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="furniture.html"><span><i class="fa-solid fa-couch"></i>Furniture</span><span
+                          class="catemenu_arrow"><i class="fa-solid fa-angle-right"></i></span>
+                      </a>
+                    </li>
+                    <!-- ======Mega Menu Start====== -->
+                    <div class="mega_menufurniture">
+
+                      <div class="megamenu_list">
+                        <div class="megamenu_items">
+                          <h4>LAPTOPS & COMPUTERS</h4>
+                          <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                          </ul>
+                        </div>
+                        <div class="megamenu_items">
+                          <h4>DIGITAL CAMERAS</h4>
+                          <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                          </ul>
+                        </div>
+                        <div class="megamenu_items">
+                          <h4>DIGITAL CAMERAS</h4>
+                          <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                          </ul>
+                        </div>
+                        <div class="megamenu_items">
+                          <h4>DIGITAL CAMERAS</h4>
+                          <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best sellers</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Shoes</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="img_list">
+                        <div class="category_img">
+                          <div class="imgtext_left">
+                            <h6>New Arrivals</h6>
+                            <h3>Amazin Sofa</h3>
+                            <p>Starting at <span>$125.00</span></p>
+                          </div>
+                          <img src="images/furniture_one.jpg" class="img-fluid w-100 h-100" alt="">
+                        </div>
+                        <div class="category_img">
+                          <div class="imgtext_right">
+                            <h6>Best Seller</h6>
+                            <h3>Chair & Lamp</h3>
+                            <p>From <span>$165.00</span></p>
+                          </div>
+                          <img src="images/furniture_two.jpg" class="img-fluid w-100 h-100" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ======Mega Menu end====== -->
+                  </ul>
+                  <!-- ======== Furniture End ======== -->
+
+                  <!-- =======Has Mega Menu part End=============== -->
+
+                  <!-- =======Has No Mega Menu part start=============== -->
+
+                  <!-- ======== Healthy & Beauty Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="healthy.html"><span><i class="fa-solid fa-heart-pulse"></i>Healthy &
+                          Beauty</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Healthy & Beauty End ======== -->
+
+                  <!-- ======== Gift Ideas Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="gift.html"><span><i class="fa-solid fa-gift"></i>Gift Ideas</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Gift Ideas End ======== -->
+
+                  <!-- ======== Toy & Games Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="games.html"><span><i class="fa-solid fa-gamepad"></i>Toy & Games</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Toy & Games End ======== -->
+
+                  <!-- ======== Cooking Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="cooking.html"><span><i class="fa-solid fa-bowl-rice"></i>Cooking</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Cooking End ======== -->
+
+                  <!-- ======== Smart Phones Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href="smartphones.html"><span><i class="fa-solid fa-mobile-screen-button"></i>Smart
+                          Phones</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Smart Phones End ======== -->
+
+                  <!-- ======== Cameras & Photo Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href=""><span><i class="fa-solid fa-camera"></i>Cameras &
+                          Photo</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Cameras & Photo End ======== -->
+
+                  <!-- ======== Accessories Start ======== -->
+                  <ul class="category_menu">
+                    <li>
+                      <a href=""><span><i class="fa-solid fa-gem"></i>Accessories</span></a>
+                    </li>
+                  </ul>
+                  <!-- ======== Accessories End ======== -->
+
+                  <!-- =======Has No Mega Menu part End=============== -->
+
+                  <ul class="category_menu all_categories">
+                    <li>
+                      <a href=""><span>VIEW ALL CATEGORIES</span><i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                  </ul>
+
                 </div>
-                <!-- ============Menu End========= -->
-    
-                <div class="col-xl-3 col-lg-2 ">
-                  <div class="order_deals">
-                    <a href="" class="option_one"><i class="fa-solid fa-location-dot"></i><span>Track Order</span></a>
-                    <a href=""><i class="fa-solid fa-tag fa-rotate-90"></i><span>Daily Deals</span></a>
-                  </div>
-                </div>
+
+                <!-- ======== BROWSE CATEGORIES List End========== -->
+
               </div>
-    
+            </div>
+            <!-- ======== BROWSE CATEGORIES Part End========== -->
+
+            <!-- ============Menu Start========= -->
+            <div class="col-xl-6 col-lg-7  col-12 ">
+              <nav class="navbar navbar-expand-lg menu py-0 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav menu_bar">
+                    <!-- ===========Home Menu============ -->
+                    <li class="nav-item menuItem_home">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- ===========Shop Menu============ -->
+                    <li class="nav-item menuItem_shop">
+                      <a class="nav-link active" aria-current="page" href="shop.html">Shop
+                        <span><i class="fa-solid fa-angle-down"></i></span></a>
+                      <!-- ======== Mega Menu Start ============ -->
+                      <ul class="mega_menu">
+                        <li class="megaMenu_items">
+                          <h4>SHOP PAGES</h4>
+                          <ul>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Boxed Banner</a></li>
+                            <li><a href="#">Full Width Banner</a></li>
+                            <li><a href="#">Horizontal Filter</a></li>
+                            <li><a href="#">Off Canvas Sidebar</a></li>
+                            <li><a href="#">Infinite Ajax Scroll</a></li>
+                            <li><a href="#">Right Sidebar</a></li>
+                            <li><a href="#">Both Sidebar</a></li>
+                          </ul>
+                        </li>
+                        <li class="megaMenu_items">
+                          <h4>SHOP LAYOUTS</h4>
+                          <ul>
+                            <li><a href="#">3 Columns Mode</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                          </ul>
+                        </li>
+                        <li class="megaMenu_items">
+                          <h4>PRODUCT PAGES</h4>
+                          <ul>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                          </ul>
+                        </li>
+                        <li class="megaMenu_items">
+                          <h4>PRODUCT LAYOUTS</h4>
+                          <ul>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                            <li><a href="#">Banner With Sidebar</a></li>
+                          </ul>
+                        </li>
+                        <!-- ======== Mega Menu End ============ -->
+                      </ul>
+                    </li>
+
+                    <!-- ===========Vendor Menu============ -->
+                    <li class="nav-item menuItem_vendor">
+                      <a class="nav-link active" aria-current="page" href="vendor.html">Vendor
+                        <span><i class="fa-solid fa-angle-down"></i></span></a>
+                      <!-- ======== Mega Menu Start ============ -->
+                      <ul class="mega_menu">
+                        <li class="megaMenu_items">
+                          <ul>
+                            <li class="store_listing">
+                              <a href="#">Store Listing <span><i class="fa-solid fa-angle-right"></i></span></a>
+                              <ul class="subMega_menu">
+                                <li><a href="#">Store Listing 1</a></li>
+                                <li><a href="#">Store Listing 2</a></li>
+                                <li><a href="#">Store Listing 3</a></li>
+                                <li><a href="#">Store Listing 4</a></li>
+                              </ul>
+                            </li>
+                            <li class="vendor_store">
+                              <a href="#">Vendor Store <span><i class="fa-solid fa-angle-right"></i></span></a>
+                              <ul class="subMega_menu">
+                                <li><a href="#">Store Listing 1</a></li>
+                                <li><a href="#">Store Listing 2</a></li>
+                                <li><a href="#">Store Listing 3</a></li>
+                                <li><a href="#">Store Listing 4</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <!-- ======== Mega Menu End ============ -->
+                      </ul>
+                    </li>
+
+                    <!-- ===========Blog Menu============ -->
+                    <li class="nav-item menuItem_blog">
+                      <a class="nav-link active" aria-current="page" href="blog.html">Blog
+                        <span><i class="fa-solid fa-angle-down"></i></span></a>
+                      <!-- ======== Mega Menu Start ============ -->
+                      <ul class="mega_menu">
+                        <li class="megaMenu_items">
+                          <ul>
+                            <li><a href="#">Store Listing</a></li>
+
+                            <li><a href="#">Store Listing</a></li>
+
+
+
+
+                            <li class="grid">
+                              <ul class="subMega_heading">
+                                <a href="#">Grid</a>
+                                <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
+                              </ul>
+                              <ul class="subMega_menu">
+                                <li><a href="#">Store Listing 1</a></li>
+                                <li><a href="#">Store Listing 2</a></li>
+                                <li><a href="#">Store Listing 3</a></li>
+                                <li><a href="#">Store Listing 4</a></li>
+                              </ul>
+                            </li>
+
+                            <li class="masonry">
+                              <ul class="subMega_heading">
+                                <a href="#">Masonry</a>
+                                <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
+                              </ul>
+                              <ul class="subMega_menu">
+                                <li><a href="#">Store Listing 1</a></li>
+                                <li><a href="#">Store Listing 2</a></li>
+                                <li><a href="#">Store Listing 3</a></li>
+                                <li><a href="#">Store Listing 4</a></li>
+                              </ul>
+                            </li>
+
+
+                            <li class="mask">
+                              <ul class="subMega_heading">
+                                <a href="#">Mask</a>
+                                <a href=""><span><i class="fa-solid fa-angle-right"></i></span></a>
+                              </ul>
+                              <ul class="subMega_menu">
+                                <li><a href="#">Store Listing 1</a></li>
+                                <li><a href="#">Store Listing 2</a></li>
+                                <li><a href="#">Store Listing 3</a></li>
+                                <li><a href="#">Store Listing 4</a></li>
+                              </ul>
+                            </li>
+
+                            <li><a href="#">Store Listing</a></li>
+
+                          </ul>
+                        </li>
+
+                        <!-- ======== Mega Menu End ============ -->
+                      </ul>
+                    </li>
+
+                    <!-- =========== Pages Menu ============ -->
+                    <li class="nav-item menuItem_pages">
+                      <a class="nav-link active" aria-current="page" href="pages.html">Pages
+                        <span><i class="fa-solid fa-angle-down"></i></span></a>
+                      <!-- ======== Mega Menu Start ============ -->
+                      <ul class="mega_menu">
+                        <li class="megaMenu_items">
+                          <ul>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+
+                          </ul>
+                        </li>
+
+                        <!-- ======== Mega Menu End ============ -->
+                      </ul>
+                    </li>
+
+                    <!-- =========== Elements Menu ============ -->
+                    <li class="nav-item menuItem_elements">
+                      <a class="nav-link active" aria-current="page" href="elements.html">Elements
+                        <span><i class="fa-solid fa-angle-down"></i></span></a>
+                      <!-- ======== Mega Menu Start ============ -->
+                      <ul class="mega_menu">
+                        <li class="megaMenu_items">
+                          <ul>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+                            <li><a href="#">Store Listing</a></li>
+
+                          </ul>
+                        </li>
+
+                        <!-- ======== Mega Menu End ============ -->
+                      </ul>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </nav>
+              <!-- ============Menu Start========= -->
+            </div>
+            <!-- ============Menu End========= -->
+
+            <div class="col-xl-3 col-lg-2 ">
+              <div class="order_deals">
+                <a href="" class="option_one"><i class="fa-solid fa-location-dot"></i><span>Track Order</span></a>
+                <a href=""><i class="fa-solid fa-tag fa-rotate-90"></i><span>Daily Deals</span></a>
+              </div>
             </div>
           </div>
+
         </div>
-    
-        <!-- =======================
+      </div>
+    </div>
+
+    <!-- =======================
               Main menu part start
       ============================  -->
-      </header>
-    <!--===========================
+  </header>
+  <!--===========================
             Header part end
     ============================= -->
 
-    <!--=============================
+  <!--=============================
             Breadcrumb Start Start
     =============================== -->
-    <section id="categoriesBread_crumb">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-                        aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                Fashion</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+  <section id="categoriesBread_crumb">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Fashion</li>
+            </ol>
+          </nav>
         </div>
-    </section>
-    <!--=============================
+      </div>
+    </div>
+  </section>
+  <!--=============================
         Breadcrumb Start End
 =============================== -->
 
 
-    <!--===========================
+  <!--===========================
             Banner part Start
     ============================= -->
 
-    <section id="categories_banner"
-        style="background: url(images/fashionBanner.jpg) no-repeat; background-size: cover; ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12">
-                    <div class="banner_content">
-                        <!-- <div class="banner_img">
+  <section id="categories_banner" style="background: url(images/fashionBanner.jpg) no-repeat; background-size: cover; ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12">
+          <div class="banner_content">
+            <!-- <div class="banner_img">
                             <img src="images/shop_banner.jpg" class="img-fluid w-100 h-100" alt="">
                         </div> -->
-                        <div class="banner_text">
-                            <h4>Accessories Collection</h4>
-                            <h3>SMART WRIST WATCHES</h3>
-                            <button><a href="">DISCOVER NOW <span><i
-                                            class="fa-solid fa-arrow-right-long"></i></span></a> </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="banner_text">
+              <h4>Accessories Collection</h4>
+              <h3>SMART WRIST WATCHES</h3>
+              <button><a href="">DISCOVER NOW <span><i class="fa-solid fa-arrow-right-long"></i></span></a> </button>
             </div>
-
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!--===========================
+    </div>
+  </section>
+
+  <!--===========================
             Banner part end
     ============================= -->
 
 
-    <!--==============================
+  <!--==============================
         Fashion Content part start
     ================================= -->
 
-    <section id="categories_content">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="categories_toolbox">
-                    <div class="toolBox_left">
-                        <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions"><i
-                                class="fa-solid fa-list-ul"></i><span>FILTERS</span></a>
-                        <label for="">Sort By :</label>
-                        <select name="" id="" class="dropDown">
-                            <option value="">Default sorting</option>
-                            <option value="">Default sorting</option>
-                            <option value="">Default sorting</option>
-                            <option value="">Default sorting</option>
-                            <option value="">Default sorting</option>
-                            <option value="">Default sorting</option>
-                        </select>
-                    </div>
-                    <div class="toolBox_right">
-                        <select name="" id="">
-                            <option value="">Show 9</option>
-                            <option value="">Show 9</option>
-                            <option value="">Show 9</option>
-                            <option value="">Show 9</option>
-                        </select>
-                        <ul>
-                            <li><i class="fa-solid fa-grip"></i></li>
-                            <li class="list"><i class="fa-solid fa-list"></i></li>
-                        </ul>
-                    </div>
-                </div>
+  <section id="categories_content">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="categories_toolbox">
+          <div class="toolBox_left">
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-list-ul"></i><span>FILTERS</span></a>
+            <label for="">Sort By :</label>
+            <select name="" id="" class="dropDown">
+              <option value="">Default sorting</option>
+              <option value="">Default sorting</option>
+              <option value="">Default sorting</option>
+              <option value="">Default sorting</option>
+              <option value="">Default sorting</option>
+              <option value="">Default sorting</option>
+            </select>
+          </div>
+          <div class="toolBox_right">
+            <select name="" id="">
+              <option value="">Show 9</option>
+              <option value="">Show 9</option>
+              <option value="">Show 9</option>
+              <option value="">Show 9</option>
+            </select>
+            <ul>
+              <li><i class="fa-solid fa-grip"></i></li>
+              <li class="list"><i class="fa-solid fa-list"></i></li>
+            </ul>
+          </div>
+        </div>
 
-                <!-- ============================
+        <!-- ============================
                         Filtters offcancas end
                 =============================== -->
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter:</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body cart_list">
+            <div class="categories_sidebar">
+              <div class="filter">
+                <label for=""></label>
+                <a href="">Clean All
+                </a>
+              </div>
+              <div class="sidebar_content">
+                <!-- =========== All_categories ========= -->
+                <div class="accordion sidebarContent_item" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        All Categories
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                      <div class="accordion-body items_list">
+                        <ul>
+                          <li><a href="">Accessories</a></li>
+                          <li><a href="">Babies</a></li>
+                          <li><a href="">Beauty</a></li>
+                          <li><a href="">Decoration</a></li>
+                          <li><a href="">Electronics</a></li>
+                          <li><a href="">Fashion</a></li>
+                          <li><a href="">Food</a></li>
+                          <li><a href="">Furniture</a></li>
+                          <li><a href="">Kitchen</a></li>
+                          <li><a href="">Medical</a></li>
+                          <li><a href="">sports</a></li>
+                          <li><a href="">Watches</a></li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="offcanvas-body cart_list">
-                        <div class="categories_sidebar">
-                            <div class="filter">
-                                <label for=""></label>
-                                <a href="">Clean All
-                                </a>
-                            </div>
-                            <div class="sidebar_content">
-                                <!-- =========== All_categories ========= -->
-                                <div class="accordion sidebarContent_item" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                All Categories
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show "
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body items_list">
-                                                <ul>
-                                                    <li><a href="">Accessories</a></li>
-                                                    <li><a href="">Babies</a></li>
-                                                    <li><a href="">Beauty</a></li>
-                                                    <li><a href="">Decoration</a></li>
-                                                    <li><a href="">Electronics</a></li>
-                                                    <li><a href="">Fashion</a></li>
-                                                    <li><a href="">Food</a></li>
-                                                    <li><a href="">Furniture</a></li>
-                                                    <li><a href="">Kitchen</a></li>
-                                                    <li><a href="">Medical</a></li>
-                                                    <li><a href="">sports</a></li>
-                                                    <li><a href="">Watches</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- =========== Price ========= -->
-                                <div class="accordion sidebarContent_item" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo" aria-expanded="true"
-                                                aria-controls="collapseTwo">
-                                                Price
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse show "
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body items_list">
-                                                <ul>
-                                                    <li><a href="">$0.00 - $100.00</a></li>
-                                                    <li><a href="">$100.00 - $200.00</a></li>
-                                                    <li><a href="">$200.00 - $300.00</a></li>
-                                                    <li><a href="">$300.00 - $500.00</a></li>
-                                                    <li><a href="">$500.00+</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- =========== Size ========= -->
-                                <div class="accordion sidebarContent_item" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree" aria-expanded="true"
-                                                aria-controls="collapseThree">
-                                                Size
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse show "
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body items_list">
-                                                <form action="">
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="size1" name="" value="Bike">
-                                                        <label for="size1"> Large</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="size2" name="" value="Bike">
-                                                        <label for="size2"> Large</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="size3" name="" value="Bike">
-                                                        <label for="size3"> Large</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="size4" name="" value="Bike">
-                                                        <label for="size4"> Large</label>
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- =========== Brand ========= -->
-                                <div class="accordion sidebarContent_item" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseFour" aria-expanded="true"
-                                                aria-controls="collapseFour">
-                                                Brand
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFour" class="accordion-collapse collapse show "
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body items_list">
-                                                <form action="">
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand1" name="" value="Bike">
-                                                        <label for="brand1"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand2" name="" value="Bike">
-                                                        <label for="brand2"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand3" name="" value="Bike">
-                                                        <label for="brand3"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand4" name="" value="Bike">
-                                                        <label for="brand4"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand5" name="" value="Bike">
-                                                        <label for="brand5"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand6" name="" value="Bike">
-                                                        <label for="brand6"> Elant Auto Grou</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="brand7" name="" value="Bike">
-                                                        <label for="brand7"> Elant Auto Grou</label>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- =========== Color ========= -->
-                                <div class="accordion sidebarContent_item" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseFive" aria-expanded="true"
-                                                aria-controls="collapseFive">
-                                                Color
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFive" class="accordion-collapse collapse show "
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body items_list">
-                                                <form action="">
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color1" name="" value="Bike">
-                                                        <label for="color1"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color2" name="" value="Bike">
-                                                        <label for="color2"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color3" name="" value="Bike">
-                                                        <label for="color3"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color4" name="" value="Bike">
-                                                        <label for="color4"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color5" name="" value="Bike">
-                                                        <label for="color5"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color6" name="" value="Bike">
-                                                        <label for="color6"> Black</label>
-                                                    </div>
-                                                    <div class="check_box">
-                                                        <input type="checkbox" id="color7" name="" value="Bike">
-                                                        <label for="color7"> Black</label>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <!-- ============================
+                <!-- =========== Price ========= -->
+                <div class="accordion sidebarContent_item" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Price
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                      <div class="accordion-body items_list">
+                        <ul>
+                          <li><a href="">$0.00 - $100.00</a></li>
+                          <li><a href="">$100.00 - $200.00</a></li>
+                          <li><a href="">$200.00 - $300.00</a></li>
+                          <li><a href="">$300.00 - $500.00</a></li>
+                          <li><a href="">$500.00+</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========== Size ========= -->
+                <div class="accordion sidebarContent_item" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Size
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show "
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body items_list">
+                        <form action="">
+                          <div class="check_box">
+                            <input type="checkbox" id="size1" name="" value="Bike">
+                            <label for="size1"> Large</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="size2" name="" value="Bike">
+                            <label for="size2"> Large</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="size3" name="" value="Bike">
+                            <label for="size3"> Large</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="size4" name="" value="Bike">
+                            <label for="size4"> Large</label>
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========== Brand ========= -->
+                <div class="accordion sidebarContent_item" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Brand
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                      <div class="accordion-body items_list">
+                        <form action="">
+                          <div class="check_box">
+                            <input type="checkbox" id="brand1" name="" value="Bike">
+                            <label for="brand1"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand2" name="" value="Bike">
+                            <label for="brand2"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand3" name="" value="Bike">
+                            <label for="brand3"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand4" name="" value="Bike">
+                            <label for="brand4"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand5" name="" value="Bike">
+                            <label for="brand5"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand6" name="" value="Bike">
+                            <label for="brand6"> Elant Auto Grou</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="brand7" name="" value="Bike">
+                            <label for="brand7"> Elant Auto Grou</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- =========== Color ========= -->
+                <div class="accordion sidebarContent_item" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Color
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                      <div class="accordion-body items_list">
+                        <form action="">
+                          <div class="check_box">
+                            <input type="checkbox" id="color1" name="" value="Bike">
+                            <label for="color1"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color2" name="" value="Bike">
+                            <label for="color2"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color3" name="" value="Bike">
+                            <label for="color3"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color4" name="" value="Bike">
+                            <label for="color4"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color5" name="" value="Bike">
+                            <label for="color5"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color6" name="" value="Bike">
+                            <label for="color6"> Black</label>
+                          </div>
+                          <div class="check_box">
+                            <input type="checkbox" id="color7" name="" value="Bike">
+                            <label for="color7"> Black</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================
                         Filtters offcancas end
                 =============================== -->
-            </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_one.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_one.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3 ">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_two.jpg" alt="" class="img-fluid w-100 h-100">
-                        <img src="images/fashionImg_ttwo.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_img">
-                    </div>
-                    <div class="categorieslimit_items">
-                        <ul>
-                            <li><span class="num">00</span> <span>Days</span></li>
-                            <li><span class="num">00</span> <span>Days</span></li>
-                            <li><span class="num">00</span> <span>Days</span></li>
-                            <li><span class="num">00</span> <span>Days</span></li>
-                        </ul>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_three.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_four.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_five.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_six.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3 ">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_two.jpg" alt="" class="img-fluid w-100 h-100">
+            <img src="images/fashionImg_ttwo.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_img">
+          </div>
+          <div class="categorieslimit_items">
+            <ul>
+              <li><span class="num">00</span> <span>Days</span></li>
+              <li><span class="num">00</span> <span>Days</span></li>
+              <li><span class="num">00</span> <span>Days</span></li>
+              <li><span class="num">00</span> <span>Days</span></li>
+            </ul>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_seven.jpg" alt="" class="img-fluid w-100 h-100">
-                        <img src="images/fashionImg_sseven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_eight.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_nine.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_ten.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_eleven.jpg" alt="" class="img-fluid w-100 h-100">
-                        <img src="images/fashionImg_eeleven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 col-md-3">
-                <div class="categoriesContent_products">
-                    <div class="products_img">
-                        <img src="images/fashionImg_twelve.jpg" alt="" class="img-fluid w-100 h-100">
-                    </div>
-                    <div class="products_text">
-                        <p><a href="">ELECTRONICS</a></p>
-                        <a href="">3D Television</a>
-                        <ul>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <p>(3 Reviews)</p>
-                        </ul>
-                        <h6>$220.00 - $230.00</h6>
-                    </div>
-                    <div class="categoriesHover_items">
-                        <ul>
-                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_three.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_four.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_five.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_six.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_seven.jpg" alt="" class="img-fluid w-100 h-100">
+            <img src="images/fashionImg_sseven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_eight.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_nine.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_ten.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_eleven.jpg" alt="" class="img-fluid w-100 h-100">
+            <img src="images/fashionImg_eeleven.jpg" alt="" class=" img-fluid w-100 h-100 hover_img">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6 col-sm-4 col-md-3">
+        <div class="categoriesContent_products">
+          <div class="products_img">
+            <img src="images/fashionImg_twelve.jpg" alt="" class="img-fluid w-100 h-100">
+          </div>
+          <div class="products_text">
+            <p><a href="">ELECTRONICS</a></p>
+            <a href="">3D Television</a>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <p>(3 Reviews)</p>
+            </ul>
+            <h6>$220.00 - $230.00</h6>
+          </div>
+          <div class="categoriesHover_items">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-scale-balanced"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="toolbox_bottom">
-            <div class="showing_info">
-                <p>
-                    Showing
-                    <span>1-12 of 60</span>
-                    Products
-                </p>
-            </div>
-            <div class="pagination">
-                <li class="prev">
-                    <a href="">
-                        <i class="fa-solid fa-arrow-left"></i> Prev
-                    </a>
-                </li>
+    <div class="toolbox_bottom">
+      <div class="showing_info">
+        <p>
+          Showing
+          <span>1-12 of 60</span>
+          Products
+        </p>
+      </div>
+      <div class="pagination">
+        <li class="prev">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i> Prev
+          </a>
+        </li>
 
-                <!-- <li ></li>
+        <!-- <li ></li>
                         <li class="num"><a href="">2</a></li> -->
 
-                <li class="num">
-                    <a href="" class="one">1</a>
-                    <a href="">2</a>
-                </li>
+        <li class="num">
+          <a href="" class="one">1</a>
+          <a href="">2</a>
+        </li>
 
-                <li class="next"><a href="">Next <i class="fa-solid fa-arrow-right"></i></a></li>
-            </div>
-        </div>
-    </section>
+        <li class="next"><a href="">Next <i class="fa-solid fa-arrow-right"></i></a></li>
+      </div>
+    </div>
+  </section>
 
-    <!--===========================
+  <!--===========================
             Fashion Content part end
     ============================= -->
 
-    <!-- ========= Subscribe part Start ======== -->
+  <!-- ========= Subscribe part Start ======== -->
 
-    <section id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12">
+  <section id="subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12">
 
-                    <div class="subscribe_box">
+          <div class="subscribe_box">
 
-                        <div class="subscribe_item">
-                            <div class="icon">
-                                <i class="fa-regular fa-envelope"></i>
-                            </div>
-                            <div class="subscribe__text">
-                                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                                <p>Get all the latest information on Events, Sales and Offers.</p>
-                            </div>
-                        </div>
-                        <div class="subscribe_inputbox">
-                            <input type="text" placeholder="Your E-mail Address">
-                            <button><a href="#">Subscribe <span><i
-                                            class="fa-solid fa-arrow-right-long"></i></span></a></button>
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="subscribe_item">
+              <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="subscribe__text">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <p>Get all the latest information on Events, Sales and Offers.</p>
+              </div>
             </div>
+            <div class="subscribe_inputbox">
+              <input type="text" placeholder="Your E-mail Address">
+              <button><a href="#">Subscribe <span><i class="fa-solid fa-arrow-right-long"></i></span></a></button>
+            </div>
+          </div>
+
+
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ========= Subscribe part End ======== -->
+  <!-- ========= Subscribe part End ======== -->
 
-    <!--===========================
+  <!--===========================
             Footer part start
     ============================= -->
-    <footer>
+  <footer>
 
-      <section id="footer_part">
-        <div class="container">
-          <div class="footer_top">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="footer_logo">
-                  <img src="images/logo.png" alt="">
-                  <div class="footer_text">
-                    <p class="call">Got Question? Call us 24/7</p>
-                    <a href="#">01813-933-245</a>
-                    <p>Register now to get updates on pronot get
-                      up icons & coupons ster now toon.</p>
-                  </div>
-                  <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f fb"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-x-twitter x"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram insta"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube utube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-pinterest-p pin"></i></a></li>
-                  </ul>
+    <section id="footer_part">
+      <div class="container">
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer_logo">
+                <img src="images/logo.png" alt="">
+                <div class="footer_text">
+                  <p class="call">Got Question? Call us 24/7</p>
+                  <a href="#">01813-933-245</a>
+                  <p>Register now to get updates on pronot get
+                    up icons & coupons ster now toon.</p>
                 </div>
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-x-twitter x"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram insta"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube utube"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-pinterest-p pin"></i></a></li>
+                </ul>
               </div>
-  
-              <div class="col-lg-3">
-                <div class="company">
-                  <h5 class="text-uppercase">Company</h5>
-                  <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Team Member</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Affilate</a></li>
-                    <li><a href="#">order History</a></li>
-                  </ul>
-  
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="company">
-                  <h5 class="text-uppercase">MY ACCOUNT</h5>
-                  <ul>
-                    <li><a href="#">Track My Order</a></li>
-                    <li><a href="#">View Cart</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">My Wishlist</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                  </ul>
-  
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="company">
-                  <h5 class="text-uppercase">CUSTOMER SERVICE</h5>
-                  <ul>
-                    <li><a href="#">Payment Methods</a></li>
-                    <li><a href="#">Money-back guarantee!</a></li>
-                    <li><a href="#">Product Returns</a></li>
-                    <li><a href="#">Support Center</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Term and Conditions</a></li>
-                  </ul>
-  
-                </div>
-              </div>
-  
             </div>
+
+            <div class="col-lg-3">
+              <div class="company">
+                <h5 class="text-uppercase">Company</h5>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Team Member</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Affilate</a></li>
+                  <li><a href="#">order History</a></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="company">
+                <h5 class="text-uppercase">MY ACCOUNT</h5>
+                <ul>
+                  <li><a href="#">Track My Order</a></li>
+                  <li><a href="#">View Cart</a></li>
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">My Wishlist</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="company">
+                <h5 class="text-uppercase">CUSTOMER SERVICE</h5>
+                <ul>
+                  <li><a href="#">Payment Methods</a></li>
+                  <li><a href="#">Money-back guarantee!</a></li>
+                  <li><a href="#">Product Returns</a></li>
+                  <li><a href="#">Support Center</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Term and Conditions</a></li>
+                </ul>
+
+              </div>
+            </div>
+
           </div>
-          <div class="footer_middle">
-            <div class="category_box">
-              <div class="category_content">
-                <h6>Consumer Electric:</h6>
-                <ul>
-                  <li><a href="#">TV Television</a></li>
-                  <li><a href="#">Air Condition</a></li>
-                  <li><a href="#">Refrigerator</a></li>
-                  <li><a href="#">Washing Machine</a></li>
-                  <li><a href="#">Audio Speaker</a></li>
-                  <li><a href="#">Security Camera</a></li>
-                  <li class="remove_border"><a href="#">View All</a></li>
-                </ul>
-              </div>
-              <div class="category_content">
-                <h6>Clothing & Apparel:</h6>
-                <ul>
-                  <li><a href="#">Men's T-shirt</a></li>
-                  <li><a href="#">Dresses</a></li>
-                  <li><a href="#">Men's Sneacker</a></li>
-                  <li><a href="#">Leather Backpack</a></li>
-                  <li><a href="#">Watches</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Sunglasses</a></li>
-                  <li><a href="#">Boots</a></li>
-                  <li><a href="#">Rayban</a></li>
-                  <li class="remove_border"><a href="#">Acccessories</a></li>
-                </ul>
-              </div>
-              <div class="category_content">
-                <h6>Home, Garden & Kitchen:</h6>
-                <ul>
-                  <li><a href="#">Sofa</a></li>
-                  <li><a href="#">Chair</a></li>
-                  <li><a href="#">Bed Room</a></li>
-                  <li><a href="#">Living Room</a></li>
-                  <li><a href="#">cookware</a></li>
-                  <li><a href="#">Utensil</a></li>
-                  <li><a href="#">Blender</a></li>
-                  <li><a href="#">Garden Equipments</a></li>
-                  <li><a href="#">Decor</a></li>
-                  <li class="remove_border"><a href="#">Library</a></li>
-                </ul>
-              </div>
-              <div class="category_content">
-                <h6>Health & Beauty:</h6>
-                <ul>
-                  <li><a href="#">Skin care</a></li>
-                  <li><a href="#">Body Shower</a></li>
-                  <li><a href="#">Makeup</a></li>
-                  <li><a href="#">Hair Care</a></li>
-                  <li><a href="#">Lipstick</a></li>
-                  <li><a href="#">perfume</a></li>
-                  <li class="remove_border"><a href="#">View All</a></li>
-                </ul>
-              </div>
-              <div class="category_content">
-                <h6>Jewelry & Watches:</h6>
-                <ul>
-                  <li><a href="#">TNecklace</a></li>
-                  <li><a href="#">pendant</a></li>
-                  <li><a href="#">Diamond Ring</a></li>
-                  <li><a href="#">Silver Earing</a></li>
-                  <li><a href="#">Leather watcher</a></li>
-                  <li><a href="#">Rolex</a></li>
-                  <li><a href="#">Gucci</a></li>
-                  <li><a href="#">Australian opal</a></li>
-                  <li><a href="#">Ammolite</a></li>
-                  <li class="remove_border"><a href="#">Sun Pyrite</a></li>
-                </ul>
-              </div>
-              <div class="category_content">
-                <h6>Computer & Technologies:</h6>
-                <ul>
-                  <li><a href="#">Laptop</a></li>
-                  <li><a href="#">iMac</a></li>
-                  <li><a href="#">Smartphone</a></li>
-                  <li><a href="#">Tablet</a></li>
-                  <li><a href="#">Apple</a></li>
-                  <li><a href="#">Asus</a></li>
-                  <li><a href="#">Drone</a></li>
-                  <li><a href="#">Wireless Speaker</a></li>
-                  <li><a href="#">Game Controller</a></li>
-                  <li class="remove_border"><a href="#">View All</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="footer_bottom">
-            <div class="footer_right">
-              <p>Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
-            </div>
-            <div class="footer_left">
-              <span>We're using safe payment for</span>
-              <img src="images/footer_card.png" alt="">
-            </div>
-          </div>
-  
         </div>
-      </section>
-  
-    </footer>
+        <div class="footer_middle">
+          <div class="category_box">
+            <div class="category_content">
+              <h6>Consumer Electric:</h6>
+              <ul>
+                <li><a href="#">TV Television</a></li>
+                <li><a href="#">Air Condition</a></li>
+                <li><a href="#">Refrigerator</a></li>
+                <li><a href="#">Washing Machine</a></li>
+                <li><a href="#">Audio Speaker</a></li>
+                <li><a href="#">Security Camera</a></li>
+                <li class="remove_border"><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="category_content">
+              <h6>Clothing & Apparel:</h6>
+              <ul>
+                <li><a href="#">Men's T-shirt</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Men's Sneacker</a></li>
+                <li><a href="#">Leather Backpack</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Sunglasses</a></li>
+                <li><a href="#">Boots</a></li>
+                <li><a href="#">Rayban</a></li>
+                <li class="remove_border"><a href="#">Acccessories</a></li>
+              </ul>
+            </div>
+            <div class="category_content">
+              <h6>Home, Garden & Kitchen:</h6>
+              <ul>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Chair</a></li>
+                <li><a href="#">Bed Room</a></li>
+                <li><a href="#">Living Room</a></li>
+                <li><a href="#">cookware</a></li>
+                <li><a href="#">Utensil</a></li>
+                <li><a href="#">Blender</a></li>
+                <li><a href="#">Garden Equipments</a></li>
+                <li><a href="#">Decor</a></li>
+                <li class="remove_border"><a href="#">Library</a></li>
+              </ul>
+            </div>
+            <div class="category_content">
+              <h6>Health & Beauty:</h6>
+              <ul>
+                <li><a href="#">Skin care</a></li>
+                <li><a href="#">Body Shower</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Hair Care</a></li>
+                <li><a href="#">Lipstick</a></li>
+                <li><a href="#">perfume</a></li>
+                <li class="remove_border"><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="category_content">
+              <h6>Jewelry & Watches:</h6>
+              <ul>
+                <li><a href="#">TNecklace</a></li>
+                <li><a href="#">pendant</a></li>
+                <li><a href="#">Diamond Ring</a></li>
+                <li><a href="#">Silver Earing</a></li>
+                <li><a href="#">Leather watcher</a></li>
+                <li><a href="#">Rolex</a></li>
+                <li><a href="#">Gucci</a></li>
+                <li><a href="#">Australian opal</a></li>
+                <li><a href="#">Ammolite</a></li>
+                <li class="remove_border"><a href="#">Sun Pyrite</a></li>
+              </ul>
+            </div>
+            <div class="category_content">
+              <h6>Computer & Technologies:</h6>
+              <ul>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">iMac</a></li>
+                <li><a href="#">Smartphone</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Asus</a></li>
+                <li><a href="#">Drone</a></li>
+                <li><a href="#">Wireless Speaker</a></li>
+                <li><a href="#">Game Controller</a></li>
+                <li class="remove_border"><a href="#">View All</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <!--===========================
+        <div class="footer_bottom">
+          <div class="footer_right">
+            <p>Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
+          </div>
+          <div class="footer_left">
+            <span>We're using safe payment for</span>
+            <img src="images/footer_card.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </footer>
+
+  <!--===========================
             Footer part end
     ============================= -->
 
-    <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+  <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
